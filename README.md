@@ -86,6 +86,9 @@ await validButtons[index].click();
 - 質問の順序が異なっても公平な比較が可能
 
 ### ブラウザ独立性
+- **`--incognito`フラグ**: 毎回完全にクリーンなブラウザセッションで実行
 - 各テスト実行で新しいブラウザコンテキスト作成
-- Cookie、LocalStorage、SessionStorageをクリア
+- Cookie、LocalStorage、SessionStorage、IndexedDBをクリア
 - ユニークな`test_run_id`でキャッシュ回避
+
+> **Note**: `--incognito`フラグにより、前回のテスト実行の影響を受けずに毎回まっさらな状態でテストが実行されます。これにより、タバコの質問などが安定して出現するようになっています。
