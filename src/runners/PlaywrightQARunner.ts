@@ -88,6 +88,10 @@ export class PlaywrightQARunner {
   async init(headless: boolean = true): Promise<void> {
     this.browser = await chromium.launch({
       headless, // デバッグ時は上書き可能
+      args: [
+        '--incognito', // シークレットモードで起動
+        '--disable-blink-features=AutomationControlled', // 自動化検出を無効化
+      ],
     });
   }
 
