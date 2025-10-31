@@ -1,0 +1,1069 @@
+{
+  "timestamp": "2025-10-17T11:58:31.919+09:00",
+  "scenarioName": "44歳男性・かゆみ",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 34,
+      "diseaseCount": 10,
+      "executionTimeMs": 69202
+    },
+    "askman": {
+      "questionCount": 30,
+      "diseaseCount": 10,
+      "executionTimeMs": 92353
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [
+      {
+        "id": "糖尿病網膜症",
+        "name": "糖尿病網膜症",
+        "section": "related"
+      },
+      {
+        "id": "網膜中心静脈閉塞症",
+        "name": "網膜中心静脈閉塞症",
+        "section": "related"
+      },
+      {
+        "id": "角膜損傷",
+        "name": "角膜損傷",
+        "section": "related"
+      },
+      {
+        "id": "伝染性膿痂疹(とびひ)",
+        "name": "伝染性膿痂疹(とびひ)",
+        "section": "related"
+      },
+      {
+        "id": "網膜中心動脈閉塞症",
+        "name": "網膜中心動脈閉塞症",
+        "section": "related"
+      },
+      {
+        "id": "アレルギー性鼻炎・結膜炎",
+        "name": "アレルギー性鼻炎・結膜炎",
+        "section": "related"
+      },
+      {
+        "id": "アトピー性皮ふ炎",
+        "name": "アトピー性皮ふ炎",
+        "section": "related"
+      },
+      {
+        "id": "フォークト-小柳-原田病(Vogt-小柳-原田病)",
+        "name": "フォークト-小柳-原田病(Vogt-小柳-原田病)",
+        "section": "related"
+      },
+      {
+        "id": "トロサ・ハント症候群(Tolosa-Hunt症候群)",
+        "name": "トロサ・ハント症候群(Tolosa-Hunt症候群)",
+        "section": "easily-missed"
+      },
+      {
+        "id": "眼内異物",
+        "name": "眼内異物",
+        "section": "easily-missed"
+      }
+    ],
+    "askman": [
+      {
+        "id": "アレルギー性鼻炎・結膜炎",
+        "name": "アレルギー性鼻炎・結膜炎",
+        "section": "related"
+      },
+      {
+        "id": "副鼻腔炎",
+        "name": "副鼻腔炎",
+        "label": "指定難病と関連あり",
+        "section": "related"
+      },
+      {
+        "id": "伝染性膿痂疹(とびひ)",
+        "name": "伝染性膿痂疹(とびひ)",
+        "section": "related"
+      },
+      {
+        "id": "急性扁桃炎・咽頭炎",
+        "name": "急性扁桃炎・咽頭炎",
+        "section": "related"
+      },
+      {
+        "id": "アトピー性皮ふ炎",
+        "name": "アトピー性皮ふ炎",
+        "section": "related"
+      },
+      {
+        "id": "群発頭痛",
+        "name": "群発頭痛",
+        "section": "related"
+      },
+      {
+        "id": "ぶどう膜炎",
+        "name": "ぶどう膜炎",
+        "section": "related"
+      },
+      {
+        "id": "角膜損傷",
+        "name": "角膜損傷",
+        "section": "related"
+      },
+      {
+        "id": "シェーグレン症候群",
+        "name": "シェーグレン症候群",
+        "label": "指定難病",
+        "section": "easily-missed"
+      },
+      {
+        "id": "角膜損傷",
+        "name": "角膜損傷",
+        "section": "easily-missed"
+      }
+    ]
+  },
+  "questionLogs": {
+    "cDiagnosis": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/relationship",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760669829783
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "44歳",
+        "timestamp": 1760669830032
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760669830908
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "140cm",
+        "timestamp": 1760669832152
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "33kg",
+        "timestamp": 1760669833238
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-complaint",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "手足がかゆい",
+          "陰部に痒みがある",
+          "目のかゆみがある",
+          "手のかゆみがある",
+          "手にかゆみがある",
+          "目にかゆみがある",
+          "皮ふのかゆみがある",
+          "顔のかゆみがある",
+          "肘にかゆみがある",
+          "首にかゆみがある"
+        ],
+        "selectedOption": "目のかゆみがある",
+        "timestamp": 1760669835466
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-complaint/confirm",
+        "questionText": "【目のかゆみがある】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760669835898
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-9682",
+        "questionText": "今回の【目のかゆみがある】は【いつから】ですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669837102
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-9534",
+        "questionText": "これまでに同じような【目のかゆみがある】を経験したことはありますか？一番近いものを選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "月に数回程度は同じような症状がある",
+          "ほぼ毎日同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669838126
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-11077",
+        "questionText": "【目のかゆみがある】の【変化】として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669839176
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-14531",
+        "questionText": "【目のかゆみ】について、当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "【花粉の時期】に目のかゆみがある",
+          "【動物】に接した時に目のかゆみがある",
+          "【ほこり】に接した時に目のかゆみがある",
+          "【草木】に接した時に目のかゆみがある",
+          "【稲】に接した時に目のかゆみがある",
+          "【カビ】に接した時に目のかゆみがある",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "【花粉の時期】に目のかゆみがある",
+        "timestamp": 1760669840351
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-10352",
+        "questionText": "これまでに【アレルギー性鼻炎（花粉症を含む）】と医師に言われたことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760669842242
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-15705_health_history_general",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+        "timestamp": 1760669843693
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-15920",
+        "questionText": "【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "心不全",
+          "心筋梗塞・不安定狭心症",
+          "不整脈",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669845683
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760669846938
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-16275",
+        "questionText": "以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "高血圧症",
+          "脂質異常症",
+          "糖尿病",
+          "慢性腎臓病・慢性腎不全",
+          "高尿酸血症",
+          "痛風",
+          "睡眠時無呼吸症候群",
+          "脂肪肝",
+          "脳梗塞",
+          "一過性脳虚血発作",
+          "変形性膝関節症",
+          "変形性股関節症",
+          "変形性脊椎症",
+          "肥満低換気症候群",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "糖尿病",
+        "timestamp": 1760669849032
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-19745",
+        "questionText": "これまで、【体重を減らす方法】について医師に相談したことがありますか？",
+        "availableOptions": [
+          "相談したことがある",
+          "相談したいが、実際にしたことはない",
+          "相談したいと思ったこともない",
+          "覚えていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "相談したいが、実際にしたことはない",
+        "timestamp": 1760669850869
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-19012",
+        "questionText": "現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。",
+        "availableOptions": [
+          "最近指導を受けたばかり",
+          "1ヶ月ほど継続している",
+          "2ヶ月から3ヶ月ほど継続している",
+          "4ヶ月から5ヶ月ほど継続している",
+          "6ヶ月以上継続している",
+          "指導を受けたが、やめてしまった",
+          "指導を受けたことはない",
+          "回答をとばす"
+        ],
+        "selectedOption": "1ヶ月ほど継続している",
+        "timestamp": 1760669852422
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760669853781
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/symptom-2896",
+        "questionText": "これまでに糖尿病（女性の場合は妊娠糖尿病も含みます）を治療したことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760669855265
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-1041",
+        "questionText": "現在、はな声ですか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760669856790
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-166",
+        "questionText": "皮ふのかゆみはありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760669858361
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-993",
+        "questionText": "最近目が見えにくくなったと感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760669859893
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-945",
+        "questionText": "皮ふに何らかの異常がありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669861428
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-2008",
+        "questionText": "両親や兄弟、子供にアトピー・喘息・アレルギー性鼻炎（花粉症を含む）・結膜炎のいずれかを罹っている人がいますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760669862694
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-309",
+        "questionText": "前と比べ現在、視界の一部が見えなくなったと感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760669864187
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptoms-890-1841",
+        "questionText": "次のような症状などはありますか？",
+        "availableOptions": [
+          "しびれや感覚のおかしさがある",
+          "手足の痛みがある",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760669865711
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-2046",
+        "questionText": "黒い点や虫のようなもの、あるいは薄い雲のようなものがフワフワと視界に見えますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669867757
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760669869049
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/question-predicted-disease",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "糖尿病網膜症",
+          "網膜中心静脈閉塞症",
+          "角膜損傷",
+          "伝染性膿痂疹(とびひ)",
+          "網膜中心動脈閉塞症",
+          "アレルギー性鼻炎・結膜炎",
+          "アトピー性皮ふ炎",
+          "フォークト-小柳-原田病(Vogt-小柳-原田病)",
+          "トロサ・ハント症候群(Tolosa-Hunt症候群)",
+          "眼内異物",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "糖尿病網膜症",
+        "timestamp": 1760669872384
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/disease-under-treatment",
+        "questionText": "この中に治療中、またはお薬を飲んでいる病気はありますか？",
+        "availableOptions": [
+          "アレルギー性鼻炎・結膜炎",
+          "結節性痒疹(けっせつせいようしん)",
+          "糖尿病",
+          "糖尿病網膜症",
+          "この中に該当なし"
+        ],
+        "selectedOption": "糖尿病網膜症",
+        "timestamp": 1760669874470
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/diagnosed-poorly-controlled-disease-1002-visit-status",
+        "questionText": "【糖尿病網膜症】の治療のため、病院に通っていますか？",
+        "availableOptions": [
+          "病院に通っている",
+          "病院に通っていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "病院に通っている",
+        "timestamp": 1760669876423
+      },
+      {
+        "questionNumber": 33,
+        "url": "https://staging.ubie.app/qa/question/diagnosed-poorly-controlled-disease-1002-medical-institution",
+        "questionText": "いま治療している病院を教えてください",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669877777
+      },
+      {
+        "questionNumber": 34,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【目のかゆみがある】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669879626
+      }
+    ],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760669830534
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "44歳",
+        "timestamp": 1760669834210
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760669836264
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "140cm",
+        "timestamp": 1760669838075
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "33kg",
+        "timestamp": 1760669840566
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "手足がかゆい",
+          "陰部に痒みがある",
+          "目のかゆみがある",
+          "手のかゆみがある",
+          "手にかゆみがある",
+          "目にかゆみがある",
+          "皮ふのかゆみがある",
+          "顔のかゆみがある",
+          "肘にかゆみがある",
+          "首にかゆみがある"
+        ],
+        "selectedOption": "目のかゆみがある",
+        "timestamp": 1760669842101
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "questionText": "【目のかゆみがある】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760669842683
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16123",
+        "questionText": "【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669846481
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-9682",
+        "questionText": "今回の【目のかゆみがある】は【いつから】ですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669848377
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-9534",
+        "questionText": "これまでに同じような【目のかゆみがある】を経験したことはありますか？一番近いものを選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "月に数回程度は同じような症状がある",
+          "ほぼ毎日同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669851663
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-11077",
+        "questionText": "【目のかゆみがある】の【変化】として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669853276
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-14531",
+        "questionText": "【目のかゆみ】について、当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "【花粉の時期】に目のかゆみがある",
+          "【動物】に接した時に目のかゆみがある",
+          "【ほこり】に接した時に目のかゆみがある",
+          "【草木】に接した時に目のかゆみがある",
+          "【稲】に接した時に目のかゆみがある",
+          "【カビ】に接した時に目のかゆみがある",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "【花粉の時期】に目のかゆみがある",
+        "timestamp": 1760669856804
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-10352",
+        "questionText": "これまでに【アレルギー性鼻炎（花粉症を含む）】と医師に言われたことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760669858743
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-15705",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+        "timestamp": 1760669860466
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15920",
+        "questionText": "【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "心不全",
+          "心筋梗塞・不安定狭心症",
+          "不整脈",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669862485
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760669866177
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760669868158
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/symptom-1041",
+        "questionText": "現在、はな声ですか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760669871371
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/symptom-166",
+        "questionText": "皮ふのかゆみはありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760669873274
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/symptom-945",
+        "questionText": "皮ふに何らかの異常がありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669877900
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-1544",
+        "questionText": "現在、皮ふのどこかに厚くザラザラしている部分がありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760669880266
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-746",
+        "questionText": "鼻水が出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669882077
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-2590",
+        "questionText": "これまでに食べ物、薬剤、金属以外の原因でアレルギー症状が出たことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760669883608
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-878",
+        "questionText": "鼻が詰まっていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760669885430
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-2008",
+        "questionText": "両親や兄弟、子供にアトピー・喘息・アレルギー性鼻炎（花粉症を含む）・結膜炎のいずれかを罹っている人がいますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760669887280
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-655",
+        "questionText": "はな・のど・せき症状は目のかゆみ・充血を伴っていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760669890472
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-12",
+        "questionText": "頭痛がありますか？あるいは頭が重いですか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760669892386
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760669894867
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/predicted-disease-question",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "アレルギー性鼻炎・結膜炎(春季カタルを含む)",
+          "副鼻腔炎",
+          "伝染性膿痂疹(とびひ)",
+          "急性扁桃炎・咽頭炎",
+          "アトピー性皮膚炎",
+          "群発頭痛",
+          "ぶどう膜炎",
+          "角膜損傷",
+          "シェーグレン症候群(Sjögren症候群)",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "群発頭痛",
+        "timestamp": 1760669896992
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【目のかゆみがある】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669902103
+      }
+    ]
+  },
+  "differences": {
+    "diseaseMismatch": {
+      "cDiagnosisOnly": [
+        {
+          "id": "糖尿病網膜症",
+          "name": "糖尿病網膜症",
+          "section": "related"
+        },
+        {
+          "id": "網膜中心静脈閉塞症",
+          "name": "網膜中心静脈閉塞症",
+          "section": "related"
+        },
+        {
+          "id": "網膜中心動脈閉塞症",
+          "name": "網膜中心動脈閉塞症",
+          "section": "related"
+        },
+        {
+          "id": "フォークト-小柳-原田病(Vogt-小柳-原田病)",
+          "name": "フォークト-小柳-原田病(Vogt-小柳-原田病)",
+          "section": "related"
+        },
+        {
+          "id": "トロサ・ハント症候群(Tolosa-Hunt症候群)",
+          "name": "トロサ・ハント症候群(Tolosa-Hunt症候群)",
+          "section": "easily-missed"
+        },
+        {
+          "id": "眼内異物",
+          "name": "眼内異物",
+          "section": "easily-missed"
+        }
+      ],
+      "askmanOnly": [
+        {
+          "id": "副鼻腔炎",
+          "name": "副鼻腔炎",
+          "label": "指定難病と関連あり",
+          "section": "related"
+        },
+        {
+          "id": "急性扁桃炎・咽頭炎",
+          "name": "急性扁桃炎・咽頭炎",
+          "section": "related"
+        },
+        {
+          "id": "群発頭痛",
+          "name": "群発頭痛",
+          "section": "related"
+        },
+        {
+          "id": "ぶどう膜炎",
+          "name": "ぶどう膜炎",
+          "section": "related"
+        },
+        {
+          "id": "シェーグレン症候群",
+          "name": "シェーグレン症候群",
+          "label": "指定難病",
+          "section": "easily-missed"
+        }
+      ]
+    },
+    "questionCountMismatch": {
+      "cDiagnosis": 34,
+      "askman": 30
+    }
+  }
+}

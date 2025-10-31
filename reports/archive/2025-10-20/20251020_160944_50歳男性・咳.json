@@ -1,0 +1,765 @@
+{
+  "timestamp": "2025-10-20T16:09:44.979+09:00",
+  "scenarioName": "50歳男性・咳",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 33,
+      "diseaseCount": 10,
+      "executionTimeMs": 61981
+    },
+    "askman": {
+      "questionCount": 7,
+      "diseaseCount": 0,
+      "executionTimeMs": 33289
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [
+      {
+        "id": "急性扁桃炎・咽頭炎",
+        "name": "急性扁桃炎・咽頭炎",
+        "section": "related"
+      },
+      {
+        "id": "慢性閉塞性肺疾患(COPD)",
+        "name": "慢性閉塞性肺疾患(COPD)",
+        "section": "related"
+      },
+      {
+        "id": "胃食道逆流症(GERD)・逆流性食道炎",
+        "name": "胃食道逆流症(GERD)・逆流性食道炎",
+        "section": "related"
+      },
+      {
+        "id": "かぜ症候群(上気道炎)",
+        "name": "かぜ症候群(上気道炎)",
+        "section": "related"
+      },
+      {
+        "id": "アスペルギルス症",
+        "name": "アスペルギルス症",
+        "section": "related"
+      },
+      {
+        "id": "気管支喘息",
+        "name": "気管支喘息",
+        "section": "related"
+      },
+      {
+        "id": "アレルギー性鼻炎・結膜炎",
+        "name": "アレルギー性鼻炎・結膜炎",
+        "section": "related"
+      },
+      {
+        "id": "感染後咳嗽",
+        "name": "感染後咳嗽",
+        "section": "related"
+      },
+      {
+        "id": "気管支異物",
+        "name": "気管支異物",
+        "section": "easily-missed"
+      },
+      {
+        "id": "百日咳",
+        "name": "百日咳",
+        "section": "easily-missed"
+      }
+    ],
+    "askman": []
+  },
+  "resultPageElements": {
+    "cDiagnosis": {
+      "diseases": [
+        {
+          "id": "急性扁桃炎・咽頭炎",
+          "name": "急性扁桃炎・咽頭炎",
+          "section": "related"
+        },
+        {
+          "id": "慢性閉塞性肺疾患(COPD)",
+          "name": "慢性閉塞性肺疾患(COPD)",
+          "section": "related"
+        },
+        {
+          "id": "胃食道逆流症(GERD)・逆流性食道炎",
+          "name": "胃食道逆流症(GERD)・逆流性食道炎",
+          "section": "related"
+        },
+        {
+          "id": "かぜ症候群(上気道炎)",
+          "name": "かぜ症候群(上気道炎)",
+          "section": "related"
+        },
+        {
+          "id": "アスペルギルス症",
+          "name": "アスペルギルス症",
+          "section": "related"
+        },
+        {
+          "id": "気管支喘息",
+          "name": "気管支喘息",
+          "section": "related"
+        },
+        {
+          "id": "アレルギー性鼻炎・結膜炎",
+          "name": "アレルギー性鼻炎・結膜炎",
+          "section": "related"
+        },
+        {
+          "id": "感染後咳嗽",
+          "name": "感染後咳嗽",
+          "section": "related"
+        },
+        {
+          "id": "気管支異物",
+          "name": "気管支異物",
+          "section": "easily-missed"
+        },
+        {
+          "id": "百日咳",
+          "name": "百日咳",
+          "section": "easily-missed"
+        }
+      ],
+      "banners": {
+        "membershipPlus": true,
+        "appDownload": true,
+        "ads": [
+          "https://freakout-api-stub.staging.ubie.dev/serve?id=55336&mt=282&csurl=https%3A%2F%2Fstaging.ubie.app%2Fapi%2Fubie-ads%2Fsync&pid=29d98a4e-b60f-4ee6-b60f-fc06ad68f7bc&btt=8QvWz9MZOkoCR2NOVtQbS5EYXYYYe5EBq9kG6XNKkks"
+        ]
+      },
+      "buttons": {
+        "hospitalSearch": true,
+        "ubieActions": [
+          "いますぐ取れる対処法",
+          "病院に行くべきか知りたい",
+          "何科に行くべきか知りたい",
+          "適切な対処法を知りたい",
+          "病気や症状について詳しく知りたい",
+          "受診したがまだ悩みがある"
+        ]
+      },
+      "sections": {
+        "otc": true,
+        "relatedDiseases": true,
+        "treatmentInfo": true
+      },
+      "social": {
+        "twitter": true,
+        "line": true
+      }
+    }
+  },
+  "questionLogs": {
+    "cDiagnosis": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/relationship",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760944096515
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "50歳",
+        "timestamp": 1760944096763
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760944096864
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "157cm",
+        "timestamp": 1760944098100
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "50kg",
+        "timestamp": 1760944099158
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-complaint",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "咳が出る",
+          "痰に血が混ざる",
+          "痰の絡まない咳が出る",
+          "痰が出る",
+          "せきで血が出る",
+          "コホコホと咳が出る",
+          "痰が切れない",
+          "便に血が混ざる",
+          "精子に血が混ざる",
+          "おしっこに血が混ざる"
+        ],
+        "selectedOption": "咳が出る",
+        "timestamp": 1760944100745
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-complaint/confirm",
+        "questionText": "【咳が出る】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760944101015
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16123",
+        "questionText": "【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760944102131
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-11048",
+        "questionText": "今回の【咳が出る】は【いつから】ですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760944103264
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-10395",
+        "questionText": "【咳が出る】の【回数】について、一番近いものを選んでください。",
+        "availableOptions": [
+          "1日数回、単発のせきが出る",
+          "1日数回、立て続けにせきがでる",
+          "いつもひっきりなしに咳が出ている",
+          "回答をとばす"
+        ],
+        "selectedOption": "1日数回、単発のせきが出る",
+        "timestamp": 1760944104267
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-9519",
+        "questionText": "【咳が出る】の【変化】として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "悪化している",
+        "timestamp": 1760944105469
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-8569",
+        "questionText": "これまでに同じような【咳が出る】を経験したことはありますか？一番近いものを選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "月に数回程度は同じような症状がある",
+          "ほぼ毎日同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "初めての症状である",
+        "timestamp": 1760944106673
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-8141",
+        "questionText": "【咳が出る】について、当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "発作のように咳が出る",
+          "犬やオットセイの鳴き声のような咳が出る",
+          "痰（たん）の絡まない乾いた咳が出る",
+          "夜も咳で起きてしまう",
+          "運動した後に咳が悪化する",
+          "咳の発作で、息を吸った時に笛のような音が鳴る",
+          "自宅や職場など特定の場所に行くと咳が出る",
+          "周囲（学校や職場、家庭など）に同じような症状の人がいる",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "運動した後に咳が悪化する",
+        "timestamp": 1760944108006
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-8879",
+        "questionText": "つぎのような症状はありますか？当てはまるものを【全て】選んでください",
+        "availableOptions": [
+          "体温が37.5℃以上",
+          "たんが出る",
+          "のどの痛み",
+          "鼻水",
+          "胸の痛み",
+          "息苦しさ",
+          "体のだるさ",
+          "頭痛がある・頭が重い",
+          "胸やけ",
+          "最近、味覚が変わったと感じることがある",
+          "においの感じ方がおかしい",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760944109929
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15705_health_history_general",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+        "timestamp": 1760944111917
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15920",
+        "questionText": "【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "心不全",
+          "心筋梗塞・不安定狭心症",
+          "不整脈",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760944113777
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760944114921
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-16275",
+        "questionText": "以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "高血圧症",
+          "脂質異常症",
+          "糖尿病",
+          "慢性腎臓病・慢性腎不全",
+          "高尿酸血症",
+          "痛風",
+          "睡眠時無呼吸症候群",
+          "脂肪肝",
+          "脳梗塞",
+          "一過性脳虚血発作",
+          "変形性膝関節症",
+          "変形性股関節症",
+          "変形性脊椎症",
+          "肥満低換気症候群",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "変形性膝関節症",
+        "timestamp": 1760944116906
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-19745",
+        "questionText": "これまで、【体重を減らす方法】について医師に相談したことがありますか？",
+        "availableOptions": [
+          "相談したことがある",
+          "相談したいが、実際にしたことはない",
+          "相談したいと思ったこともない",
+          "覚えていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "相談したいが、実際にしたことはない",
+        "timestamp": 1760944118667
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/question-19012",
+        "questionText": "現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。",
+        "availableOptions": [
+          "最近指導を受けたばかり",
+          "1ヶ月ほど継続している",
+          "2ヶ月から3ヶ月ほど継続している",
+          "4ヶ月から5ヶ月ほど継続している",
+          "6ヶ月以上継続している",
+          "指導を受けたが、やめてしまった",
+          "指導を受けたことはない",
+          "回答をとばす"
+        ],
+        "selectedOption": "1ヶ月ほど継続している",
+        "timestamp": 1760944120222
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760944121502
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-1111",
+        "questionText": "ゼーゼー・ヒューヒューするような呼吸音がしますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760944122945
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-2612",
+        "questionText": "のどの圧迫感や詰まるような感じがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760944124295
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-1405",
+        "questionText": "日常的にげっぷがよく出ますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760944125704
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-871",
+        "questionText": "のどが腫れていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760944127134
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-212",
+        "questionText": "のどの赤みがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760944128602
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-2008",
+        "questionText": "両親や兄弟、子供にアトピー・喘息・アレルギー性鼻炎（花粉症を含む）・結膜炎のいずれかを罹っている人がいますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760944130018
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-2803",
+        "questionText": "これまでにピロリ菌の除菌治療を受けたことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760944131443
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/symptom-emergence-7794",
+        "questionText": "今回の【のどの圧迫感や詰まるような感じ】はどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760944132884
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760944134026
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/question-predicted-disease",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "急性扁桃炎・咽頭炎",
+          "慢性閉塞性肺疾患(COPD)",
+          "胃食道逆流症(GERD)・逆流性食道炎",
+          "アスペルギルス症",
+          "気管支喘息",
+          "アレルギー性鼻炎・結膜炎",
+          "感染後咳嗽",
+          "気管支異物",
+          "百日咳",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "急性扁桃炎・咽頭炎",
+        "timestamp": 1760944137368
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/disease-under-treatment",
+        "questionText": "この中に治療中、またはお薬を飲んでいる病気はありますか？",
+        "availableOptions": [
+          "結節性痒疹(けっせつせいようしん)",
+          "変形性膝関節症",
+          "急性扁桃炎・咽頭炎",
+          "この中に該当なし"
+        ],
+        "selectedOption": "急性扁桃炎・咽頭炎",
+        "timestamp": 1760944139371
+      },
+      {
+        "questionNumber": 33,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【咳が出る】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "症状に関する病気を詳しく知りたい",
+        "timestamp": 1760944141774
+      }
+    ],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760944158797
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "50歳",
+        "timestamp": 1760944159902
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760944160777
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "157cm",
+        "timestamp": 1760944162894
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "50kg",
+        "timestamp": 1760944165293
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "咳が出る",
+          "痰に血が混ざる",
+          "痰の絡まない咳が出る",
+          "痰が出る",
+          "せきで血が出る",
+          "コホコホと咳が出る",
+          "痰が切れない",
+          "便に血が混ざる",
+          "精子に血が混ざる",
+          "おしっこに血が混ざる"
+        ],
+        "selectedOption": "咳が出る",
+        "timestamp": 1760944166695
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "questionText": "【咳が出る】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760944167155
+      }
+    ]
+  },
+  "differences": {
+    "diseaseMismatch": {
+      "cDiagnosisOnly": [
+        {
+          "id": "急性扁桃炎・咽頭炎",
+          "name": "急性扁桃炎・咽頭炎",
+          "section": "related"
+        },
+        {
+          "id": "慢性閉塞性肺疾患(COPD)",
+          "name": "慢性閉塞性肺疾患(COPD)",
+          "section": "related"
+        },
+        {
+          "id": "胃食道逆流症(GERD)・逆流性食道炎",
+          "name": "胃食道逆流症(GERD)・逆流性食道炎",
+          "section": "related"
+        },
+        {
+          "id": "かぜ症候群(上気道炎)",
+          "name": "かぜ症候群(上気道炎)",
+          "section": "related"
+        },
+        {
+          "id": "アスペルギルス症",
+          "name": "アスペルギルス症",
+          "section": "related"
+        },
+        {
+          "id": "気管支喘息",
+          "name": "気管支喘息",
+          "section": "related"
+        },
+        {
+          "id": "アレルギー性鼻炎・結膜炎",
+          "name": "アレルギー性鼻炎・結膜炎",
+          "section": "related"
+        },
+        {
+          "id": "感染後咳嗽",
+          "name": "感染後咳嗽",
+          "section": "related"
+        },
+        {
+          "id": "気管支異物",
+          "name": "気管支異物",
+          "section": "easily-missed"
+        },
+        {
+          "id": "百日咳",
+          "name": "百日咳",
+          "section": "easily-missed"
+        }
+      ],
+      "askmanOnly": []
+    },
+    "questionCountMismatch": {
+      "cDiagnosis": 33,
+      "askman": 7
+    }
+  }
+}

@@ -1,0 +1,147 @@
+❌ FAILED - Results differ
+
+C-Diagnosis: 0 diseases, 0 questions ⚠️ ERROR
+Askman:      0 diseases, 7 questions ⚠️ ERROR
+
+Disease Results:
+  C-Diagnosis:
+  Askman:
+
+Question Count Mismatch:
+  C-Diagnosis: 0
+  Askman: 7
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️  Error Details
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+C-Diagnosis Error:
+  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: '自分' }).first()
+
+  Stopped after 0 questions
+  📸 Screenshot: screenshots/error-c-diagnosis-1760682738998.png
+
+Askman Error:
+  結果ページに到達できませんでした。 停止位置: https://staging.ubie.app/qa/question/main-symptom/confirm. Screenshot: ./screenshots/failed_to_reach_result_1760682775954.png
+  Stopped after 7 questions
+  📸 Screenshot: screenshots/error-askman-1760682776006.png
+
+  Steps before error:
+    1. person
+       Q: 誰の症状について調べますか？
+       A: 自分
+    2. age
+       Q: 年齢を教えてください
+       A: 40歳
+    3. sex
+       Q: 性別を教えてください
+       A: 男性
+    4. height
+       Q: 身長を教えてください
+       A: 161cm
+    5. weight
+       Q: 体重を教えてください
+       A: 54kg
+    6. main-symptom
+       Q: 現在、最も気になる症状を教えてください。
+       A: 吐き気
+    7. main-symptom
+       Q: 現在、最も気になる症状を教えてください。
+       A: 頭を動かすと吐き気がでる
+    8. confirm
+       Q: 【頭を動かすと吐き気がでる】に関する質問に進みます
+       A: 次へ進む
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 Detailed Question Log Comparison
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q1]
+    URL: https://staging.ubie.app/qa/question/person
+    Question: 誰の症状について調べますか？
+    Options: 自分, 家族, その他
+    Selected: 自分
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q2]
+    URL: https://staging.ubie.app/qa/question/age
+    Question: 年齢を教えてください
+    Options: 
+    Selected: 40歳
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q3]
+    URL: https://staging.ubie.app/qa/question/sex
+    Question: 性別を教えてください
+    Options: 男性, 女性
+    Selected: 男性
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q4]
+    URL: https://staging.ubie.app/qa/question/height
+    Question: 身長を教えてください
+    Options: 80-200cm
+    Selected: 161cm
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q5]
+    URL: https://staging.ubie.app/qa/question/weight
+    Question: 体重を教えてください
+    Options: 10-130kg
+    Selected: 54kg
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q6]
+    URL: https://staging.ubie.app/qa/question/main-symptom
+    Question: 現在、最も気になる症状を教えてください。
+    Options: お腹が痛い, 発熱, だるい, 頭痛, 喉が痛い, 吐き気
+    Selected: 吐き気
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q7]
+    URL: https://staging.ubie.app/qa/question/main-symptom
+    Question: 現在、最も気になる症状を教えてください。
+    Options: 吐き気がある, 吐き気のために食事が取れない, 頭を動かすと吐き気がでる
+    Selected: 頭を動かすと吐き気がでる
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q8]
+    URL: https://staging.ubie.app/qa/question/main-symptom/confirm
+    Question: 【頭を動かすと吐き気がでる】に関する質問に進みます
+    Options: クリック可能な領域（SVG/画像）
+    Selected: 次へ進む
+
+  ⚠️  DIFFERENCES: Question only in Askman

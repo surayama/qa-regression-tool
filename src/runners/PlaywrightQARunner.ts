@@ -102,7 +102,7 @@ export class PlaywrightQARunner {
     }
   }
 
-  async runScenario(scenario: TestScenario): Promise<TestResult> {
+  async runScenario(scenario: TestScenario, outputDir?: string): Promise<TestResult> {
     if (!this.browser) {
       throw new Error('Browser not initialized. Call init() first.');
     }
@@ -165,6 +165,12 @@ export class PlaywrightQARunner {
       // 6. 疾患結果を取得
       diseases = await this.getDiseaseResults(page);
 
+      // 7. LocalStorageスナップショットを取得
+      const localStorageSnapshot = await this.getLocalStorageSnapshot(page);
+
+      // 8. 成功時に結果画面のスクリーンショットを撮影
+      const successScreenshotPath = await this.takeSuccessScreenshot(page, outputDir);
+
       const executionTimeMs = Date.now() - startTime;
 
       await page.close();
@@ -175,8 +181,9 @@ export class PlaywrightQARunner {
         diseases,
         questionCount,
         questionLogs,
+        localStorageSnapshot,
         executionTimeMs,
-        screenshotPath: goToResultResponse.screenshot,  // 結果ページに到達しなかった場合のスクリーンショットを含む
+        screenshotPath: successScreenshotPath,  // 成功時の結果画面スクリーンショット
       };
     } catch (error) {
       console.log(`      ❌ 問診中にエラー: ${error instanceof Error ? error.message : String(error)}`);
@@ -184,7 +191,8 @@ export class PlaywrightQARunner {
       // エラー時にスクリーンショットを保存
       let screenshotPath: string | undefined;
       try {
-        screenshotPath = `screenshots/error-${this.engine || 'unknown'}-${Date.now()}.png`;
+        const errorFileName = `error-${this.engine || 'unknown'}.png`;
+        screenshotPath = outputDir ? `${outputDir}/${errorFileName}` : `screenshots/${errorFileName}`;
         await page.screenshot({ path: screenshotPath });
         console.log(`      📸 スクリーンショット保存: ${screenshotPath}`);
       } catch {}
@@ -211,9 +219,8 @@ export class PlaywrightQARunner {
    * ホームページから問診を開始
    */
   private async startQuestionnaire(page: Page): Promise<void> {
-    const testRunId = Date.now();
     // 必要に応じてaskmanパラメータ付きURLを構築
-    let url = `${this.baseUrl}?iam_ubie_developer=1&test_run_id=${testRunId}&force_repeater=1&sandbox_mode=1`;
+    let url = `${this.baseUrl}?iam_ubie_developer=1`;
     if (this.engine === 'askman') {
       url += '&use_askman_qa=1';
     }
@@ -961,16 +968,155 @@ export class PlaywrightQARunner {
           }
 
           if (!clicked) {
-            // 設問文に基づいて選択肢を選択 (同じ質問 = 同じ選択を保証)
-            if (this.randomSeed !== null && validButtons.length > 0) {
-              const questionKey = questionLog.questionText || currentUrl;
-              const randomIndex = this.getRandomIndexForQuestion(questionKey, validButtons.length);
-              const selectedButton = validButtons[randomIndex];
-              await selectedButton.button.click();
-              clicked = true;
-              selectedOption = selectedButton.text;
-              questionCount++;
-              console.log(`      ✓ 設問ベース要素をクリック [${randomIndex + 1}/${validButtons.length}]: ${selectedButton.text.substring(0, 30)}`);
+            // チェックボックスページかどうか判定
+            const checkboxes = await page.locator('input[type="checkbox"]:visible').all();
+            const isCheckboxPage = checkboxes.length > 0;
+
+            // question-16275のみ特別処理: c-diagnosisとaskmanで選択肢が異なるため安全な選択肢を優先
+            const isQuestion16275 = currentUrl.includes('question-16275');
+
+            if (isQuestion16275 && validButtons.length > 0) {
+              const safeOptions = ['この中に該当なし', 'わからない', '回答をとばす'];
+              const safeButton = validButtons.find(b => safeOptions.some(opt => b.text === opt));
+
+              if (safeButton) {
+                await safeButton.button.click();
+                clicked = true;
+                selectedOption = safeButton.text;
+                questionCount++;
+                console.log(`      ✓ [question-16275] 安全な選択肢をクリック: ${safeButton.text}`);
+              } else {
+                // 安全な選択肢がない場合はランダム選択
+                const questionKey = questionLog.questionText || currentUrl;
+                const randomIndex = this.getRandomIndexForQuestion(questionKey, validButtons.length);
+                const selectedButton = validButtons[randomIndex];
+                await selectedButton.button.click();
+                clicked = true;
+                selectedOption = selectedButton.text;
+                questionCount++;
+                console.log(`      ✓ [question-16275] ランダム選択 [${randomIndex + 1}/${validButtons.length}]: ${selectedButton.text.substring(0, 30)}`);
+              }
+            } else if (this.randomSeed !== null && validButtons.length > 0) {
+              // チェックボックスページの場合は複数選択
+              if (isCheckboxPage) {
+                // 「回答をとばす」を除外してチェックボックス選択肢のみ取得
+                const checkboxButtons = validButtons.filter(b => !b.text.includes('回答をとばす'));
+                const skipButton = validButtons.find(b => b.text.includes('回答をとばす'));
+
+                // 排他的選択肢を特定
+                const exclusivePatterns = ['この中に該当なし', 'わからない', 'あてはまるものはない'];
+                const exclusiveButtons = checkboxButtons.filter(b =>
+                  exclusivePatterns.some(pattern => b.text.includes(pattern))
+                );
+                const nonExclusiveButtons = checkboxButtons.filter(b =>
+                  !exclusivePatterns.some(pattern => b.text.includes(pattern))
+                );
+
+                // 「回答をとばす」をランダムで押すか判定（30%の確率）
+                const questionKey = questionLog.questionText || currentUrl;
+                const skipProbability = this.getRandomValueInRange(`${questionKey}_skip`, 0, 100);
+
+                if (skipButton && skipProbability < 30) {
+                  // 「回答をとばす」を押す
+                  await skipButton.button.click();
+                  clicked = true;
+                  selectedOption = skipButton.text;
+                  questionCount++;
+                  console.log(`      ✓ 「回答をとばす」をクリック`);
+                } else if (checkboxButtons.length > 0) {
+                  // 排他的選択肢を選ぶか判定（40%の確率）
+                  const exclusiveProbability = this.getRandomValueInRange(`${questionKey}_exclusive`, 0, 100);
+
+                  if (exclusiveButtons.length > 0 && exclusiveProbability < 40) {
+                    // 排他的選択肢から1つだけ選択
+                    const randomIndex = this.getRandomValueInRange(`${questionKey}_exclusive_idx`, 0, exclusiveButtons.length - 1);
+                    const selectedButton = exclusiveButtons[randomIndex];
+
+                    await selectedButton.button.click();
+                    clicked = true;
+                    selectedOption = selectedButton.text;
+                    questionCount++;
+                    console.log(`      ✓ 排他的選択肢をクリック: ${selectedButton.text}`);
+                  } else if (nonExclusiveButtons.length > 0) {
+                    // 通常の選択肢から1〜複数個選択
+                    const maxSelections = Math.min(3, nonExclusiveButtons.length); // 最大3個まで
+                    const numSelections = this.getRandomValueInRange(`${questionKey}_count`, 1, maxSelections);
+
+                    const selectedButtons: typeof nonExclusiveButtons = [];
+                    const selectedTexts: string[] = [];
+
+                    for (let i = 0; i < numSelections; i++) {
+                      const availableButtons = nonExclusiveButtons.filter(b => !selectedButtons.includes(b));
+                      if (availableButtons.length === 0) break;
+
+                      const randomIndex = this.getRandomValueInRange(`${questionKey}_${i}`, 0, availableButtons.length - 1);
+                      const selectedButton = availableButtons[randomIndex];
+                      selectedButtons.push(selectedButton);
+                      selectedTexts.push(selectedButton.text);
+
+                      await selectedButton.button.click();
+                      await page.waitForTimeout(200); // クリック間隔
+                    }
+
+                    clicked = true;
+                    selectedOption = selectedTexts.join(', ');
+                    questionCount++;
+                    console.log(`      ✓ チェックボックス ${numSelections}個選択: ${selectedTexts.map(t => t.substring(0, 20)).join(', ')}`);
+                  } else if (exclusiveButtons.length > 0) {
+                    // 通常の選択肢がない場合は排他的選択肢から選ぶ
+                    const randomIndex = this.getRandomValueInRange(`${questionKey}_exclusive_fallback`, 0, exclusiveButtons.length - 1);
+                    const selectedButton = exclusiveButtons[randomIndex];
+
+                    await selectedButton.button.click();
+                    clicked = true;
+                    selectedOption = selectedButton.text;
+                    questionCount++;
+                    console.log(`      ✓ 排他的選択肢をクリック: ${selectedButton.text}`);
+                  }
+                } else if (skipButton) {
+                  // チェックボックスがない場合は「回答をとばす」
+                  await skipButton.button.click();
+                  clicked = true;
+                  selectedOption = skipButton.text;
+                  questionCount++;
+                  console.log(`      ✓ 「回答をとばす」をクリック`);
+                }
+              } else {
+                // 通常のボタン選択（1つだけ）
+                const questionKey = questionLog.questionText || currentUrl;
+
+                // 「回答をとばす」をランダムで押すか判定（20%の確率）
+                const skipButton = validButtons.find(b => b.text.includes('回答をとばす'));
+                const skipProbability = this.getRandomValueInRange(`${questionKey}_skip`, 0, 100);
+
+                if (skipButton && skipProbability < 20) {
+                  // 「回答をとばす」を押す
+                  await skipButton.button.click();
+                  clicked = true;
+                  selectedOption = skipButton.text;
+                  questionCount++;
+                  console.log(`      ✓ 「回答をとばす」をクリック`);
+                } else {
+                  // 通常の選択肢からランダムに選択
+                  const selectableButtons = validButtons.filter(b => !b.text.includes('回答をとばす'));
+                  if (selectableButtons.length > 0) {
+                    const randomIndex = this.getRandomIndexForQuestion(questionKey, selectableButtons.length);
+                    const selectedButton = selectableButtons[randomIndex];
+                    await selectedButton.button.click();
+                    clicked = true;
+                    selectedOption = selectedButton.text;
+                    questionCount++;
+                    console.log(`      ✓ 設問ベース要素をクリック [${randomIndex + 1}/${selectableButtons.length}]: ${selectedButton.text.substring(0, 30)}`);
+                  } else if (skipButton) {
+                    // 選択肢がない場合は「回答をとばす」
+                    await skipButton.button.click();
+                    clicked = true;
+                    selectedOption = skipButton.text;
+                    questionCount++;
+                    console.log(`      ✓ 「回答をとばす」をクリック`);
+                  }
+                }
+              }
             } else {
               // デフォルトモード: 「回答をとばす」ボタンがあるか確認
               const skipButton = validButtons.find(b => b.text.includes('回答をとばす'));
@@ -1196,10 +1342,135 @@ export class PlaywrightQARunner {
           const validButtons = await this.collectValidButtons(page);
 
           if (validButtons.length > 0) {
-            const questionKey = questionText || currentUrl;
-            const randomIndex = this.getRandomIndexForQuestion(questionKey, validButtons.length);
-            const selectedButton = validButtons[randomIndex];
-            console.log(`      ✓ ランダム: 要素をクリック "${selectedButton.text.substring(0, 30)}"`);
+            // チェックボックスページかどうか判定
+            const checkboxes = await page.locator('input[type="checkbox"]:visible').all();
+            const isCheckboxPage = checkboxes.length > 0;
+
+            // question-16275のみ特別処理: c-diagnosisとaskmanで選択肢が異なるため安全な選択肢を優先
+            const isQuestion16275 = currentUrl.includes('question-16275');
+            let selectedOption: string;
+
+            if (isQuestion16275) {
+              const safeOptions = ['この中に該当なし', 'わからない', '回答をとばす'];
+              const safeButton = validButtons.find(b => safeOptions.some(opt => b.text === opt));
+
+              if (safeButton) {
+                selectedOption = safeButton.text;
+                await safeButton.button.click();
+                console.log(`      ✓ [question-16275] 安全な選択肢をクリック: ${safeButton.text}`);
+              } else {
+                const questionKey = questionText || currentUrl;
+                const randomIndex = this.getRandomIndexForQuestion(questionKey, validButtons.length);
+                const selectedButton = validButtons[randomIndex];
+                selectedOption = selectedButton.text;
+                await selectedButton.button.click();
+                console.log(`      ✓ [question-16275] ランダム選択 "${selectedButton.text.substring(0, 30)}"`);
+              }
+            } else if (isCheckboxPage) {
+              // チェックボックスページの場合は複数選択
+              const checkboxButtons = validButtons.filter(b => !b.text.includes('回答をとばす'));
+              const skipButton = validButtons.find(b => b.text.includes('回答をとばす'));
+
+              // 排他的選択肢を特定
+              const exclusivePatterns = ['この中に該当なし', 'わからない', 'あてはまるものはない'];
+              const exclusiveButtons = checkboxButtons.filter(b =>
+                exclusivePatterns.some(pattern => b.text.includes(pattern))
+              );
+              const nonExclusiveButtons = checkboxButtons.filter(b =>
+                !exclusivePatterns.some(pattern => b.text.includes(pattern))
+              );
+
+              // 「回答をとばす」をランダムで押すか判定（30%の確率）
+              const questionKey = questionText || currentUrl;
+              const skipProbability = this.getRandomValueInRange(`${questionKey}_skip`, 0, 100);
+
+              if (skipButton && skipProbability < 30) {
+                // 「回答をとばす」を押す
+                selectedOption = skipButton.text;
+                await skipButton.button.click();
+                console.log(`      ✓ 「回答をとばす」をクリック`);
+              } else if (checkboxButtons.length > 0) {
+                // 排他的選択肢を選ぶか判定（40%の確率）
+                const exclusiveProbability = this.getRandomValueInRange(`${questionKey}_exclusive`, 0, 100);
+
+                if (exclusiveButtons.length > 0 && exclusiveProbability < 40) {
+                  // 排他的選択肢から1つだけ選択
+                  const randomIndex = this.getRandomValueInRange(`${questionKey}_exclusive_idx`, 0, exclusiveButtons.length - 1);
+                  const selectedButton = exclusiveButtons[randomIndex];
+
+                  selectedOption = selectedButton.text;
+                  await selectedButton.button.click();
+                  console.log(`      ✓ 排他的選択肢をクリック: ${selectedButton.text}`);
+                } else if (nonExclusiveButtons.length > 0) {
+                  // 通常の選択肢から1〜複数個選択
+                  const maxSelections = Math.min(3, nonExclusiveButtons.length);
+                  const numSelections = this.getRandomValueInRange(`${questionKey}_count`, 1, maxSelections);
+
+                  const selectedTexts: string[] = [];
+                  const selectedButtons: typeof nonExclusiveButtons = [];
+
+                  for (let i = 0; i < numSelections; i++) {
+                    const availableButtons = nonExclusiveButtons.filter(b => !selectedButtons.includes(b));
+                    if (availableButtons.length === 0) break;
+
+                    const randomIndex = this.getRandomValueInRange(`${questionKey}_${i}`, 0, availableButtons.length - 1);
+                    const selectedButton = availableButtons[randomIndex];
+                    selectedButtons.push(selectedButton);
+                    selectedTexts.push(selectedButton.text);
+
+                    await selectedButton.button.click();
+                    await page.waitForTimeout(200);
+                  }
+
+                  selectedOption = selectedTexts.join(', ');
+                  console.log(`      ✓ チェックボックス ${numSelections}個選択: ${selectedTexts.map(t => t.substring(0, 20)).join(', ')}`);
+                } else if (exclusiveButtons.length > 0) {
+                  // 通常の選択肢がない場合は排他的選択肢から選ぶ
+                  const randomIndex = this.getRandomValueInRange(`${questionKey}_exclusive_fallback`, 0, exclusiveButtons.length - 1);
+                  const selectedButton = exclusiveButtons[randomIndex];
+
+                  selectedOption = selectedButton.text;
+                  await selectedButton.button.click();
+                  console.log(`      ✓ 排他的選択肢をクリック: ${selectedButton.text}`);
+                } else {
+                  selectedOption = '';
+                }
+              } else if (skipButton) {
+                selectedOption = skipButton.text;
+                await skipButton.button.click();
+                console.log(`      ✓ 「回答をとばす」をクリック`);
+              } else {
+                selectedOption = '';
+              }
+            } else {
+              // 通常のボタン選択
+              const questionKey = questionText || currentUrl;
+
+              // 「回答をとばす」をランダムで押すか判定（20%の確率）
+              const skipButton = validButtons.find(b => b.text.includes('回答をとばす'));
+              const skipProbability = this.getRandomValueInRange(`${questionKey}_skip`, 0, 100);
+
+              if (skipButton && skipProbability < 20) {
+                selectedOption = skipButton.text;
+                await skipButton.button.click();
+                console.log(`      ✓ 「回答をとばす」をクリック`);
+              } else {
+                const selectableButtons = validButtons.filter(b => !b.text.includes('回答をとばす'));
+                if (selectableButtons.length > 0) {
+                  const randomIndex = this.getRandomIndexForQuestion(questionKey, selectableButtons.length);
+                  const selectedButton = selectableButtons[randomIndex];
+                  selectedOption = selectedButton.text;
+                  await selectedButton.button.click();
+                  console.log(`      ✓ ランダム: 要素をクリック "${selectedButton.text.substring(0, 30)}"`);
+                } else if (skipButton) {
+                  selectedOption = skipButton.text;
+                  await skipButton.button.click();
+                  console.log(`      ✓ 「回答をとばす」をクリック`);
+                } else {
+                  selectedOption = '';
+                }
+              }
+            }
 
             // ログに記録
             questionNumber++;
@@ -1208,16 +1479,13 @@ export class PlaywrightQARunner {
               url: currentUrl.split('?')[0],
               questionText: questionText || '',
               availableOptions: validButtons.map(b => b.text),
-              selectedOption: selectedButton.text,
+              selectedOption: selectedOption,
               timestamp: Date.now(),
             });
 
-            await selectedButton.button.click();
-
             // チェックボックスのラベルをクリックした場合は「次へ」ボタンを押す必要がある
             // 「回答をとばす」ボタンをクリックした場合は不要
-            const checkboxes = await page.locator('input[type="checkbox"]:visible').all();
-            if (checkboxes.length > 0 && selectedButton.text !== '回答をとばす') {
+            if (isCheckboxPage && !selectedOption.includes('回答をとばす')) {
               // 「次へ」ボタンが有効になるまで待つ
               await page.waitForTimeout(500);
               const nextButton = page.getByRole('button', { name: '次へ' });
@@ -1668,5 +1936,40 @@ export class PlaywrightQARunner {
     }
 
     return diseases;
+  }
+
+  /**
+   * LocalStorageスナップショットを取得
+   */
+  private async getLocalStorageSnapshot(page: Page): Promise<any> {
+    console.log(`      📦 LocalStorage取得中...`);
+
+    const snapshot = await page.evaluate(() => {
+      const userInfoValue = localStorage.getItem('user-info');
+      const medicoUserValue = localStorage.getItem('medico-user');
+
+      return {
+        userInfo: userInfoValue ? JSON.parse(userInfoValue) : null,
+        medicoUser: medicoUserValue ? JSON.parse(medicoUserValue) : null,
+      };
+    });
+
+    console.log(`      ✓ LocalStorage取得完了`);
+    return snapshot;
+  }
+
+  /**
+   * 成功時に結果画面のスクリーンショットを撮影
+   */
+  private async takeSuccessScreenshot(page: Page, outputDir?: string): Promise<string> {
+    console.log(`      📸 結果画面のスクリーンショット撮影中...`);
+
+    const fileName = `${this.engine}-result.png`;
+    const screenshotPath = outputDir ? `${outputDir}/${fileName}` : `screenshots/${fileName}`;
+
+    await page.screenshot({ path: screenshotPath, fullPage: true });
+
+    console.log(`      ✓ スクリーンショット保存: ${screenshotPath}`);
+    return screenshotPath;
   }
 }

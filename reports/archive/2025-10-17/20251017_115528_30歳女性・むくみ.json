@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-10-17T11:55:28.424+09:00",
+  "scenarioName": "30歳女性・むくみ",
+  "passed": true,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 0,
+      "diseaseCount": 0,
+      "executionTimeMs": 47474
+    },
+    "askman": {
+      "questionCount": 0,
+      "diseaseCount": 0,
+      "executionTimeMs": 47536
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [],
+    "askman": []
+  },
+  "questionLogs": {
+    "cDiagnosis": [],
+    "askman": []
+  },
+  "differences": {}
+}

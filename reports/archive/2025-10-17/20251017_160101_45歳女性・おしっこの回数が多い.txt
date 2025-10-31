@@ -1,0 +1,532 @@
+❌ FAILED - Results differ
+
+C-Diagnosis: 10 diseases, 34 questions
+Askman:      10 diseases, 32 questions
+
+Disease Results:
+  C-Diagnosis:
+    回答に関連する病気:
+      1. 更年期障害
+      2. 子宮下垂・子宮脱
+      3. 糖尿病
+      4. 子宮筋腫
+      5. 過活動膀胱
+      6. 心因性多飲症
+      7. 膀胱炎
+      8. [指定難病] 多発性筋炎・皮ふ筋炎
+    見逃されやすい病気:
+      1. 膀胱がん・尿管がん・腎盂がん
+      2. [指定難病] アルポート症候群(Alport症候群)
+  Askman:
+    回答に関連する病気:
+      1. 更年期障害
+      2. 子宮下垂・子宮脱
+      3. 糖尿病
+      4. 子宮筋腫
+      5. 過活動膀胱
+      6. 心因性多飲症
+      7. 膀胱炎
+      8. 腰椎椎間板ヘルニア
+    見逃されやすい病気:
+      1. 過活動膀胱
+      2. 膀胱がん・尿管がん・腎盂がん
+
+Disease Differences:
+  Only in c-diagnosis: 多発性筋炎・皮ふ筋炎, アルポート症候群(Alport症候群)
+  Only in askman: 腰椎椎間板ヘルニア
+
+Question Count Mismatch:
+  C-Diagnosis: 34
+  Askman: 32
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 Detailed Question Log Comparison
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q1]
+    URL: https://staging.ubie.app/qa/relationship
+    Question: 誰の症状について調べますか？
+    Options: 自分, 家族, その他
+    Selected: 自分
+
+  [Askman Q1]
+    URL: https://staging.ubie.app/qa/question/person
+    Question: 誰の症状について調べますか？
+    Options: 自分, 家族, その他
+    Selected: 自分
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q2]
+    URL: https://staging.ubie.app/qa/age
+    Question: 年齢を教えてください
+    Options: 
+    Selected: 45歳
+
+  [Askman Q2]
+    URL: https://staging.ubie.app/qa/question/age
+    Question: 年齢を教えてください
+    Options: 
+    Selected: 45歳
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q3]
+    URL: https://staging.ubie.app/qa/sex
+    Question: 性別を教えてください
+    Options: 男性, 女性
+    Selected: 女性
+
+  [Askman Q3]
+    URL: https://staging.ubie.app/qa/question/sex
+    Question: 性別を教えてください
+    Options: 男性, 女性
+    Selected: 女性
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q4]
+    URL: https://staging.ubie.app/qa/height
+    Question: 身長を教えてください
+    Options: 80-200cm
+    Selected: 183cm
+
+  [Askman Q4]
+    URL: https://staging.ubie.app/qa/question/height
+    Question: 身長を教えてください
+    Options: 80-200cm
+    Selected: 183cm
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q5]
+    URL: https://staging.ubie.app/qa/weight
+    Question: 体重を教えてください
+    Options: 10-130kg
+    Selected: 76kg
+
+  [Askman Q5]
+    URL: https://staging.ubie.app/qa/question/weight
+    Question: 体重を教えてください
+    Options: 10-130kg
+    Selected: 76kg
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q6]
+    URL: https://staging.ubie.app/qa/question/main-complaint
+    Question: 現在、最も気になる症状を教えてください。
+    Options: 尿の回数が多い, おしっこの時間が長い, おしっこが濁る, おしっこが少ない, おしっこに泡が立つ, おしっこに血が混ざる, いつもおしっこがしたい, おしっこが出なくなった, おしっこが漏れてしまう
+    Selected: 尿の回数が多い
+
+  [Askman Q6]
+    URL: https://staging.ubie.app/qa/question/main-symptom
+    Question: 現在、最も気になる症状を教えてください。
+    Options: 尿の回数が多い, おしっこの時間が長い, おしっこが濁る, おしっこが少ない, おしっこに泡が立つ, おしっこに血が混ざる, いつもおしっこがしたい, おしっこが出なくなった, おしっこが漏れてしまう
+    Selected: 尿の回数が多い
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q7]
+    URL: https://staging.ubie.app/qa/question/main-complaint/confirm
+    Question: 【尿の回数が多い】に関する質問に進みます
+    Options: 
+    Selected: 次へ進む
+
+  [Askman Q7]
+    URL: https://staging.ubie.app/qa/question/main-symptom/confirm
+    Question: 【尿の回数が多い】に関する質問に進みます
+    Options: 
+    Selected: 次へ進む
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q8]
+    URL: https://staging.ubie.app/qa/question/question-16123
+    Question: 【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q8]
+    URL: https://staging.ubie.app/qa/question/question-16095
+    Question: 【妊娠・授乳】の状況で、当てはまるものを【すべて】選んでください。
+    Options: 現在、妊娠している, 確定していないが、妊娠しているかもしれない, 現在、授乳中である, この中に該当なし, 回答をとばす
+    Selected: 現在、授乳中である
+
+  [Askman Q9]
+    URL: https://staging.ubie.app/qa/question/question-16095
+    Question: 【妊娠・授乳】の状況で、当てはまるものを【すべて】選んでください。
+    Options: 現在、妊娠している, 確定していないが、妊娠しているかもしれない, 現在、授乳中である, この中に該当なし, 回答をとばす
+    Selected: 現在、授乳中である
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q9]
+    URL: https://staging.ubie.app/qa/question/question-8587
+    Question: 今回の【尿の回数が多い】はどのくらい前からですか？
+    Options: 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman Q10]
+    URL: https://staging.ubie.app/qa/question/question-8587
+    Question: 今回の【尿の回数が多い】はどのくらい前からですか？
+    Options: 回答をとばす
+    Selected: 回答をとばす
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q10]
+    URL: https://staging.ubie.app/qa/question/question-10734
+    Question: 1日におしっこでトイレに行く回数について、一番近いものを以下から選んでください。
+    Options: 7回以下, 8-14回, 15回以上, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman Q11]
+    URL: https://staging.ubie.app/qa/question/question-10734
+    Question: 1日におしっこでトイレに行く回数について、一番近いものを以下から選んでください。
+    Options: 7回以下, 8-14回, 15回以上, 回答をとばす
+    Selected: 回答をとばす
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q11]
+    URL: https://staging.ubie.app/qa/question/question-9453
+    Question: 【尿の回数が多い】のはじまりから現在までの変化として、一番近いものはどれですか？
+    Options: 悪化している, 改善も悪化もしていない, 改善したがまだ残っている, 改善し、現在はない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman Q12]
+    URL: https://staging.ubie.app/qa/question/question-9453
+    Question: 【尿の回数が多い】のはじまりから現在までの変化として、一番近いものはどれですか？
+    Options: 悪化している, 改善も悪化もしていない, 改善したがまだ残っている, 改善し、現在はない, 回答をとばす
+    Selected: 回答をとばす
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q12]
+    URL: https://staging.ubie.app/qa/question/question-10370
+    Question: つぎのような症状はありますか？当てはまるものを全て選んでください
+    Options: 残尿感, 排尿後2時間以内の尿意, 尿が途中で出なくなることがある, 尿が出しづらく、いきむことがある, 尿の勢いが弱いと感じることがある, 尿を我慢できないと感じ、トイレに急ぐときがある, 夜に尿のためにトイレに起きてしまう, 尿を漏らしてしまう, この中に該当なし, 回答をとばす
+    Selected: 尿を漏らしてしまう
+
+  [Askman Q13]
+    URL: https://staging.ubie.app/qa/question/question-10370
+    Question: つぎのような症状はありますか？当てはまるものを全て選んでください
+    Options: 残尿感, 排尿後2時間以内の尿意, 尿が途中で出なくなることがある, 尿が出しづらく、いきむことがある, 尿の勢いが弱いと感じることがある, 尿を我慢できないと感じ、トイレに急ぐときがある, 夜に尿のためにトイレに起きてしまう, 尿を漏らしてしまう, この中に該当なし, 回答をとばす
+    Selected: 尿を漏らしてしまう
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q13]
+    URL: https://staging.ubie.app/qa/question/question-8552
+    Question: つぎのような症状はありますか？当てはまるものを全て選んでください
+    Options: 尿を出すときに痛みがある, 背中の痛みがある, 体温が37.5℃以上, 赤い尿や血尿が最近出た, この中に該当なし, 回答をとばす
+    Selected: 赤い尿や血尿が最近出た
+
+  [Askman Q14]
+    URL: https://staging.ubie.app/qa/question/question-8552
+    Question: つぎのような症状はありますか？当てはまるものを全て選んでください
+    Options: 尿を出すときに痛みがある, 背中の痛みがある, 体温が37.5℃以上, 赤い尿や血尿が最近出た, この中に該当なし, 回答をとばす
+    Selected: 赤い尿や血尿が最近出た
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q14]
+    URL: https://staging.ubie.app/qa/question/question-15705_health_history_general
+    Question: これまでにかかったことがある病気を【全て】選んでください
+    Options: 気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎, リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群, アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー, 生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧, 皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹, 腎臓の病気慢性腎臓病・慢性腎不全, 胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍, 心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈, 精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）, がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん, この中に該当なし, 回答をとばす
+    Selected: 生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧
+
+  [Askman Q15]
+    URL: https://staging.ubie.app/qa/question/question-15705
+    Question: これまでにかかったことがある病気を【全て】選んでください
+    Options: 気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎, リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群, アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー, 生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧, 皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹, 腎臓の病気慢性腎臓病・慢性腎不全, 胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍, 心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈, 精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）, がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん, この中に該当なし, 回答をとばす
+    Selected: 生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q15]
+    URL: https://staging.ubie.app/qa/question/question-15707
+    Question: 【生活習慣病・貧血】について、【かかったことのある病気】を【全て】選んでください。
+    Options: 貧血, 高血圧, 糖尿病, 脂質異常症, 脂肪肝, この中に該当なし, 回答をとばす
+    Selected: 貧血
+
+  [Askman Q16]
+    URL: https://staging.ubie.app/qa/question/question-15707
+    Question: 【生活習慣病・貧血】について、【かかったことのある病気】を【全て】選んでください。
+    Options: 貧血, 高血圧, 糖尿病, 脂質異常症, 脂肪肝, この中に該当なし, 回答をとばす
+    Selected: 貧血
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q16]
+    URL: https://staging.ubie.app/qa/question/question-15656
+    Question: 以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。
+    Options: アトピー性皮膚炎, 気管支喘息, 鼻茸（鼻ポリープ）, 結節性痒疹, 慢性蕁麻疹（じんましん）, COPD（慢性閉塞性肺疾患）, この中に該当なし, 回答をとばす
+    Selected: 結節性痒疹
+
+  [Askman Q17]
+    URL: https://staging.ubie.app/qa/question/question-15656
+    Question: 以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。
+    Options: アトピー性皮膚炎, 気管支喘息, 鼻茸（鼻ポリープ）, 結節性痒疹, 慢性蕁麻疹（じんましん）, COPD（慢性閉塞性肺疾患）, この中に該当なし, 回答をとばす
+    Selected: 結節性痒疹
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q17]
+    URL: https://staging.ubie.app/qa/question/question-16275
+    Question: 以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。
+    Options: 慢性腎臓病・慢性腎不全, 狭心症・心筋梗塞, 高尿酸血症, 痛風, 睡眠時無呼吸症候群, 脳梗塞, 一過性脳虚血発作, 変形性膝関節症, 変形性股関節症, 変形性脊椎症, 肥満低換気症候群, この中に該当なし, 回答をとばす
+    Selected: 変形性脊椎症
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q18]
+    URL: https://staging.ubie.app/qa/question/question-19745
+    Question: これまで、【体重を減らす方法】について医師に相談したことがありますか？
+    Options: 相談したことがある, 相談したいが、実際にしたことはない, 相談したいと思ったこともない, 覚えていない, 回答をとばす
+    Selected: 相談したいが、実際にしたことはない
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q19]
+    URL: https://staging.ubie.app/qa/question/question-19012
+    Question: 現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。
+    Options: 最近指導を受けたばかり, 1ヶ月ほど継続している, 2ヶ月から3ヶ月ほど継続している, 4ヶ月から5ヶ月ほど継続している, 6ヶ月以上継続している, 指導を受けたが、やめてしまった, 指導を受けたことはない, 回答をとばす
+    Selected: 1ヶ月ほど継続している
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q20]
+    URL: https://staging.ubie.app/qa/question/question-16347
+    Question: ここ1年で、生理が遅れる、あるいは早まっているということがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q21]
+    URL: https://staging.ubie.app/qa/question/question-15455
+    Question: 医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？
+    Options: ある（慢性腎臓病と診断済み）, ある（慢性腎臓病と診断されていない）, ない, ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている, 回答をとばす
+    Selected: ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている
+
+  [Askman Q18]
+    URL: https://staging.ubie.app/qa/question/question-15455
+    Question: 医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？
+    Options: ある（慢性腎臓病と診断済み）, ある（慢性腎臓病と診断されていない）, ない, ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている, 回答をとばす
+    Selected: ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q22]
+    URL: https://staging.ubie.app/qa/question/symptoms-515-2650
+    Question: 次のような症状などはありますか？
+    Options: 深部静脈血栓症（エコノミークラス症候群の原因）と診断されたことがある, ふくらはぎが痛む, この中に該当なし, 回答をとばす
+    Selected: この中に該当なし
+
+  [Askman Q19]
+    URL: https://staging.ubie.app/qa/question/symptoms-515-2650
+    Question: 次のような症状はありますか？
+    Options: 深部静脈血栓症（エコノミークラス症候群の原因）と診断されたことがある, ふくらはぎが痛む, 回答をとばす
+    Selected: 回答をとばす
+
+  ⚠️  DIFFERENCES: Question text differs, Selected option differs, Available options differ
+      C-Diagnosis only: この中に該当なし
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q23]
+    URL: https://staging.ubie.app/qa/question/symptom-9811
+    Question: ほてり・のぼせがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: いいえ
+
+  [Askman Q20]
+    URL: https://staging.ubie.app/qa/question/symptom-9811
+    Question: ほてり・のぼせがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: いいえ
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q24]
+    URL: https://staging.ubie.app/qa/question/symptom-7392
+    Question: 子宮が下がっているまたは陰部（おしも）から何か出ているように感じますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  [Askman Q21]
+    URL: https://staging.ubie.app/qa/question/symptom-7392
+    Question: 子宮が下がっているまたは陰部（おしも）から何か出ているように感じますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q25]
+    URL: https://staging.ubie.app/qa/question/symptom-2593
+    Question: これまでに出産した経験がありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: いいえ
+
+  [Askman Q22]
+    URL: https://staging.ubie.app/qa/question/symptom-2593
+    Question: これまでに出産した経験がありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: いいえ
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q23]
+    URL: https://staging.ubie.app/qa/question/symptom-7988
+    Question: 陰部にできもの、腫れはありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: わからない
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q26]
+    URL: https://staging.ubie.app/qa/question/symptom-932
+    Question: 現在、精神的なストレスや肉体的な疲労を感じていますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  [Askman Q24]
+    URL: https://staging.ubie.app/qa/question/symptom-932
+    Question: 現在、精神的なストレスや肉体的な疲労を感じていますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q27]
+    URL: https://staging.ubie.app/qa/question/symptom-600
+    Question: イライラする感じがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman Q25]
+    URL: https://staging.ubie.app/qa/question/symptom-600
+    Question: イライラする感じがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q28]
+    URL: https://staging.ubie.app/qa/question/symptom-372
+    Question: 暑がりであるとか、暑さに弱いと感じますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  [Askman Q26]
+    URL: https://staging.ubie.app/qa/question/symptom-372
+    Question: 暑がりであるとか、暑さに弱いと感じますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q29]
+    URL: https://staging.ubie.app/qa/question/symptom-1563
+    Question: 首の痛みやこわばりがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: わからない
+
+  [Askman Q27]
+    URL: https://staging.ubie.app/qa/question/symptom-1563
+    Question: 首の痛みやこわばりがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: わからない
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q28]
+    URL: https://staging.ubie.app/qa/question/symptom-375
+    Question: 生理が遅れる、あるいは早まっているということがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: わからない
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q30]
+    URL: https://staging.ubie.app/qa/question/symptom-2040
+    Question: 肩が痛みますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: いいえ
+
+  [Askman Q29]
+    URL: https://staging.ubie.app/qa/question/symptom-2040
+    Question: 肩が痛みますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: いいえ
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q31]
+    URL: https://staging.ubie.app/qa/question/continue-symptom-answer
+    Question: ここまでの回答でおおよその結果を確認できます
+    Options: ここまでの回答で結果を見る, このまま回答を続ける
+    Selected: ここまでの回答で結果を見る
+
+  [Askman Q30]
+    URL: https://staging.ubie.app/qa/question/continue-symptom-answer
+    Question: ここまでの回答でおおよその結果を確認できます
+    Options: ここまでの回答で結果を見る, このまま回答を続ける
+    Selected: ここまでの回答で結果を見る
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q32]
+    URL: https://staging.ubie.app/qa/question/question-predicted-disease
+    Question: この中でかかったことがある病気をすべて選んでください
+    Options: 更年期障害, 子宮下垂・子宮脱, 糖尿病, 子宮筋腫, 過活動膀胱, 心因性多飲症, 膀胱炎, 多発性筋炎・皮ふ筋炎, 膀胱がん・尿管がん・腎盂がん, アルポート症候群(Alport症候群), この中に該当なし, 回答をとばす
+    Selected: 膀胱がん・尿管がん・腎盂がん
+
+  [Askman Q31]
+    URL: https://staging.ubie.app/qa/question/predicted-disease-question
+    Question: この中でかかったことがある病気をすべて選んでください
+    Options: 更年期障害, 子宮下垂・子宮脱, 糖尿病, 子宮筋腫, 過活動膀胱, 心因性多飲症, 膀胱炎, 腰椎椎間板ヘルニア, 膀胱癌・尿管癌・腎盂癌, この中に該当なし, 回答をとばす
+    Selected: 過活動膀胱
+
+  ⚠️  DIFFERENCES: URL differs, Selected option differs, Available options differ
+      C-Diagnosis only: 多発性筋炎・皮ふ筋炎, 膀胱がん・尿管がん・腎盂がん, アルポート症候群(Alport症候群)
+      Askman only: 腰椎椎間板ヘルニア, 膀胱癌・尿管癌・腎盂癌
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q33]
+    URL: https://staging.ubie.app/qa/question/disease-under-treatment
+    Question: この中に治療中、またはお薬を飲んでいる病気はありますか？
+    Options: 貧血, 結節性痒疹(けっせつせいようしん), 変形性脊椎症, 膀胱がん・尿管がん・腎盂がん, この中に該当なし
+    Selected: 膀胱がん・尿管がん・腎盂がん
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q34]
+    URL: https://staging.ubie.app/qa/question/symptom-care-needs
+    Question: 今回、【尿の回数が多い】についてどのような対応をしたいですか？
+    Options: 市販薬で対処したい, 医師に診てもらいたい, 症状に関する病気を詳しく知りたい, 該当するものがない, 回答をとばす
+    Selected: 該当するものがない
+
+  [Askman Q32]
+    URL: https://staging.ubie.app/qa/question/symptom-care-needs
+    Question: 今回、【尿の回数が多い】についてどのような対応をしたいですか？
+    Options: 市販薬で対処したい, 医師に診てもらいたい, 症状に関する病気を詳しく知りたい, 該当するものがない, 回答をとばす
+    Selected: 該当するものがない

@@ -1,0 +1,689 @@
+{
+  "timestamp": "2025-10-17T16:06:19.846+09:00",
+  "scenarioName": "32歳女性・皮膚の異常",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 34,
+      "diseaseCount": 10,
+      "executionTimeMs": 70359
+    },
+    "askman": {
+      "questionCount": 7,
+      "diseaseCount": 0,
+      "executionTimeMs": 244845
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [
+      {
+        "id": "鶏眼",
+        "name": "鶏眼",
+        "section": "related"
+      },
+      {
+        "id": "胼胝",
+        "name": "胼胝",
+        "section": "related"
+      },
+      {
+        "id": "粉瘤",
+        "name": "粉瘤",
+        "section": "related"
+      },
+      {
+        "id": "手湿疹",
+        "name": "手湿疹",
+        "section": "related"
+      },
+      {
+        "id": "疣贅(ゆうぜい、イボ)",
+        "name": "疣贅(ゆうぜい、イボ)",
+        "section": "related"
+      },
+      {
+        "id": "乾癬性関節炎",
+        "name": "乾癬性関節炎",
+        "section": "related"
+      },
+      {
+        "id": "乳腺炎",
+        "name": "乳腺炎",
+        "section": "related"
+      },
+      {
+        "id": "水いぼ(伝染性軟属腫)",
+        "name": "水いぼ(伝染性軟属腫)",
+        "section": "related"
+      },
+      {
+        "id": "乾癬",
+        "name": "乾癬",
+        "section": "easily-missed"
+      },
+      {
+        "id": "糖尿病性壊疽",
+        "name": "糖尿病性壊疽",
+        "section": "easily-missed"
+      }
+    ],
+    "askman": []
+  },
+  "questionLogs": {
+    "cDiagnosis": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/relationship",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760684545352
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "32歳",
+        "timestamp": 1760684545607
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "女性",
+        "timestamp": 1760684545753
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "119cm",
+        "timestamp": 1760684547002
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "12kg",
+        "timestamp": 1760684548079
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-complaint",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "皮膚が乾燥している",
+          "皮膚に異常がある",
+          "首の腫脹がある",
+          "足の皮膚に異常がある",
+          "陰部の皮膚に異常がある",
+          "股間の皮膚に異常がある",
+          "鼠径の皮膚に異常がある",
+          "お腹の皮膚に異常がある",
+          "胸の皮膚に異常がある",
+          "背中の皮膚に異常がある"
+        ],
+        "selectedOption": "皮膚が乾燥している",
+        "timestamp": 1760684549920
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-complaint/confirm",
+        "questionText": "【皮膚が乾燥している】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760684550287
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16095",
+        "questionText": "【妊娠・授乳】の状況で、当てはまるものを【すべて】選んでください。",
+        "availableOptions": [
+          "現在、妊娠している",
+          "確定していないが、妊娠しているかもしれない",
+          "現在、授乳中である",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "現在、授乳中である",
+        "timestamp": 1760684551414
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-8284",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "皮ふのかゆみがある",
+          "皮ふに何らかの異常がある",
+          "皮ふが赤くなっている",
+          "体温が37.5℃以上",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "皮ふに何らかの異常がある",
+        "timestamp": 1760684553463
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-8211",
+        "questionText": "今回の【皮膚が乾燥している】はどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760684555447
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-8106",
+        "questionText": "これまでに同じような【皮膚が乾燥している】を経験したことはありますか？一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "月に数回程度は同じような症状がある",
+          "ほぼ毎日同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760684556701
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-7957",
+        "questionText": "【皮膚が乾燥している】のはじまりから現在までの変化として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "悪化している",
+        "timestamp": 1760684557867
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-9735",
+        "questionText": "冬になると皮ふの乾燥やひび割れ、カサカサなどの症状が悪化しますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760684559197
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-15705_health_history_general",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+        "timestamp": 1760684560548
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15920",
+        "questionText": "【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "心不全",
+          "心筋梗塞・不安定狭心症",
+          "不整脈",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760684562634
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760684563890
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-16275",
+        "questionText": "以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "高血圧症",
+          "脂質異常症",
+          "糖尿病",
+          "慢性腎臓病・慢性腎不全",
+          "高尿酸血症",
+          "痛風",
+          "睡眠時無呼吸症候群",
+          "脂肪肝",
+          "脳梗塞",
+          "一過性脳虚血発作",
+          "変形性膝関節症",
+          "変形性股関節症",
+          "変形性脊椎症",
+          "肥満低換気症候群",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "糖尿病",
+        "timestamp": 1760684565873
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-19745",
+        "questionText": "これまで、【体重を減らす方法】について医師に相談したことがありますか？",
+        "availableOptions": [
+          "相談したことがある",
+          "相談したいが、実際にしたことはない",
+          "相談したいと思ったこともない",
+          "覚えていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "相談したいが、実際にしたことはない",
+        "timestamp": 1760684567711
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-19012",
+        "questionText": "現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。",
+        "availableOptions": [
+          "最近指導を受けたばかり",
+          "1ヶ月ほど継続している",
+          "2ヶ月から3ヶ月ほど継続している",
+          "4ヶ月から5ヶ月ほど継続している",
+          "6ヶ月以上継続している",
+          "指導を受けたが、やめてしまった",
+          "指導を受けたことはない",
+          "回答をとばす"
+        ],
+        "selectedOption": "1ヶ月ほど継続している",
+        "timestamp": 1760684569156
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/question-16347",
+        "questionText": "ここ1年で、生理が遅れる、あるいは早まっているということがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760684570504
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760684571734
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-2110",
+        "questionText": "手首より先の皮膚に症状が出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760684573228
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-782",
+        "questionText": "現在、皮ふにコブ状のものがある、または触れますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760684574698
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-2322",
+        "questionText": "これまでに同じような皮膚の症状が現れたことがありますか？一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "月に数回程度は同じような症状がある",
+          "ほぼ毎日同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "月に数回程度は同じような症状がある",
+        "timestamp": 1760684576187
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-822",
+        "questionText": "皮ふが硬くなっている場所がありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760684577737
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-2112",
+        "questionText": "現在、足首よりつま先側の皮膚に症状が出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760684579177
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-335",
+        "questionText": "手の指から手の甲にかけて皮ふが硬くなっていると感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760684580647
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-7393",
+        "questionText": "肌にカキのからのようにガサガサしている部分がありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760684582414
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/symptom-2113",
+        "questionText": "太ももから足首までの皮膚に症状が出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760684583957
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/symptom-2649",
+        "questionText": "足の裏の痛みがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760684585477
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760684586918
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/question-predicted-disease",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "鶏眼",
+          "胼胝",
+          "粉瘤",
+          "手湿疹",
+          "疣贅(ゆうぜい、イボ)",
+          "乾癬性関節炎",
+          "乳腺炎",
+          "水いぼ(伝染性軟属腫)",
+          "乾癬",
+          "糖尿病性壊疽",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "鶏眼",
+        "timestamp": 1760684589997
+      },
+      {
+        "questionNumber": 33,
+        "url": "https://staging.ubie.app/qa/question/disease-under-treatment",
+        "questionText": "この中に治療中、またはお薬を飲んでいる病気はありますか？",
+        "availableOptions": [
+          "結節性痒疹(けっせつせいようしん)",
+          "糖尿病",
+          "鶏眼",
+          "この中に該当なし"
+        ],
+        "selectedOption": "鶏眼",
+        "timestamp": 1760684592051
+      },
+      {
+        "questionNumber": 34,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【皮膚が乾燥している】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "医師に診てもらいたい",
+        "timestamp": 1760684597154
+      }
+    ],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760684545400
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "32歳",
+        "timestamp": 1760684546283
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "女性",
+        "timestamp": 1760684547151
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "119cm",
+        "timestamp": 1760684548843
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "12kg",
+        "timestamp": 1760684550246
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "皮膚が乾燥している",
+          "皮膚に異常がある",
+          "首の腫脹がある",
+          "足の皮膚に異常がある",
+          "陰部の皮膚に異常がある",
+          "股間の皮膚に異常がある",
+          "鼠径の皮膚に異常がある",
+          "お腹の皮膚に異常がある",
+          "胸の皮膚に異常がある",
+          "背中の皮膚に異常がある"
+        ],
+        "selectedOption": "皮膚が乾燥している",
+        "timestamp": 1760684552601
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "questionText": "【皮膚が乾燥している】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760684553193
+      }
+    ]
+  },
+  "differences": {
+    "diseaseMismatch": {
+      "cDiagnosisOnly": [
+        {
+          "id": "鶏眼",
+          "name": "鶏眼",
+          "section": "related"
+        },
+        {
+          "id": "胼胝",
+          "name": "胼胝",
+          "section": "related"
+        },
+        {
+          "id": "粉瘤",
+          "name": "粉瘤",
+          "section": "related"
+        },
+        {
+          "id": "手湿疹",
+          "name": "手湿疹",
+          "section": "related"
+        },
+        {
+          "id": "疣贅(ゆうぜい、イボ)",
+          "name": "疣贅(ゆうぜい、イボ)",
+          "section": "related"
+        },
+        {
+          "id": "乾癬性関節炎",
+          "name": "乾癬性関節炎",
+          "section": "related"
+        },
+        {
+          "id": "乳腺炎",
+          "name": "乳腺炎",
+          "section": "related"
+        },
+        {
+          "id": "水いぼ(伝染性軟属腫)",
+          "name": "水いぼ(伝染性軟属腫)",
+          "section": "related"
+        },
+        {
+          "id": "乾癬",
+          "name": "乾癬",
+          "section": "easily-missed"
+        },
+        {
+          "id": "糖尿病性壊疽",
+          "name": "糖尿病性壊疽",
+          "section": "easily-missed"
+        }
+      ],
+      "askmanOnly": []
+    },
+    "questionCountMismatch": {
+      "cDiagnosis": 34,
+      "askman": 7
+    }
+  }
+}

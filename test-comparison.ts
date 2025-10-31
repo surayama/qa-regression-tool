@@ -128,7 +128,7 @@ async function main() {
       await Promise.all([cRunner.init(headless), aRunner.init(headless)]);
       console.log('✅ ブラウザを初期化しました\n');
 
-      // 両エンジンを同じランダムシードで並列実行
+      // 両エンジンを並列実行
       console.log('⚡ 両エンジンを並列実行中...\n');
 
       console.log('📍 C-Diagnosisエンジン: 開始...');
@@ -138,21 +138,27 @@ async function main() {
         aRunner.runScenario(scenario),
       ]);
 
-      console.log(`📍 C-Diagnosisエンジン: ✓ 完了 ${(cResult.executionTimeMs / 1000).toFixed(1)}秒`);
-      console.log(`   ✓ ${cResult.questionCount}個の質問に回答`);
-      console.log(`   ✓ ${cResult.diseases.length}個の疾患を発見\n`);
+      console.log(`✅ C-Diagnosis完了: ${cResult.questionCount}問, ${cResult.diseases.length}疾患`);
+      console.log(`✅ Askman完了: ${aResult.questionCount}問, ${aResult.diseases.length}疾患`);
 
-      console.log(`📍 Askmanエンジン: ✓ 完了 ${(aResult.executionTimeMs / 1000).toFixed(1)}秒`);
-      console.log(`   ✓ ${aResult.questionCount}個の質問に回答`);
-      console.log(`   ✓ ${aResult.diseases.length}個の疾患を発見\n`);
-
-      // 結果を比較
-      console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-      console.log('🔍 比較結果:');
-      console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
-
+      // 結果を比較（この時点でoutputDirが作成される）
       const comparisonEngine = new ComparisonEngine();
       const comparison = comparisonEngine.compare(cResult, aResult);
+
+      // スクリーンショットをoutputDirに移動
+      if (comparison.outputDir) {
+        const fs = await import('fs');
+        if (cResult.screenshotPath && fs.existsSync(cResult.screenshotPath)) {
+          const newPath = `${comparison.outputDir}/c-diagnosis-result.png`;
+          fs.renameSync(cResult.screenshotPath, newPath);
+          cResult.screenshotPath = newPath;
+        }
+        if (aResult.screenshotPath && fs.existsSync(aResult.screenshotPath)) {
+          const newPath = `${comparison.outputDir}/askman-result.png`;
+          fs.renameSync(aResult.screenshotPath, newPath);
+          aResult.screenshotPath = newPath;
+        }
+      }
       const formattedReport = comparisonEngine.formatResult(comparison);
 
       console.log(formattedReport);

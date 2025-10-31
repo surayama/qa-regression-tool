@@ -1,0 +1,31 @@
+✅ PASSED - Results match
+
+C-Diagnosis: 0 diseases, 0 questions ⚠️ ERROR
+Askman:      0 diseases, 0 questions ⚠️ ERROR
+
+Disease Results:
+  C-Diagnosis:
+  Askman:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️  Error Details
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+C-Diagnosis Error:
+  page.waitForLoadState: Timeout 30000ms exceeded.
+  Stopped after 0 questions
+  📸 Screenshot: screenshots/error-c-diagnosis-1760684252827.png
+
+Askman Error:
+  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: '自分' }).first()
+    - waiting for" https://staging.ubie.app/qa/question/person" navigation to finish...
+    - navigated to "https://staging.ubie.app/qa/question/person"
+
+  Stopped after 0 questions
+  📸 Screenshot: screenshots/error-askman-1760684237188.png
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 Detailed Question Log Comparison
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

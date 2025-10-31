@@ -1,0 +1,362 @@
+{
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "結果"
+    },
+    {
+      "tag": "H2",
+      "text": "回答に関連する病気（関連度順）"
+    },
+    {
+      "tag": "H2",
+      "text": "すぐに受診できない場合は"
+    },
+    {
+      "tag": "H2",
+      "text": "ユビーでできること"
+    },
+    {
+      "tag": "H3",
+      "text": "「咳が出る」という症状について特に気になることを選んでください"
+    }
+  ],
+  "testIds": [
+    "membership-plus-banner"
+  ],
+  "ids": [
+    {
+      "type": "other",
+      "id": "__next"
+    },
+    {
+      "type": "other",
+      "id": "__NEXT_DATA__"
+    },
+    {
+      "type": "other",
+      "id": "__next-route-announcer__"
+    },
+    {
+      "type": "other",
+      "id": "_goober"
+    },
+    {
+      "type": "other",
+      "id": "_rht_toaster"
+    },
+    {
+      "type": "other",
+      "id": "108"
+    },
+    {
+      "type": "other",
+      "id": "12"
+    },
+    {
+      "type": "other",
+      "id": "1477"
+    },
+    {
+      "type": "other",
+      "id": "227"
+    },
+    {
+      "type": "other",
+      "id": "228"
+    },
+    {
+      "type": "other",
+      "id": "240"
+    },
+    {
+      "type": "other",
+      "id": "359"
+    },
+    {
+      "type": "other",
+      "id": "438"
+    },
+    {
+      "type": "other",
+      "id": "450"
+    },
+    {
+      "type": "other",
+      "id": "80"
+    },
+    {
+      "type": "other",
+      "id": "90"
+    },
+    {
+      "type": "other",
+      "id": "answerRelatedDiseases"
+    },
+    {
+      "type": "other",
+      "id": "appRoot"
+    },
+    {
+      "type": "other",
+      "id": "audience-one-script"
+    },
+    {
+      "type": "other",
+      "id": "disease_card_108_suspected_3"
+    },
+    {
+      "type": "other",
+      "id": "disease_card_1477_suspected_4"
+    },
+    {
+      "type": "other",
+      "id": "disease_card_227_suspected_1"
+    },
+    {
+      "type": "other",
+      "id": "disease_card_228_suspected_5"
+    },
+    {
+      "type": "other",
+      "id": "disease_card_240_suspected_7"
+    },
+    {
+      "type": "other",
+      "id": "disease_card_359_suspected_2"
+    },
+    {
+      "type": "other",
+      "id": "disease_card_438_rare_1"
+    },
+    {
+      "type": "other",
+      "id": "disease_card_450_rare_0"
+    },
+    {
+      "type": "other",
+      "id": "disease_card_80_suspected_6"
+    },
+    {
+      "type": "other",
+      "id": "disease_card_90_suspected_0"
+    },
+    {
+      "type": "GTM",
+      "pattern": "GTM-disease_card_*"
+    },
+    {
+      "type": "other",
+      "id": "gtm-script"
+    },
+    {
+      "type": "other",
+      "id": "otcSection"
+    },
+    {
+      "type": "other",
+      "id": "rufous-sandbox"
+    },
+    {
+      "type": "other",
+      "id": "treatnmentInfoTitle"
+    },
+    {
+      "type": "other",
+      "id": "twitter-widget-script"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "ユーザー登録する"
+    },
+    {
+      "text": "ホームへ"
+    },
+    {
+      "text": "この表示について"
+    },
+    {
+      "text": "受診のめやす"
+    },
+    {
+      "text": "急性扁桃炎・咽頭炎",
+      "id": "GTM-disease_card_90"
+    },
+    {
+      "text": "慢性閉塞性肺疾患(COPD)",
+      "id": "GTM-disease_card_227"
+    },
+    {
+      "text": "胃食道逆流症(GERD)・逆流性食道炎",
+      "id": "GTM-disease_card_359"
+    },
+    {
+      "text": "かぜ症候群(上気道炎)",
+      "id": "GTM-disease_card_108"
+    },
+    {
+      "text": "アスペルギルス症",
+      "id": "GTM-disease_card_1477"
+    },
+    {
+      "text": "気管支喘息",
+      "id": "GTM-disease_card_228"
+    },
+    {
+      "text": "アレルギー性鼻炎・結膜炎",
+      "id": "GTM-disease_card_80"
+    },
+    {
+      "text": "感染後咳嗽",
+      "id": "GTM-disease_card_240"
+    },
+    {
+      "text": "気管支異物",
+      "id": "GTM-disease_card_450"
+    },
+    {
+      "text": "百日咳",
+      "id": "GTM-disease_card_438"
+    },
+    {
+      "text": "いますぐ取れる対処法"
+    },
+    {
+      "text": "病院に行くべきか知りたい"
+    },
+    {
+      "text": "何科に行くべきか知りたい"
+    },
+    {
+      "text": "適切な対処法を知りたい"
+    },
+    {
+      "text": "病気や症状について詳しく知りたい"
+    },
+    {
+      "text": "受診したがまだ悩みがある"
+    },
+    {
+      "text": "その他"
+    },
+    {
+      "text": "症状にあった病院を探す",
+      "id": "12"
+    },
+    {
+      "text": "0点 注文に進む ¥0"
+    },
+    {
+      "text": "ホーム"
+    },
+    {
+      "text": "体調の記録"
+    },
+    {
+      "text": "病院検索"
+    },
+    {
+      "text": "NEWお薬購入"
+    },
+    {
+      "text": "設定"
+    }
+  ],
+  "images": [
+    {
+      "src": "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdoctors.66afe4b8.png&w=2048&q=75",
+      "alt": "医師の画像"
+    },
+    {
+      "src": "/_next/static/media/hospital.9d00d9a5.svg",
+      "alt": "病院"
+    },
+    {
+      "src": "data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271404%27%20height=%27892%27/%3e"
+    },
+    {
+      "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "alt": "無料で、いつでも、どんな症状もすぐに調べられる。今すぐアプリを無料ダウンロード"
+    },
+    {
+      "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "alt": "Ubieロゴ"
+    },
+    {
+      "src": "data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271200%27%20height=%271227%27/%3e"
+    },
+    {
+      "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "alt": "Xロゴ"
+    },
+    {
+      "src": "data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27320%27%20height=%27320%27/%3e"
+    },
+    {
+      "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "alt": "LINEロゴ"
+    },
+    {
+      "src": "https://freakout-api-stub.staging.ubie.dev/serve?id=55336&mt=282&csurl=https%3A%2F%2Fstaging.ubie.app%2Fapi%2Fubie-ads%2Fsync&pid=46e6146a-ef20-4292-9772-875e49dbe71f&btt=prm-zKVnZonrCgbe6IIeuz8Sl3NurXm1sv4FkCjN78s"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSe8E2GmFpN-fQD8NnZoxPAOpqSpahA4Qr6l-TYSvZPAosmSYw/viewform?usp=pp_url&entry.1037755123=https%3A%2F%2Fstaging.ubie.app%2Fqa%2Fresult",
+      "text": "気になる報告"
+    },
+    {
+      "href": "/settings",
+      "text": "設定"
+    },
+    {
+      "href": "/about_datasource",
+      "text": "ユビーに掲載している情報について"
+    },
+    {
+      "href": "https://twitter.com/intent/tweet?text=%E7%A7%81%E3%81%AE%E3%80%90%E5%92%B3%E3%81%8C%E5%87%BA%E3%82%8B%E3%80%91%E3%81%AB%E9%96%A2%E9%80%A3%E3%81%99%E3%82%8B%E7%97%85%E6%B0%97%E3%81%AF%E3%80%81%0A%F0%9F%92%8A%20%E6%80%A5%E6%80%A7%E6%89%81%E6%A1%83%E7%82%8E%E3%83%BB%E5%92%BD%E9%A0%AD%E7%82%8E%0A%F0%9F%92%8A%20%E6%85%A2%E6%80%A7%E9%96%89%E5%A1%9E%E6%80%A7%E8%82%BA%E7%96%BE%E6%82%A3(COPD)%0A%F0%9F%92%8A%20%E8%83%83%E9%A3%9F%E9%81%93%E9%80%86%E6%B5%81%E7%97%87(GERD)%E3%83%BB%E9%80%86%E6%B5%81%E6%80%A7%E9%A3%9F%E9%81%93%E7%82%8E%0A%F0%9F%92%8A%20%E3%81%8B%E3%81%9C%E7%97%87%E5%80%99%E7%BE%A4(%E4%B8%8A%E6%B0%97%E9%81%93%E7%82%8E)%0A%E3%81%A7%E3%81%97%E3%81%9F%0Ahttps%3A%2F%2Fubie.app%2Flp%2Fsearch%2Fchild-have-a-cough-s205%0A%23%E7%97%87%E7%8A%B6%E6%A4%9C%E7%B4%A2%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%0A%23%E3%83%A6%E3%83%93%E3%83%BC&via=ubie_app",
+      "text": "で送る"
+    },
+    {
+      "href": "https://line.me/R/share?text=%E7%A7%81%E3%81%AE%E3%80%90%E5%92%B3%E3%81%8C%E5%87%BA%E3%82%8B%E3%80%91%E3%81%AB%E9%96%A2%E9%80%A3%E3%81%99%E3%82%8B%E7%97%85%E6%B0%97%E3%81%AF%E3%80%81%0A%F0%9F%92%8A%20%E6%80%A5%E6%80%A7%E6%89%81%E6%A1%83%E7%82%8E%E3%83%BB%E5%92%BD%E9%A0%AD%E7%82%8E%0A%F0%9F%92%8A%20%E6%85%A2%E6%80%A7%E9%96%89%E5%A1%9E%E6%80%A7%E8%82%BA%E7%96%BE%E6%82%A3(COPD)%0A%F0%9F%92%8A%20%E8%83%83%E9%A3%9F%E9%81%93%E9%80%86%E6%B5%81%E7%97%87(GERD)%E3%83%BB%E9%80%86%E6%B5%81%E6%80%A7%E9%A3%9F%E9%81%93%E7%82%8E%0A%F0%9F%92%8A%20%E3%81%8B%E3%81%9C%E7%97%87%E5%80%99%E7%BE%A4(%E4%B8%8A%E6%B0%97%E9%81%93%E7%82%8E)%0A%E3%81%A7%E3%81%97%E3%81%9F%0Ahttps%3A%2F%2Fubie.app%2Flp%2Fsearch%2Fchild-have-a-cough-s205%0A%23%E7%97%87%E7%8A%B6%E6%A4%9C%E7%B4%A2%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%0A%23%E3%83%A6%E3%83%93%E3%83%BC",
+      "text": "LINEで送る"
+    },
+    {
+      "href": "https://ubie.zendesk.com/hc/ja",
+      "text": "よくあるご質問"
+    },
+    {
+      "href": "https://ubie.zendesk.com/hc/ja/requests/new?tf_360049347912=46e6146a-ef20-4292-9772-875e49dbe71f",
+      "text": "お問い合わせ"
+    },
+    {
+      "href": "/company",
+      "text": "会社概要"
+    },
+    {
+      "href": "/",
+      "text": "🇯🇵 日本語"
+    },
+    {
+      "href": "https://ubiehealth.com",
+      "text": "🇺🇸 English"
+    },
+    {
+      "href": "https://ubie.life/",
+      "text": "Ubie株式会社"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "結果",
+      "headingTag": "H2",
+      "diseaseCount": 10
+    },
+    {
+      "heading": "回答に関連する病気（関連度順）",
+      "headingTag": "H2",
+      "diseaseCount": 10
+    }
+  ]
+}
