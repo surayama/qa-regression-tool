@@ -1,0 +1,1034 @@
+{
+  "timestamp": "2025-10-17T12:06:37.915+09:00",
+  "scenarioName": "39歳男性・耳鳴り",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 34,
+      "diseaseCount": 10,
+      "executionTimeMs": 68734
+    },
+    "askman": {
+      "questionCount": 30,
+      "diseaseCount": 10,
+      "executionTimeMs": 76395
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [
+      {
+        "id": "適応障害(適応反応症)",
+        "name": "適応障害(適応反応症)",
+        "section": "related"
+      },
+      {
+        "id": "副鼻腔炎",
+        "name": "副鼻腔炎",
+        "label": "指定難病と関連あり",
+        "section": "related"
+      },
+      {
+        "id": "甲状腺機能低下症",
+        "name": "甲状腺機能低下症",
+        "section": "related"
+      },
+      {
+        "id": "良性発作性頭位めまい症",
+        "name": "良性発作性頭位めまい症",
+        "section": "related"
+      },
+      {
+        "id": "難聴",
+        "name": "難聴",
+        "section": "related"
+      },
+      {
+        "id": "外リンパ瘻(ろう)",
+        "name": "外リンパ瘻(ろう)",
+        "section": "related"
+      },
+      {
+        "id": "敗血症",
+        "name": "敗血症",
+        "section": "related"
+      },
+      {
+        "id": "外傷性鼓膜穿孔",
+        "name": "外傷性鼓膜穿孔",
+        "section": "related"
+      },
+      {
+        "id": "中耳炎",
+        "name": "中耳炎",
+        "section": "easily-missed"
+      },
+      {
+        "id": "帯状疱疹",
+        "name": "帯状疱疹",
+        "section": "easily-missed"
+      }
+    ],
+    "askman": [
+      {
+        "id": "副鼻腔炎",
+        "name": "副鼻腔炎",
+        "label": "指定難病と関連あり",
+        "section": "related"
+      },
+      {
+        "id": "適応障害(適応反応症)",
+        "name": "適応障害(適応反応症)",
+        "section": "related"
+      },
+      {
+        "id": "甲状腺機能低下症",
+        "name": "甲状腺機能低下症",
+        "section": "related"
+      },
+      {
+        "id": "良性発作性頭位めまい症",
+        "name": "良性発作性頭位めまい症",
+        "section": "related"
+      },
+      {
+        "id": "難聴",
+        "name": "難聴",
+        "section": "related"
+      },
+      {
+        "id": "外リンパ瘻(ろう)",
+        "name": "外リンパ瘻(ろう)",
+        "section": "related"
+      },
+      {
+        "id": "敗血症",
+        "name": "敗血症",
+        "section": "related"
+      },
+      {
+        "id": "外傷性鼓膜穿孔",
+        "name": "外傷性鼓膜穿孔",
+        "section": "related"
+      },
+      {
+        "id": "中耳炎",
+        "name": "中耳炎",
+        "section": "easily-missed"
+      },
+      {
+        "id": "外リンパ瘻(ろう)",
+        "name": "外リンパ瘻(ろう)",
+        "section": "easily-missed"
+      }
+    ]
+  },
+  "questionLogs": {
+    "cDiagnosis": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/relationship",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760670332507
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "39歳",
+        "timestamp": 1760670332746
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760670332859
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "133cm",
+        "timestamp": 1760670334176
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "26kg",
+        "timestamp": 1760670335254
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-complaint",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "両側の耳鳴りがする",
+          "左側だけ耳鳴りが聞こえる",
+          "右側だけ耳鳴りが聞こえる",
+          "両側の耳鳴りが聞こえる",
+          "耳鳴りを伴うめまいがある",
+          "左耳から耳鳴りが聞こえる",
+          "右耳から耳鳴りが聞こえる",
+          "めまいがする時に耳鳴りも起こる",
+          "左耳でモーターが回るような低い耳鳴りが聞こえる"
+        ],
+        "selectedOption": "両側の耳鳴りがする",
+        "timestamp": 1760670336927
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-complaint/confirm",
+        "questionText": "【両側の耳鳴りがする】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760670337193
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-10324",
+        "questionText": "今回の【両側の耳鳴りがする】はどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670338602
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-10010",
+        "questionText": "【両側の耳鳴りがする】の現れ方について、一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "全く前ぶれのない突然の発症だった",
+          "速やかに悪化した",
+          "徐々に症状が現れた",
+          "回答をとばす"
+        ],
+        "selectedOption": "全く前ぶれのない突然の発症だった",
+        "timestamp": 1760670339646
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-9914",
+        "questionText": "【両側の耳鳴りがする】のはじまりから現在までの変化として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "改善も悪化もしていない",
+        "timestamp": 1760670340987
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-8661",
+        "questionText": "【両側の耳鳴りがする】はどのような様子・状態ですか",
+        "availableOptions": [
+          "片方だけの耳鳴りがする",
+          "セミのなき声(ジージー)やモーター(ブーン)のような低い音の耳鳴りがする",
+          "金属音(キーン)や笛の音(ピー)のような高い音の耳鳴りがする",
+          "水の流れるような音(ザーザー)が心臓の拍動と一緒に聞こえる耳鳴りがする",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "水の流れるような音(ザーザー)が心臓の拍動と一緒に聞こえる耳鳴りがする",
+        "timestamp": 1760670342345
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-13275",
+        "questionText": "これまでにかかったことのある病気（現在治療中、治療済みを含む）を【全て】選んでください",
+        "availableOptions": [
+          "中耳炎",
+          "メニエール病",
+          "突発性難聴",
+          "不安障害",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "中耳炎",
+        "timestamp": 1760670344253
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-13271",
+        "questionText": "【職業】で当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "林業の作業員",
+          "金属加工や溶接の作業員",
+          "機械の組立や整備の作業員",
+          "建設や採掘の作業員",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "金属加工や溶接の作業員",
+        "timestamp": 1760670346082
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-9684",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "耳の痛みがある",
+          "耳だれがある",
+          "体温が37.5℃以上",
+          "めまいがする",
+          "頭がボーっとする、すっきりしない",
+          "顔面の筋肉が自由に動かない",
+          "頭痛がある・頭が重い",
+          "夜によく眠れない",
+          "耳の聞こえにくさがある",
+          "耳が詰まった感じがする",
+          "小さな音が耳の中や頭の中で響く",
+          "自分の声が響いて聞こえる",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670348000
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15705_health_history_general",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+        "timestamp": 1760670349327
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15707",
+        "questionText": "【生活習慣病・貧血】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "貧血",
+          "高血圧",
+          "糖尿病",
+          "脂質異常症",
+          "脂肪肝",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670351351
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760670352539
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-16275",
+        "questionText": "以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "慢性腎臓病・慢性腎不全",
+          "狭心症・心筋梗塞",
+          "高尿酸血症",
+          "痛風",
+          "睡眠時無呼吸症候群",
+          "脳梗塞",
+          "一過性脳虚血発作",
+          "変形性膝関節症",
+          "変形性股関節症",
+          "変形性脊椎症",
+          "肥満低換気症候群",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "痛風",
+        "timestamp": 1760670354605
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-19745",
+        "questionText": "これまで、【体重を減らす方法】について医師に相談したことがありますか？",
+        "availableOptions": [
+          "相談したことがある",
+          "相談したいが、実際にしたことはない",
+          "相談したいと思ったこともない",
+          "覚えていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "相談したいが、実際にしたことはない",
+        "timestamp": 1760670356483
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/question-19012",
+        "questionText": "現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。",
+        "availableOptions": [
+          "最近指導を受けたばかり",
+          "1ヶ月ほど継続している",
+          "2ヶ月から3ヶ月ほど継続している",
+          "4ヶ月から5ヶ月ほど継続している",
+          "6ヶ月以上継続している",
+          "指導を受けたが、やめてしまった",
+          "指導を受けたことはない",
+          "回答をとばす"
+        ],
+        "selectedOption": "1ヶ月ほど継続している",
+        "timestamp": 1760670358124
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760670359531
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-746",
+        "questionText": "鼻水が出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670360997
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-105",
+        "questionText": "最近これまでと比べて精神状態に異変があると感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670362306
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-2067",
+        "questionText": "横になった時に鼻水がのどに垂れこみますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670363805
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-1418",
+        "questionText": "最近、集中力が下がっていると感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760670365307
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-932",
+        "questionText": "現在、精神的なストレスや肉体的な疲労を感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760670366781
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-2060",
+        "questionText": "今回の症状が出る前に【ショックな出来事によるストレス】がありましたか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760670368236
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-2061",
+        "questionText": "今回の症状が出る前に【生活や環境変化などでストレス】を感じましたか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670369751
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760670371047
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/question-predicted-disease",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "適応障害(適応反応症)",
+          "副鼻腔炎",
+          "甲状腺機能低下症",
+          "良性発作性頭位めまい症",
+          "難聴",
+          "外リンパ瘻(ろう)",
+          "敗血症",
+          "外傷性鼓膜穿孔",
+          "中耳炎",
+          "帯状疱疹",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "中耳炎",
+        "timestamp": 1760670374441
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/disease-under-treatment",
+        "questionText": "この中に治療中、またはお薬を飲んでいる病気はありますか？",
+        "availableOptions": [
+          "中耳炎",
+          "結節性痒疹(けっせつせいようしん)",
+          "痛風・偽痛風",
+          "この中に該当なし"
+        ],
+        "selectedOption": "痛風・偽痛風",
+        "timestamp": 1760670376550
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/diagnosed-poorly-controlled-disease-395-visit-status",
+        "questionText": "【痛風】の治療のため、病院に通っていますか？",
+        "availableOptions": [
+          "病院に通っている",
+          "病院に通っていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "病院に通っている",
+        "timestamp": 1760670378485
+      },
+      {
+        "questionNumber": 33,
+        "url": "https://staging.ubie.app/qa/question/diagnosed-poorly-controlled-disease-395-medical-institution",
+        "questionText": "いま治療している病院を教えてください",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670379880
+      },
+      {
+        "questionNumber": 34,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【両側の耳鳴りがする】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "症状に関する病気を詳しく知りたい",
+        "timestamp": 1760670381699
+      }
+    ],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760670331211
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "39歳",
+        "timestamp": 1760670332617
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760670333491
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "133cm",
+        "timestamp": 1760670335348
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "26kg",
+        "timestamp": 1760670338222
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "両側の耳鳴りがする",
+          "左側だけ耳鳴りが聞こえる",
+          "右側だけ耳鳴りが聞こえる",
+          "両側の耳鳴りが聞こえる",
+          "耳鳴りを伴うめまいがある",
+          "左耳から耳鳴りが聞こえる",
+          "右耳から耳鳴りが聞こえる",
+          "めまいがする時に耳鳴りも起こる",
+          "左耳でモーターが回るような低い耳鳴りが聞こえる"
+        ],
+        "selectedOption": "両側の耳鳴りがする",
+        "timestamp": 1760670340590
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "questionText": "【両側の耳鳴りがする】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760670341091
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16123",
+        "questionText": "【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670342608
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-10324",
+        "questionText": "今回の【両側の耳鳴りがする】はどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670344582
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-10010",
+        "questionText": "【両側の耳鳴りがする】の現れ方について、一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "全く前ぶれのない突然の発症だった",
+          "速やかに悪化した",
+          "徐々に症状が現れた",
+          "回答をとばす"
+        ],
+        "selectedOption": "全く前ぶれのない突然の発症だった",
+        "timestamp": 1760670345981
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-9914",
+        "questionText": "【両側の耳鳴りがする】のはじまりから現在までの変化として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "改善も悪化もしていない",
+        "timestamp": 1760670347445
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-8661",
+        "questionText": "【両側の耳鳴りがする】はどのような様子・状態ですか",
+        "availableOptions": [
+          "片方だけの耳鳴りがする",
+          "セミのなき声(ジージー)やモーター(ブーン)のような低い音の耳鳴りがする",
+          "金属音(キーン)や笛の音(ピー)のような高い音の耳鳴りがする",
+          "水の流れるような音(ザーザー)が心臓の拍動と一緒に聞こえる耳鳴りがする",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "水の流れるような音(ザーザー)が心臓の拍動と一緒に聞こえる耳鳴りがする",
+        "timestamp": 1760670348791
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-13275",
+        "questionText": "これまでにかかったことのある病気（現在治療中、治療済みを含む）を【全て】選んでください",
+        "availableOptions": [
+          "中耳炎",
+          "メニエール病",
+          "突発性難聴",
+          "不安障害",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "中耳炎",
+        "timestamp": 1760670350737
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-13271",
+        "questionText": "【職業】で当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "林業の作業員",
+          "金属加工や溶接の作業員",
+          "機械の組立や整備の作業員",
+          "建設や採掘の作業員",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "金属加工や溶接の作業員",
+        "timestamp": 1760670352686
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-9684",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "耳の痛みがある",
+          "耳だれがある",
+          "体温が37.5℃以上",
+          "めまいがする",
+          "頭がボーっとする、すっきりしない",
+          "顔面の筋肉が自由に動かない",
+          "頭痛がある・頭が重い",
+          "夜によく眠れない",
+          "耳の聞こえにくさがある",
+          "耳が詰まった感じがする",
+          "小さな音が耳の中や頭の中で響く",
+          "自分の声が響いて聞こえる",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670354630
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15705",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+        "timestamp": 1760670356120
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-15707",
+        "questionText": "【生活習慣病・貧血】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "貧血",
+          "高血圧",
+          "糖尿病",
+          "脂質異常症",
+          "脂肪肝",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670358134
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760670360374
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760670362415
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/symptom-746",
+        "questionText": "鼻水が出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670365545
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-105",
+        "questionText": "最近これまでと比べて精神状態に異変があると感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670367065
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-2067",
+        "questionText": "横になった時に鼻水がのどに垂れこみますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670368745
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-1418",
+        "questionText": "最近、集中力が下がっていると感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760670370458
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-932",
+        "questionText": "現在、精神的なストレスや肉体的な疲労を感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760670372253
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-2060",
+        "questionText": "今回の症状が出る前に【ショックな出来事によるストレス】がありましたか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760670374638
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-2061",
+        "questionText": "今回の症状が出る前に【生活や環境変化などでストレス】を感じましたか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670376359
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-1615",
+        "questionText": "最近、意欲が低下していると感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670377953
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760670380005
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/predicted-disease-question",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "副鼻腔炎",
+          "適応障害(適応反応症)",
+          "甲状腺機能低下症",
+          "良性発作性頭位めまい症",
+          "難聴",
+          "外リンパ瘻",
+          "敗血症",
+          "外傷性鼓膜穿孔",
+          "中耳炎",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760670383490
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【両側の耳鳴りがする】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "症状に関する病気を詳しく知りたい",
+        "timestamp": 1760670385946
+      }
+    ]
+  },
+  "differences": {
+    "diseaseMismatch": {
+      "cDiagnosisOnly": [
+        {
+          "id": "帯状疱疹",
+          "name": "帯状疱疹",
+          "section": "easily-missed"
+        }
+      ],
+      "askmanOnly": []
+    },
+    "questionCountMismatch": {
+      "cDiagnosis": 34,
+      "askman": 30
+    }
+  }
+}

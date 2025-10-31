@@ -1,0 +1,1050 @@
+{
+  "timestamp": "2025-10-17T16:14:50.802+09:00",
+  "scenarioName": "50歳女性・のどが渇く",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 34,
+      "diseaseCount": 10,
+      "executionTimeMs": 64174
+    },
+    "askman": {
+      "questionCount": 32,
+      "diseaseCount": 10,
+      "executionTimeMs": 70337
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [
+      {
+        "id": "ベル麻痺",
+        "name": "ベル麻痺",
+        "section": "related"
+      },
+      {
+        "id": "パーキンソン病(Parkinson病)",
+        "name": "パーキンソン病(Parkinson病)",
+        "label": "指定難病",
+        "section": "related"
+      },
+      {
+        "id": "脳梗塞",
+        "name": "脳梗塞",
+        "section": "related"
+      },
+      {
+        "id": "シェーグレン症候群",
+        "name": "シェーグレン症候群",
+        "label": "指定難病",
+        "section": "related"
+      },
+      {
+        "id": "ぶどう膜炎",
+        "name": "ぶどう膜炎",
+        "section": "related"
+      },
+      {
+        "id": "脳腫瘍",
+        "name": "脳腫瘍",
+        "section": "related"
+      },
+      {
+        "id": "強皮症",
+        "name": "強皮症",
+        "label": "指定難病と関連あり",
+        "section": "related"
+      },
+      {
+        "id": "角膜損傷",
+        "name": "角膜損傷",
+        "section": "related"
+      },
+      {
+        "id": "サルコイドーシス",
+        "name": "サルコイドーシス",
+        "label": "指定難病",
+        "section": "easily-missed"
+      },
+      {
+        "id": "トロサ・ハント症候群(Tolosa-Hunt症候群)",
+        "name": "トロサ・ハント症候群(Tolosa-Hunt症候群)",
+        "section": "easily-missed"
+      }
+    ],
+    "askman": [
+      {
+        "id": "ベル麻痺",
+        "name": "ベル麻痺",
+        "section": "related"
+      },
+      {
+        "id": "脳梗塞",
+        "name": "脳梗塞",
+        "section": "related"
+      },
+      {
+        "id": "シェーグレン症候群",
+        "name": "シェーグレン症候群",
+        "label": "指定難病",
+        "section": "related"
+      },
+      {
+        "id": "パーキンソン病(Parkinson病)",
+        "name": "パーキンソン病(Parkinson病)",
+        "label": "指定難病",
+        "section": "related"
+      },
+      {
+        "id": "ぶどう膜炎",
+        "name": "ぶどう膜炎",
+        "section": "related"
+      },
+      {
+        "id": "脳腫瘍",
+        "name": "脳腫瘍",
+        "section": "related"
+      },
+      {
+        "id": "強皮症",
+        "name": "強皮症",
+        "label": "指定難病と関連あり",
+        "section": "related"
+      },
+      {
+        "id": "角膜損傷",
+        "name": "角膜損傷",
+        "section": "related"
+      },
+      {
+        "id": "ベル麻痺",
+        "name": "ベル麻痺",
+        "section": "easily-missed"
+      },
+      {
+        "id": "脳梗塞",
+        "name": "脳梗塞",
+        "section": "easily-missed"
+      }
+    ]
+  },
+  "questionLogs": {
+    "cDiagnosis": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/relationship",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760685229816
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "50歳",
+        "timestamp": 1760685230067
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "女性",
+        "timestamp": 1760685230168
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "137cm",
+        "timestamp": 1760685231425
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "30kg",
+        "timestamp": 1760685232492
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-complaint",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "喉が渇く",
+          "目が乾く",
+          "すぐに眼が乾く",
+          "右目が乾く",
+          "両目が乾く",
+          "左目が乾く",
+          "口が渇く",
+          "皮膚が乾く",
+          "肌が乾く",
+          "舌が乾く"
+        ],
+        "selectedOption": "目が乾く",
+        "timestamp": 1760685234048
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-complaint/confirm",
+        "questionText": "【目が乾く】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760685234334
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16095",
+        "questionText": "【妊娠・授乳】の状況で、当てはまるものを【すべて】選んでください。",
+        "availableOptions": [
+          "現在、妊娠している",
+          "確定していないが、妊娠しているかもしれない",
+          "現在、授乳中である",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "現在、授乳中である",
+        "timestamp": 1760685235542
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-8222",
+        "questionText": "今回の【目が乾く】はどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760685237464
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-8045",
+        "questionText": "これまでに同じような【目が乾く】を経験したことはありますか？一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "月に数回程度は同じような症状がある",
+          "ほぼ毎日同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760685238598
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-10053",
+        "questionText": "【目が乾く】のはじまりから現在までの変化として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760685239606
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-8084",
+        "questionText": "【目が乾く】はどのくらいですか？",
+        "availableOptions": [
+          "日常生活に支障はない",
+          "外出が難しいなど日常生活（買い物や散歩）に支障が出ている",
+          "介助がなければ身の回りの日常生活（着替えや食事など）ができない",
+          "回答をとばす"
+        ],
+        "selectedOption": "外出が難しいなど日常生活（買い物や散歩）に支障が出ている",
+        "timestamp": 1760685240609
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-15705_health_history_general",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+        "timestamp": 1760685241939
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-15707",
+        "questionText": "【生活習慣病・貧血】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "貧血",
+          "高血圧",
+          "糖尿病",
+          "脂質異常症",
+          "脂肪肝",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760685243881
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760685245748
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-16275",
+        "questionText": "以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "慢性腎臓病・慢性腎不全",
+          "狭心症・心筋梗塞",
+          "高尿酸血症",
+          "痛風",
+          "睡眠時無呼吸症候群",
+          "脳梗塞",
+          "一過性脳虚血発作",
+          "変形性膝関節症",
+          "変形性股関節症",
+          "変形性脊椎症",
+          "肥満低換気症候群",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "脳梗塞",
+        "timestamp": 1760685247802
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-19745",
+        "questionText": "これまで、【体重を減らす方法】について医師に相談したことがありますか？",
+        "availableOptions": [
+          "相談したことがある",
+          "相談したいが、実際にしたことはない",
+          "相談したいと思ったこともない",
+          "覚えていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "相談したいが、実際にしたことはない",
+        "timestamp": 1760685249579
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-19012",
+        "questionText": "現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。",
+        "availableOptions": [
+          "最近指導を受けたばかり",
+          "1ヶ月ほど継続している",
+          "2ヶ月から3ヶ月ほど継続している",
+          "4ヶ月から5ヶ月ほど継続している",
+          "6ヶ月以上継続している",
+          "指導を受けたが、やめてしまった",
+          "指導を受けたことはない",
+          "回答をとばす"
+        ],
+        "selectedOption": "1ヶ月ほど継続している",
+        "timestamp": 1760685251064
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-16347",
+        "questionText": "ここ1年で、生理が遅れる、あるいは早まっているということがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760685252288
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760685253387
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-834",
+        "questionText": "水を飲んだときに、口の片側からこぼれてしまいますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685254829
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-310",
+        "questionText": "顔面の筋肉が自由に動かないと感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760685256275
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-452",
+        "questionText": "顔の感覚がおかしいと感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685257720
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-745",
+        "questionText": "片方の目から涙が出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760685259138
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-206",
+        "questionText": "よだれが飲み込めない状態ですか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685260567
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-208",
+        "questionText": "食べ物が飲み込みにくいと感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685261995
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-207",
+        "questionText": "耳の痛みはありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685263440
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-1989",
+        "questionText": "顔面が痛みますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760685264860
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/symptom-1810",
+        "questionText": "以前に比べ現在、目の動きが悪く、ある方向に目が動かせない状態ですか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760685266342
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/symptom-601",
+        "questionText": "手の指や全身の震えがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685267770
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760685269121
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/question-predicted-disease",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "ベル麻痺",
+          "パーキンソン病(Parkinson病)",
+          "脳梗塞",
+          "シェーグレン症候群",
+          "ぶどう膜炎",
+          "脳腫瘍",
+          "強皮症",
+          "角膜損傷",
+          "サルコイドーシス",
+          "トロサ・ハント症候群(Tolosa-Hunt症候群)",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "サルコイドーシス",
+        "timestamp": 1760685271768
+      },
+      {
+        "questionNumber": 33,
+        "url": "https://staging.ubie.app/qa/question/disease-under-treatment",
+        "questionText": "この中に治療中、またはお薬を飲んでいる病気はありますか？",
+        "availableOptions": [
+          "結節性痒疹(けっせつせいようしん)",
+          "脳梗塞",
+          "サルコイドーシス",
+          "この中に該当なし"
+        ],
+        "selectedOption": "サルコイドーシス",
+        "timestamp": 1760685273680
+      },
+      {
+        "questionNumber": 34,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【目が乾く】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "該当するものがない",
+        "timestamp": 1760685276242
+      }
+    ],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760685229650
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "50歳",
+        "timestamp": 1760685230548
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "女性",
+        "timestamp": 1760685231422
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "137cm",
+        "timestamp": 1760685233175
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "30kg",
+        "timestamp": 1760685234574
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "喉が渇く",
+          "目が乾く",
+          "すぐに眼が乾く",
+          "右目が乾く",
+          "両目が乾く",
+          "左目が乾く",
+          "口が渇く",
+          "皮膚が乾く",
+          "肌が乾く",
+          "舌が乾く"
+        ],
+        "selectedOption": "目が乾く",
+        "timestamp": 1760685236100
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "questionText": "【目が乾く】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760685236666
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16123",
+        "questionText": "【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760685238658
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-16095",
+        "questionText": "【妊娠・授乳】の状況で、当てはまるものを【すべて】選んでください。",
+        "availableOptions": [
+          "現在、妊娠している",
+          "確定していないが、妊娠しているかもしれない",
+          "現在、授乳中である",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "現在、授乳中である",
+        "timestamp": 1760685239990
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-8222",
+        "questionText": "今回の【目が乾く】はどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760685242430
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-8045",
+        "questionText": "これまでに同じような【目が乾く】を経験したことはありますか？一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "月に数回程度は同じような症状がある",
+          "ほぼ毎日同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760685243751
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-10053",
+        "questionText": "【目が乾く】のはじまりから現在までの変化として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760685245031
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-8084",
+        "questionText": "【目が乾く】はどのくらいですか？",
+        "availableOptions": [
+          "日常生活に支障はない",
+          "外出が難しいなど日常生活（買い物や散歩）に支障が出ている",
+          "介助がなければ身の回りの日常生活（着替えや食事など）ができない",
+          "回答をとばす"
+        ],
+        "selectedOption": "外出が難しいなど日常生活（買い物や散歩）に支障が出ている",
+        "timestamp": 1760685247776
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-15705",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+        "timestamp": 1760685249140
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15707",
+        "questionText": "【生活習慣病・貧血】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "貧血",
+          "高血圧",
+          "糖尿病",
+          "脂質異常症",
+          "脂肪肝",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760685250995
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760685252901
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760685255286
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/symptom-834",
+        "questionText": "水を飲んだときに、口の片側からこぼれてしまいますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685257421
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/symptom-310",
+        "questionText": "顔面の筋肉が自由に動かないと感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760685259943
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/symptom-452",
+        "questionText": "顔の感覚がおかしいと感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685261567
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-745",
+        "questionText": "片方の目から涙が出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760685263163
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-1418",
+        "questionText": "最近、集中力が下がっていると感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760685264772
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-247",
+        "questionText": "手足などに力の入らない部分はありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685266366
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-1452",
+        "questionText": "物忘れがあると感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760685267961
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-445",
+        "questionText": "最近、日常的に外を出歩くことが減ったと感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760685269435
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-1615",
+        "questionText": "最近、意欲が低下していると感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760685271074
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-206",
+        "questionText": "よだれが飲み込めない状態ですか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685272749
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-207",
+        "questionText": "耳の痛みはありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685274387
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/symptom-208",
+        "questionText": "食べ物が飲み込みにくいと感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760685276240
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760685277825
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/predicted-disease-question",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "ベル麻痺(Bell麻痺)",
+          "脳梗塞",
+          "シェーグレン症候群(Sjögren症候群)",
+          "パーキンソン病(Parkinson病)",
+          "ぶどう膜炎",
+          "脳腫瘍",
+          "強皮症",
+          "角膜損傷",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760685279364
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【目が乾く】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "該当するものがない",
+        "timestamp": 1760685281719
+      }
+    ]
+  },
+  "differences": {
+    "diseaseMismatch": {
+      "cDiagnosisOnly": [
+        {
+          "id": "サルコイドーシス",
+          "name": "サルコイドーシス",
+          "label": "指定難病",
+          "section": "easily-missed"
+        },
+        {
+          "id": "トロサ・ハント症候群(Tolosa-Hunt症候群)",
+          "name": "トロサ・ハント症候群(Tolosa-Hunt症候群)",
+          "section": "easily-missed"
+        }
+      ],
+      "askmanOnly": []
+    },
+    "questionCountMismatch": {
+      "cDiagnosis": 34,
+      "askman": 32
+    }
+  }
+}

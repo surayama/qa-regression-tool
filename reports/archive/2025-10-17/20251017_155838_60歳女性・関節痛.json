@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-10-17T15:58:38.683+09:00",
+  "scenarioName": "60歳女性・関節痛",
+  "passed": true,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 0,
+      "diseaseCount": 0,
+      "executionTimeMs": 43427
+    },
+    "askman": {
+      "questionCount": 0,
+      "diseaseCount": 0,
+      "executionTimeMs": 43472
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [],
+    "askman": []
+  },
+  "questionLogs": {
+    "cDiagnosis": [],
+    "askman": []
+  },
+  "differences": {}
+}

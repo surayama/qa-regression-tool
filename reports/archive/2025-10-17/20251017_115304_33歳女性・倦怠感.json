@@ -1,0 +1,1080 @@
+{
+  "timestamp": "2025-10-17T11:53:04.113+09:00",
+  "scenarioName": "33歳女性・倦怠感",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 34,
+      "diseaseCount": 10,
+      "executionTimeMs": 69663
+    },
+    "askman": {
+      "questionCount": 32,
+      "diseaseCount": 10,
+      "executionTimeMs": 86703
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [
+      {
+        "id": "糖尿病",
+        "name": "糖尿病",
+        "section": "related"
+      },
+      {
+        "id": "口唇ヘルペス",
+        "name": "口唇ヘルペス",
+        "section": "related"
+      },
+      {
+        "id": "過敏性腸症候群",
+        "name": "過敏性腸症候群",
+        "section": "related"
+      },
+      {
+        "id": "胃食道逆流症(GERD)・逆流性食道炎",
+        "name": "胃食道逆流症(GERD)・逆流性食道炎",
+        "section": "related"
+      },
+      {
+        "id": "頚椎症",
+        "name": "頚椎症",
+        "section": "related"
+      },
+      {
+        "id": "乳腺炎",
+        "name": "乳腺炎",
+        "section": "related"
+      },
+      {
+        "id": "月経前症候群(PMS)",
+        "name": "月経前症候群(PMS)",
+        "section": "related"
+      },
+      {
+        "id": "月経困難症",
+        "name": "月経困難症",
+        "section": "related"
+      },
+      {
+        "id": "ケトアシドーシス",
+        "name": "ケトアシドーシス",
+        "section": "easily-missed"
+      },
+      {
+        "id": "胃がん",
+        "name": "胃がん",
+        "section": "easily-missed"
+      }
+    ],
+    "askman": [
+      {
+        "id": "口唇ヘルペス",
+        "name": "口唇ヘルペス",
+        "section": "related"
+      },
+      {
+        "id": "過敏性腸症候群",
+        "name": "過敏性腸症候群",
+        "section": "related"
+      },
+      {
+        "id": "胃食道逆流症(GERD)・逆流性食道炎",
+        "name": "胃食道逆流症(GERD)・逆流性食道炎",
+        "section": "related"
+      },
+      {
+        "id": "糖尿病",
+        "name": "糖尿病",
+        "section": "related"
+      },
+      {
+        "id": "頚椎症",
+        "name": "頚椎症",
+        "section": "related"
+      },
+      {
+        "id": "乳腺炎",
+        "name": "乳腺炎",
+        "section": "related"
+      },
+      {
+        "id": "月経前症候群(PMS)",
+        "name": "月経前症候群(PMS)",
+        "section": "related"
+      },
+      {
+        "id": "月経困難症",
+        "name": "月経困難症",
+        "section": "related"
+      },
+      {
+        "id": "アルコール性肝障害",
+        "name": "アルコール性肝障害",
+        "section": "easily-missed"
+      },
+      {
+        "id": "乳腺炎",
+        "name": "乳腺炎",
+        "section": "easily-missed"
+      }
+    ]
+  },
+  "questionLogs": {
+    "cDiagnosis": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/relationship",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760669506490
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "33歳",
+        "timestamp": 1760669506729
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "女性",
+        "timestamp": 1760669506839
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "147cm",
+        "timestamp": 1760669508070
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "40kg",
+        "timestamp": 1760669509137
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-complaint",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "体がだるい",
+          "だるい",
+          "涙腺が痛い",
+          "気怠い",
+          "いつも怠い",
+          "腰がだるい",
+          "膝がだるい",
+          "手足がだるい",
+          "両膝がだるい",
+          "右膝がだるい"
+        ],
+        "selectedOption": "体がだるい",
+        "timestamp": 1760669510771
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-complaint/confirm",
+        "questionText": "【体がだるい】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760669511056
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16095",
+        "questionText": "【妊娠・授乳】の状況で、当てはまるものを【すべて】選んでください。",
+        "availableOptions": [
+          "現在、妊娠している",
+          "確定していないが、妊娠しているかもしれない",
+          "現在、授乳中である",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "現在、授乳中である",
+        "timestamp": 1760669512293
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-10541",
+        "questionText": "【体がだるい】は【いつから】ですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669514252
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-11341",
+        "questionText": "【体がだるい】の【変化】について、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "改善したがまだ残っている",
+        "timestamp": 1760669515277
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-11343",
+        "questionText": "【体がだるい】の程度について、一番近いものを選んでください。",
+        "availableOptions": [
+          "何となくだるいと感じる",
+          "だるくて動くのが面倒と感じる",
+          "だるさで普段よりも活動できなくなっている",
+          "だるさで家から出るのも苦労する",
+          "だるさで起き上がるのも苦労する",
+          "回答をとばす"
+        ],
+        "selectedOption": "何となくだるいと感じる",
+        "timestamp": 1760669516479
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-8956",
+        "questionText": "【体がだるい】について、当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "簡単な動作（歯みがきや整髪など）をするだけでも段々と動けなくなってくるが、休むとまた動けるようになる",
+          "体のだるさが1日の間で良くなったり悪くなったりする",
+          "朝に体のだるさが強い",
+          "朝よりも夕方の方が体がだるく、筋肉がうまく動かない",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "簡単な動作（歯みがきや整髪など）をするだけでも段々と動けなくなってくるが、休むとまた動けるようになる",
+        "timestamp": 1760669517706
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-10865",
+        "questionText": "【これまでの病気】について、当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "慢性腎不全もしくは腎臓が悪いと医師に言われたことがある",
+          "肝臓が悪いと医師に言われたことがある",
+          "最近の血液検査で貧血を指摘された",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760669519484
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-8244",
+        "questionText": "つぎのような症状はありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "体温が37.5℃以上",
+          "頭痛がある・頭が重い",
+          "のどの痛み",
+          "吐き気・嘔吐",
+          "鼻水",
+          "たんが出る",
+          "せきが出る",
+          "便がゆるい・下痢をしている",
+          "やる気や意欲がわかない",
+          "息苦しさ",
+          "食欲がない",
+          "最近、味覚が変わったと感じることがある",
+          "においの感じ方がおかしい",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "食欲がない",
+        "timestamp": 1760669521381
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15705_health_history_general",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669523364
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760669524502
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-16275",
+        "questionText": "以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "高血圧症",
+          "脂質異常症",
+          "糖尿病",
+          "狭心症・心筋梗塞",
+          "高尿酸血症",
+          "痛風",
+          "睡眠時無呼吸症候群",
+          "脂肪肝",
+          "脳梗塞",
+          "一過性脳虚血発作",
+          "変形性膝関節症",
+          "変形性股関節症",
+          "変形性脊椎症",
+          "肥満低換気症候群",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "糖尿病",
+        "timestamp": 1760669526482
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-19745",
+        "questionText": "これまで、【体重を減らす方法】について医師に相談したことがありますか？",
+        "availableOptions": [
+          "相談したことがある",
+          "相談したいが、実際にしたことはない",
+          "相談したいと思ったこともない",
+          "覚えていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "相談したいが、実際にしたことはない",
+        "timestamp": 1760669528463
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-19012",
+        "questionText": "現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。",
+        "availableOptions": [
+          "最近指導を受けたばかり",
+          "1ヶ月ほど継続している",
+          "2ヶ月から3ヶ月ほど継続している",
+          "4ヶ月から5ヶ月ほど継続している",
+          "6ヶ月以上継続している",
+          "指導を受けたが、やめてしまった",
+          "指導を受けたことはない",
+          "回答をとばす"
+        ],
+        "selectedOption": "1ヶ月ほど継続している",
+        "timestamp": 1760669529895
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/question-16347",
+        "questionText": "ここ1年で、生理が遅れる、あるいは早まっているということがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669531745
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760669533673
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-7970",
+        "questionText": "生理の前になると決まって何か不快な症状が現れますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760669536460
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-696",
+        "questionText": "生理前になると決まって出現する体や心の不快な症状は生理開始後に良くなりますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669537954
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-7992",
+        "questionText": "乳房が張っていると感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760669539237
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-2006",
+        "questionText": "患部は腫れていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669540714
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-154",
+        "questionText": "お腹の痛みがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669542010
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-2216",
+        "questionText": "食欲低下の程度について、一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "普段の食事量と同じくらい食べられている",
+          "普段の食事量の75%くらい食べられている",
+          "普段の食事量の50%くらい食べられている",
+          "普段の食事量の25%くらい食べられている",
+          "固形物は食べられないが水分はとれている",
+          "水分も摂取出来ていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "普段の食事量の75%くらい食べられている",
+        "timestamp": 1760669543405
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-1227",
+        "questionText": "残便感がありますか？あるいは便を出し切れていない感じがしますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760669544877
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/symptom-932",
+        "questionText": "現在、精神的なストレスや肉体的な疲労を感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760669546358
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/symptom-105",
+        "questionText": "最近これまでと比べて精神状態に異変があると感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760669547843
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760669549358
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/question-predicted-disease",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "糖尿病",
+          "口唇ヘルペス",
+          "過敏性腸症候群",
+          "胃食道逆流症(GERD)・逆流性食道炎",
+          "頚椎症",
+          "乳腺炎",
+          "月経前症候群(PMS)",
+          "月経困難症",
+          "ケトアシドーシス",
+          "胃がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "頚椎症",
+        "timestamp": 1760669552995
+      },
+      {
+        "questionNumber": 33,
+        "url": "https://staging.ubie.app/qa/question/disease-under-treatment",
+        "questionText": "この中に治療中、またはお薬を飲んでいる病気はありますか？",
+        "availableOptions": [
+          "結節性痒疹(けっせつせいようしん)",
+          "糖尿病",
+          "頚椎症",
+          "この中に該当なし"
+        ],
+        "selectedOption": "頚椎症",
+        "timestamp": 1760669555191
+      },
+      {
+        "questionNumber": 34,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【体がだるい】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669557837
+      }
+    ],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760669506669
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "33歳",
+        "timestamp": 1760669507467
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "女性",
+        "timestamp": 1760669508321
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "147cm",
+        "timestamp": 1760669511182
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "40kg",
+        "timestamp": 1760669512665
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "体がだるい",
+          "だるい",
+          "涙腺が痛い",
+          "気怠い",
+          "いつも怠い",
+          "腰がだるい",
+          "膝がだるい",
+          "手足がだるい",
+          "両膝がだるい",
+          "右膝がだるい"
+        ],
+        "selectedOption": "体がだるい",
+        "timestamp": 1760669514088
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "questionText": "【体がだるい】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760669514541
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16123",
+        "questionText": "【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669515966
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-16095",
+        "questionText": "【妊娠・授乳】の状況で、当てはまるものを【すべて】選んでください。",
+        "availableOptions": [
+          "現在、妊娠している",
+          "確定していないが、妊娠しているかもしれない",
+          "現在、授乳中である",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "現在、授乳中である",
+        "timestamp": 1760669517514
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-10541",
+        "questionText": "【体がだるい】は【いつから】ですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669520550
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-11341",
+        "questionText": "【体がだるい】の【変化】について、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "改善したがまだ残っている",
+        "timestamp": 1760669521949
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-11343",
+        "questionText": "【体がだるい】の程度について、一番近いものを選んでください。",
+        "availableOptions": [
+          "何となくだるいと感じる",
+          "だるくて動くのが面倒と感じる",
+          "だるさで普段よりも活動できなくなっている",
+          "だるさで家から出るのも苦労する",
+          "だるさで起き上がるのも苦労する",
+          "回答をとばす"
+        ],
+        "selectedOption": "何となくだるいと感じる",
+        "timestamp": 1760669523338
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-8956",
+        "questionText": "【体がだるい】について、当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "簡単な動作（歯みがきや整髪など）をするだけでも段々と動けなくなってくるが、休むとまた動けるようになる",
+          "体のだるさが1日の間で良くなったり悪くなったりする",
+          "朝に体のだるさが強い",
+          "朝よりも夕方の方が体がだるく、筋肉がうまく動かない",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "簡単な動作（歯みがきや整髪など）をするだけでも段々と動けなくなってくるが、休むとまた動けるようになる",
+        "timestamp": 1760669524734
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-10865",
+        "questionText": "【これまでの病気】について、当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "慢性腎不全もしくは腎臓が悪いと医師に言われたことがある",
+          "肝臓が悪いと医師に言われたことがある",
+          "最近の血液検査で貧血を指摘された",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760669527767
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-8244",
+        "questionText": "つぎのような症状はありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "体温が37.5℃以上",
+          "頭痛がある・頭が重い",
+          "のどの痛み",
+          "吐き気・嘔吐",
+          "鼻水",
+          "たんが出る",
+          "せきが出る",
+          "便がゆるい・下痢をしている",
+          "やる気や意欲がわかない",
+          "息苦しさ",
+          "食欲がない",
+          "最近、味覚が変わったと感じることがある",
+          "においの感じ方がおかしい",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "食欲がない",
+        "timestamp": 1760669529999
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15705",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669532086
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760669536171
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760669538151
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/symptom-7970",
+        "questionText": "生理の前になると決まって何か不快な症状が現れますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760669541827
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/symptom-696",
+        "questionText": "生理前になると決まって出現する体や心の不快な症状は生理開始後に良くなりますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669543629
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-2006",
+        "questionText": "患部は腫れていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669545450
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-7992",
+        "questionText": "乳房が張っていると感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760669546954
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-154",
+        "questionText": "お腹の痛みがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669548622
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-2216",
+        "questionText": "食欲低下の程度について、一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "普段の食事量と同じくらい食べられている",
+          "普段の食事量の75%くらい食べられている",
+          "普段の食事量の25%くらい食べられている",
+          "普段の食事量の50%くらい食べられている",
+          "固形物は食べられないが水分はとれている",
+          "水分も摂取出来ていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "普段の食事量の75%くらい食べられている",
+        "timestamp": 1760669550145
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-1227",
+        "questionText": "残便感がありますか？あるいは便を出し切れていない感じがしますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760669551869
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-932",
+        "questionText": "現在、精神的なストレスや肉体的な疲労を感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760669553665
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-105",
+        "questionText": "最近これまでと比べて精神状態に異変があると感じていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760669558447
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-1717",
+        "questionText": "皮膚に水ぶくれが出来ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669560493
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/symptom-1460",
+        "questionText": "安静にしていると痛みを感じないが、立ち上がる、歩く、階段をのぼる等の動作をすることで痛みが出て来ますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669562634
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760669566772
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/predicted-disease-question",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "口唇ヘルペス",
+          "過敏性腸症候群",
+          "胃食道逆流症(GERD)",
+          "糖尿病",
+          "頚椎症",
+          "乳腺炎",
+          "月経前症候群(PMS)",
+          "月経困難症",
+          "胃癌",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "過敏性腸症候群",
+        "timestamp": 1760669568586
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【体がだるい】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760669571092
+      }
+    ]
+  },
+  "differences": {
+    "diseaseMismatch": {
+      "cDiagnosisOnly": [
+        {
+          "id": "ケトアシドーシス",
+          "name": "ケトアシドーシス",
+          "section": "easily-missed"
+        },
+        {
+          "id": "胃がん",
+          "name": "胃がん",
+          "section": "easily-missed"
+        }
+      ],
+      "askmanOnly": [
+        {
+          "id": "アルコール性肝障害",
+          "name": "アルコール性肝障害",
+          "section": "easily-missed"
+        }
+      ]
+    },
+    "questionCountMismatch": {
+      "cDiagnosis": 34,
+      "askman": 32
+    }
+  }
+}

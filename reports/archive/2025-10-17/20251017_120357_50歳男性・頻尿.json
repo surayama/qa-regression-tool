@@ -1,0 +1,1042 @@
+{
+  "timestamp": "2025-10-17T12:03:57.725+09:00",
+  "scenarioName": "50歳男性・頻尿",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 33,
+      "diseaseCount": 10,
+      "executionTimeMs": 65441
+    },
+    "askman": {
+      "questionCount": 30,
+      "diseaseCount": 10,
+      "executionTimeMs": 77591
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [
+      {
+        "id": "糖尿病",
+        "name": "糖尿病",
+        "section": "related"
+      },
+      {
+        "id": "脊柱管狭窄症・すべり症",
+        "name": "脊柱管狭窄症・すべり症",
+        "label": "指定難病と関連あり",
+        "section": "related"
+      },
+      {
+        "id": "脊髄損傷急性期",
+        "name": "脊髄損傷急性期",
+        "section": "related"
+      },
+      {
+        "id": "腰椎椎間板ヘルニア",
+        "name": "腰椎椎間板ヘルニア",
+        "section": "related"
+      },
+      {
+        "id": "糖尿病性ニューロパチー(末梢神経障害)",
+        "name": "糖尿病性ニューロパチー(末梢神経障害)",
+        "section": "related"
+      },
+      {
+        "id": "慢性腎臓病・慢性腎不全",
+        "name": "慢性腎臓病・慢性腎不全",
+        "section": "related"
+      },
+      {
+        "id": "過活動膀胱",
+        "name": "過活動膀胱",
+        "section": "related"
+      },
+      {
+        "id": "心因性多飲症",
+        "name": "心因性多飲症",
+        "section": "related"
+      },
+      {
+        "id": "多発性硬化症(MS)",
+        "name": "多発性硬化症(MS)",
+        "label": "指定難病",
+        "section": "easily-missed"
+      },
+      {
+        "id": "胸椎黄色靭帯骨化症",
+        "name": "胸椎黄色靭帯骨化症",
+        "label": "指定難病",
+        "section": "easily-missed"
+      }
+    ],
+    "askman": [
+      {
+        "id": "糖尿病",
+        "name": "糖尿病",
+        "section": "related"
+      },
+      {
+        "id": "慢性腎臓病・慢性腎不全",
+        "name": "慢性腎臓病・慢性腎不全",
+        "section": "related"
+      },
+      {
+        "id": "腰椎椎間板ヘルニア",
+        "name": "腰椎椎間板ヘルニア",
+        "section": "related"
+      },
+      {
+        "id": "脊柱管狭窄症・すべり症",
+        "name": "脊柱管狭窄症・すべり症",
+        "label": "指定難病と関連あり",
+        "section": "related"
+      },
+      {
+        "id": "脊髄損傷急性期",
+        "name": "脊髄損傷急性期",
+        "section": "related"
+      },
+      {
+        "id": "多発性嚢胞腎",
+        "name": "多発性嚢胞腎",
+        "label": "指定難病",
+        "section": "related"
+      },
+      {
+        "id": "急性前立腺炎",
+        "name": "急性前立腺炎",
+        "section": "related"
+      },
+      {
+        "id": "過活動膀胱",
+        "name": "過活動膀胱",
+        "section": "related"
+      },
+      {
+        "id": "過活動膀胱",
+        "name": "過活動膀胱",
+        "section": "easily-missed"
+      },
+      {
+        "id": "慢性腎盂腎炎",
+        "name": "慢性腎盂腎炎",
+        "section": "easily-missed"
+      }
+    ]
+  },
+  "questionLogs": {
+    "cDiagnosis": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/relationship",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760670170164
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "50歳",
+        "timestamp": 1760670170476
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760670170629
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "197cm",
+        "timestamp": 1760670171935
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "90kg",
+        "timestamp": 1760670173012
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-complaint",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "頻尿である",
+          "夜間に頻尿がある",
+          "尿が出ない",
+          "尿が泡立つ",
+          "尿が赤い",
+          "濃い尿が出ている",
+          "尿が途切れる",
+          "尿が茶色",
+          "尿が真っ白い",
+          "尿が臭い"
+        ],
+        "selectedOption": "頻尿である",
+        "timestamp": 1760670174730
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-complaint/confirm",
+        "questionText": "【頻尿である】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760670174997
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-8587",
+        "questionText": "今回の【頻尿である】はどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670176210
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-10734",
+        "questionText": "1日におしっこでトイレに行く回数について、一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "7回以下",
+          "8-14回",
+          "15回以上",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670177344
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-9453",
+        "questionText": "【頻尿である】のはじまりから現在までの変化として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "悪化している",
+        "timestamp": 1760670178367
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-10370",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "残尿感",
+          "排尿後2時間以内の尿意",
+          "尿が途中で出なくなることがある",
+          "尿が出しづらく、いきむことがある",
+          "尿の勢いが弱いと感じることがある",
+          "尿を我慢できないと感じ、トイレに急ぐときがある",
+          "夜に尿のためにトイレに起きてしまう",
+          "尿を漏らしてしまう",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "尿を漏らしてしまう",
+        "timestamp": 1760670179590
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-8552",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "尿を出すときに痛みがある",
+          "背中の痛みがある",
+          "体温が37.5℃以上",
+          "赤い尿や血尿が最近出た",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670181444
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-15705_health_history_general",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670182669
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760670183813
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-16275",
+        "questionText": "以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "高血圧症",
+          "脂質異常症",
+          "糖尿病",
+          "慢性腎臓病・慢性腎不全",
+          "狭心症・心筋梗塞",
+          "高尿酸血症",
+          "痛風",
+          "睡眠時無呼吸症候群",
+          "脂肪肝",
+          "脳梗塞",
+          "一過性脳虚血発作",
+          "変形性膝関節症",
+          "変形性股関節症",
+          "変形性脊椎症",
+          "肥満低換気症候群",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "脂肪肝",
+        "timestamp": 1760670185895
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-19745",
+        "questionText": "これまで、【体重を減らす方法】について医師に相談したことがありますか？",
+        "availableOptions": [
+          "相談したことがある",
+          "相談したいが、実際にしたことはない",
+          "相談したいと思ったこともない",
+          "覚えていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "相談したいが、実際にしたことはない",
+        "timestamp": 1760670187752
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-19012",
+        "questionText": "現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。",
+        "availableOptions": [
+          "最近指導を受けたばかり",
+          "1ヶ月ほど継続している",
+          "2ヶ月から3ヶ月ほど継続している",
+          "4ヶ月から5ヶ月ほど継続している",
+          "6ヶ月以上継続している",
+          "指導を受けたが、やめてしまった",
+          "指導を受けたことはない",
+          "回答をとばす"
+        ],
+        "selectedOption": "1ヶ月ほど継続している",
+        "timestamp": 1760670189458
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760670190871
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/symptom-524",
+        "questionText": "腰が痛みますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760670192347
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-2312",
+        "questionText": "これまでに同じような腰の痛みや違和感を感じたことはありますか？一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "月に数回程度は同じような症状がある",
+          "ほぼ毎日同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "ほぼ毎日同じような症状がある",
+        "timestamp": 1760670193772
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-1322",
+        "questionText": "前かがみや座る姿勢だと腰痛が改善しますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670195209
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-1421",
+        "questionText": "体の表面近くではない、深いところに痛みを感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670196718
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-pain-2215",
+        "questionText": "【腰の痛み】について、最もつらかったときを1から10で表すとどれぐらいの痛みでしたか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670198177
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-890",
+        "questionText": "しびれや感覚のおかしさを感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670199437
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-171",
+        "questionText": "口の中が乾いていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760670200888
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-2613",
+        "questionText": "足の付け根から足指のどこかにしびれはありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760670202348
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-2103",
+        "questionText": "足の膝から上にかけて(太ももなど)しびれがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670203768
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-2102",
+        "questionText": "膝から下にかけてしびれがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670205014
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760670206309
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/question-predicted-disease",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "糖尿病",
+          "脊柱管狭窄症・すべり症",
+          "脊髄損傷急性期",
+          "腰椎椎間板ヘルニア",
+          "糖尿病性ニューロパチー(末梢神経障害)",
+          "慢性腎臓病・慢性腎不全",
+          "過活動膀胱",
+          "心因性多飲症",
+          "多発性硬化症(MS)",
+          "胸椎黄色靭帯骨化症",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "糖尿病性ニューロパチー(末梢神経障害)",
+        "timestamp": 1760670210067
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/disease-under-treatment",
+        "questionText": "この中に治療中、またはお薬を飲んでいる病気はありますか？",
+        "availableOptions": [
+          "結節性痒疹(けっせつせいようしん)",
+          "非アルコール性脂肪肝・単純性脂肪肝(NAFL)",
+          "糖尿病性ニューロパチー(末梢神経障害)",
+          "この中に該当なし"
+        ],
+        "selectedOption": "糖尿病性ニューロパチー(末梢神経障害)",
+        "timestamp": 1760670212020
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/diagnosed-poorly-controlled-disease-1201-visit-status",
+        "questionText": "【糖尿病性ニューロパチー(末梢神経障害)】の治療のため、病院に通っていますか？",
+        "availableOptions": [
+          "病院に通っている",
+          "病院に通っていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "病院に通っていない",
+        "timestamp": 1760670214567
+      },
+      {
+        "questionNumber": 33,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【頻尿である】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "市販薬で対処したい",
+        "timestamp": 1760670216544
+      }
+    ],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760670171196
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "50歳",
+        "timestamp": 1760670172306
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760670173178
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "197cm",
+        "timestamp": 1760670175861
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "90kg",
+        "timestamp": 1760670177440
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "頻尿である",
+          "夜間に頻尿がある",
+          "尿が出ない",
+          "尿が泡立つ",
+          "尿が赤い",
+          "濃い尿が出ている",
+          "尿が途切れる",
+          "尿が茶色",
+          "尿が真っ白い",
+          "尿が臭い"
+        ],
+        "selectedOption": "頻尿である",
+        "timestamp": 1760670179895
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "questionText": "【頻尿である】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760670180352
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16123",
+        "questionText": "【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670181962
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-8587",
+        "questionText": "今回の【頻尿である】はどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670184055
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-10734",
+        "questionText": "1日におしっこでトイレに行く回数について、一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "7回以下",
+          "8-14回",
+          "15回以上",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670185447
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-9453",
+        "questionText": "【頻尿である】のはじまりから現在までの変化として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "悪化している",
+        "timestamp": 1760670186860
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-10370",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "残尿感",
+          "排尿後2時間以内の尿意",
+          "尿が途中で出なくなることがある",
+          "尿が出しづらく、いきむことがある",
+          "尿の勢いが弱いと感じることがある",
+          "尿を我慢できないと感じ、トイレに急ぐときがある",
+          "夜に尿のためにトイレに起きてしまう",
+          "尿を漏らしてしまう",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "尿を漏らしてしまう",
+        "timestamp": 1760670188294
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-8552",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "尿を出すときに痛みがある",
+          "背中の痛みがある",
+          "体温が37.5℃以上",
+          "赤い尿や血尿が最近出た",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670190248
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-15705",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670191882
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760670193574
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760670195540
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/symptom-2896",
+        "questionText": "これまでに糖尿病（女性の場合は妊娠糖尿病も含みます）を治療したことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760670197217
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/symptom-171",
+        "questionText": "口の中が乾いていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760670198928
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/symptom-524",
+        "questionText": "腰が痛みますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760670200706
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/symptom-pain-2215",
+        "questionText": "【腰の痛み】について、最もつらかったときを1から10で表すとどれぐらいの痛みでしたか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760670202965
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-2312",
+        "questionText": "これまでに同じような腰の痛みや違和感を感じたことはありますか？一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "月に数回程度は同じような症状がある",
+          "これまでに1回以上同じような症状があった",
+          "ほぼ毎日同じような症状がある",
+          "年に数回程度は同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "年に数回程度は同じような症状がある",
+        "timestamp": 1760670205918
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-1421",
+        "questionText": "体の表面近くではない、深いところに痛みを感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670207931
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-2179",
+        "questionText": "太ももが痛みますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760670210569
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-890",
+        "questionText": "しびれや感覚のおかしさを感じますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670212341
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-901",
+        "questionText": "【慢性腎臓病・腎不全（腎臓の機能が3ヶ月以上低下）】と言われたことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760670214322
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-8273",
+        "questionText": "ここ数年の間に蛋白尿（1+以上）を指摘されていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760670216620
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-12",
+        "questionText": "頭痛がありますか？あるいは頭が重いですか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760670218569
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760670221527
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/predicted-disease-question",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "糖尿病",
+          "慢性腎臓病・慢性腎不全",
+          "腰椎椎間板ヘルニア",
+          "脊柱管狭窄症・すべり症",
+          "脊髄損傷急性期",
+          "多発性嚢胞腎",
+          "急性前立腺炎",
+          "過活動膀胱",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760670223256
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【頻尿である】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "市販薬で対処したい",
+        "timestamp": 1760670227642
+      }
+    ]
+  },
+  "differences": {
+    "diseaseMismatch": {
+      "cDiagnosisOnly": [
+        {
+          "id": "糖尿病性ニューロパチー(末梢神経障害)",
+          "name": "糖尿病性ニューロパチー(末梢神経障害)",
+          "section": "related"
+        },
+        {
+          "id": "心因性多飲症",
+          "name": "心因性多飲症",
+          "section": "related"
+        },
+        {
+          "id": "多発性硬化症(MS)",
+          "name": "多発性硬化症(MS)",
+          "label": "指定難病",
+          "section": "easily-missed"
+        },
+        {
+          "id": "胸椎黄色靭帯骨化症",
+          "name": "胸椎黄色靭帯骨化症",
+          "label": "指定難病",
+          "section": "easily-missed"
+        }
+      ],
+      "askmanOnly": [
+        {
+          "id": "多発性嚢胞腎",
+          "name": "多発性嚢胞腎",
+          "label": "指定難病",
+          "section": "related"
+        },
+        {
+          "id": "急性前立腺炎",
+          "name": "急性前立腺炎",
+          "section": "related"
+        },
+        {
+          "id": "慢性腎盂腎炎",
+          "name": "慢性腎盂腎炎",
+          "section": "easily-missed"
+        }
+      ]
+    },
+    "questionCountMismatch": {
+      "cDiagnosis": 33,
+      "askman": 30
+    }
+  }
+}

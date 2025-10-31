@@ -1,0 +1,651 @@
+{
+  "timestamp": "2025-10-17T12:31:10.330+09:00",
+  "scenarioName": "30歳女性・生理痛",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 7,
+      "diseaseCount": 0,
+      "executionTimeMs": 27216
+    },
+    "askman": {
+      "questionCount": 32,
+      "diseaseCount": 10,
+      "executionTimeMs": 77081
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [],
+    "askman": [
+      {
+        "id": "排卵時出血",
+        "name": "排卵時出血",
+        "section": "related"
+      },
+      {
+        "id": "子宮内膜症・卵巣チョコレート嚢胞",
+        "name": "子宮内膜症・卵巣チョコレート嚢胞",
+        "section": "related"
+      },
+      {
+        "id": "子宮腺筋症",
+        "name": "子宮腺筋症",
+        "section": "related"
+      },
+      {
+        "id": "子宮奇形",
+        "name": "子宮奇形",
+        "section": "related"
+      },
+      {
+        "id": "月経前症候群(PMS)",
+        "name": "月経前症候群(PMS)",
+        "section": "related"
+      },
+      {
+        "id": "月経困難症",
+        "name": "月経困難症",
+        "section": "related"
+      },
+      {
+        "id": "子宮発育不全",
+        "name": "子宮発育不全",
+        "section": "related"
+      },
+      {
+        "id": "進行流産",
+        "name": "進行流産",
+        "section": "related"
+      },
+      {
+        "id": "子宮内膜症・卵巣チョコレート嚢胞",
+        "name": "子宮内膜症・卵巣チョコレート嚢胞",
+        "section": "easily-missed"
+      },
+      {
+        "id": "子宮腺筋症",
+        "name": "子宮腺筋症",
+        "section": "easily-missed"
+      }
+    ]
+  },
+  "questionLogs": {
+    "cDiagnosis": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/relationship",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760671801878
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "30歳",
+        "timestamp": 1760671802124
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "女性",
+        "timestamp": 1760671802213
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "183cm",
+        "timestamp": 1760671803433
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "76kg",
+        "timestamp": 1760671804513
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-complaint",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "生理痛がひどい",
+          "生理痛のような痛みがある",
+          "生理痛のような痛みがある（妊娠中）",
+          "生理が不規則である（生理不順）",
+          "生理が来ない",
+          "膀胱痛がある",
+          "生理の悩みがある",
+          "生理が長引いてしまう",
+          "生理が乱れている",
+          "生理の遅れがある"
+        ],
+        "selectedOption": "生理痛がひどい",
+        "timestamp": 1760671806181
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-complaint/confirm",
+        "questionText": "【生理痛がひどい】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760671806431
+      }
+    ],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760671802329
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "30歳",
+        "timestamp": 1760671804426
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "女性",
+        "timestamp": 1760671805298
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "183cm",
+        "timestamp": 1760671807388
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "76kg",
+        "timestamp": 1760671808848
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "生理痛がひどい",
+          "生理痛のような痛みがある",
+          "生理痛のような痛みがある（妊娠中）",
+          "生理が不規則である（生理不順）",
+          "生理が来ない",
+          "膀胱痛がある",
+          "生理の悩みがある",
+          "生理が長引いてしまう",
+          "生理が乱れている",
+          "生理の遅れがある"
+        ],
+        "selectedOption": "生理痛がひどい",
+        "timestamp": 1760671810298
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "questionText": "【生理痛がひどい】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760671810747
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16123",
+        "questionText": "【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760671812177
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-16095",
+        "questionText": "【妊娠・授乳】の状況で、当てはまるものを【すべて】選んでください。",
+        "availableOptions": [
+          "現在、妊娠している",
+          "確定していないが、妊娠しているかもしれない",
+          "現在、授乳中である",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "現在、授乳中である",
+        "timestamp": 1760671814989
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-10648",
+        "questionText": "【生理痛がひどい】は【いつから】ですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760671817487
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-9524",
+        "questionText": "【強い生理痛の頻度】について、一番近いものはどれですか？",
+        "availableOptions": [
+          "今回の生理で初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "数回に１回の生理で同じような症状がある",
+          "ほぼ毎回の生理で同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "これまでに1回以上同じような症状があった",
+        "timestamp": 1760671818819
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-8929",
+        "questionText": "【生理痛がひどい】の程度について、一番近いものはどれですか？",
+        "availableOptions": [
+          "鎮痛薬を使わなくても我慢できる程度",
+          "痛みが強く鎮痛薬を使う必要がある",
+          "鎮痛薬を使っても日常生活に支障が出るほど痛む",
+          "回答をとばす"
+        ],
+        "selectedOption": "痛みが強く鎮痛薬を使う必要がある",
+        "timestamp": 1760671820215
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-9100",
+        "questionText": "【生理痛の年々の変化】について、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760671821626
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-7769",
+        "questionText": "つぎのような症状はありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "生理の出血量や期間がおかしい",
+          "普段から生理周期がおかしい",
+          "直近3ヶ月に一度でも性行為があった",
+          "性交をしている際に痛みがある",
+          "お腹にガスがたまったり、張った感じがする",
+          "頭痛がある・頭が重い",
+          "胸の痛みがある",
+          "生理前になると決まって何か不快な症状が出現する",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "生理の出血量や期間がおかしい",
+        "timestamp": 1760671822981
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-11236",
+        "questionText": "【生理の出血量や期間がおかしい】について、当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "生理の出血量が極端に【少ない】",
+          "生理の出血量が【多い】（ナプキンが2時間もたない、日中でも夜用ナプキンが必要、レバー状の塊が出る）",
+          "生理の出血が【２日以内】で終わってしまう",
+          "生理の出血が【８日以上】続く",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "生理の出血が【２日以内】で終わってしまう",
+        "timestamp": 1760671825033
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15705",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+        "timestamp": 1760671827036
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-15707",
+        "questionText": "【生活習慣病・貧血】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "貧血",
+          "高血圧",
+          "糖尿病",
+          "脂質異常症",
+          "脂肪肝",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "貧血",
+        "timestamp": 1760671828950
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760671830969
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760671832945
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/symptom-667",
+        "questionText": "生理ではないのに腟からの出血または茶色・ピンク色のおりものがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760671834455
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-154",
+        "questionText": "お腹の痛みがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760671837888
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-69",
+        "questionText": "体温は37.5℃以上ですか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760671840124
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-542",
+        "questionText": "これまでに【不妊（望んでいるのに1年以上妊娠できない）時期】がありましたか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760671841714
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-524",
+        "questionText": "腰が痛みますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760671843325
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-2312",
+        "questionText": "これまでに同じような腰の痛みや違和感を感じたことはありますか？一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "月に数回程度は同じような症状がある",
+          "これまでに1回以上同じような症状があった",
+          "ほぼ毎日同じような症状がある",
+          "年に数回程度は同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "これまでに1回以上同じような症状があった",
+        "timestamp": 1760671845220
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-7989",
+        "questionText": "これまでに同じような【生理の出血量や期間がおかしい】を経験したことはありますか？一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "数回に１回の生理で同じような症状がある",
+          "年に数回程度の生理で同じような症状がある",
+          "これまでに1回以上同じような症状があった",
+          "ほぼ毎回の生理で同じような症状がある",
+          "今回の生理で初めての症状である",
+          "回答をとばす"
+        ],
+        "selectedOption": "これまでに1回以上同じような症状があった",
+        "timestamp": 1760671846945
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-696",
+        "questionText": "生理前になると決まって出現する体や心の不快な症状は生理開始後に良くなりますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760671848457
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-emergence-2243",
+        "questionText": "今回、腰の痛みや違和感を感じたのはどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760671851511
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/symptom-2173",
+        "questionText": "妊娠したいと考えているのに、妊娠できない状態が1年以上続いていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760671853815
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760671855915
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/predicted-disease-question",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "排卵時出血",
+          "子宮内膜症",
+          "子宮腺筋症",
+          "子宮奇形",
+          "月経前症候群(PMS)",
+          "月経困難症",
+          "子宮発育不全",
+          "進行流産",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760671857739
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【生理痛がひどい】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "市販薬で対処したい",
+        "timestamp": 1760671860334
+      }
+    ]
+  },
+  "differences": {
+    "diseaseMismatch": {
+      "cDiagnosisOnly": [],
+      "askmanOnly": [
+        {
+          "id": "排卵時出血",
+          "name": "排卵時出血",
+          "section": "related"
+        },
+        {
+          "id": "子宮内膜症・卵巣チョコレート嚢胞",
+          "name": "子宮内膜症・卵巣チョコレート嚢胞",
+          "section": "related"
+        },
+        {
+          "id": "子宮腺筋症",
+          "name": "子宮腺筋症",
+          "section": "related"
+        },
+        {
+          "id": "子宮奇形",
+          "name": "子宮奇形",
+          "section": "related"
+        },
+        {
+          "id": "月経前症候群(PMS)",
+          "name": "月経前症候群(PMS)",
+          "section": "related"
+        },
+        {
+          "id": "月経困難症",
+          "name": "月経困難症",
+          "section": "related"
+        },
+        {
+          "id": "子宮発育不全",
+          "name": "子宮発育不全",
+          "section": "related"
+        },
+        {
+          "id": "進行流産",
+          "name": "進行流産",
+          "section": "related"
+        },
+        {
+          "id": "子宮内膜症・卵巣チョコレート嚢胞",
+          "name": "子宮内膜症・卵巣チョコレート嚢胞",
+          "section": "easily-missed"
+        },
+        {
+          "id": "子宮腺筋症",
+          "name": "子宮腺筋症",
+          "section": "easily-missed"
+        }
+      ]
+    },
+    "questionCountMismatch": {
+      "cDiagnosis": 7,
+      "askman": 32
+    }
+  }
+}

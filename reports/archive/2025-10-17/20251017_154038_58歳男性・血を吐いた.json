@@ -1,0 +1,1024 @@
+{
+  "timestamp": "2025-10-17T15:40:38.523+09:00",
+  "scenarioName": "58歳男性・血を吐いた",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 32,
+      "diseaseCount": 10,
+      "executionTimeMs": 67642
+    },
+    "askman": {
+      "questionCount": 31,
+      "diseaseCount": 10,
+      "executionTimeMs": 75149
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [
+      {
+        "id": "肝硬変",
+        "name": "肝硬変",
+        "section": "related"
+      },
+      {
+        "id": "急性気管支炎・慢性気管支炎",
+        "name": "急性気管支炎・慢性気管支炎",
+        "section": "related"
+      },
+      {
+        "id": "慢性腎臓病・慢性腎不全",
+        "name": "慢性腎臓病・慢性腎不全",
+        "section": "related"
+      },
+      {
+        "id": "門脈圧亢進症",
+        "name": "門脈圧亢進症",
+        "section": "related"
+      },
+      {
+        "id": "アスペルギルス症",
+        "name": "アスペルギルス症",
+        "section": "related"
+      },
+      {
+        "id": "肺炎",
+        "name": "肺炎",
+        "section": "related"
+      },
+      {
+        "id": "胃食道逆流症(GERD)・逆流性食道炎",
+        "name": "胃食道逆流症(GERD)・逆流性食道炎",
+        "section": "related"
+      },
+      {
+        "id": "肺結核",
+        "name": "肺結核",
+        "section": "related"
+      },
+      {
+        "id": "肝臓がん",
+        "name": "肝臓がん",
+        "section": "easily-missed"
+      },
+      {
+        "id": "血管炎症候群(クリオグロブリン血症など)",
+        "name": "血管炎症候群(クリオグロブリン血症など)",
+        "label": "指定難病と関連あり",
+        "section": "easily-missed"
+      }
+    ],
+    "askman": [
+      {
+        "id": "急性気管支炎・慢性気管支炎",
+        "name": "急性気管支炎・慢性気管支炎",
+        "section": "related"
+      },
+      {
+        "id": "肝硬変",
+        "name": "肝硬変",
+        "section": "related"
+      },
+      {
+        "id": "門脈圧亢進症",
+        "name": "門脈圧亢進症",
+        "section": "related"
+      },
+      {
+        "id": "慢性腎臓病・慢性腎不全",
+        "name": "慢性腎臓病・慢性腎不全",
+        "section": "related"
+      },
+      {
+        "id": "胃食道逆流症(GERD)・逆流性食道炎",
+        "name": "胃食道逆流症(GERD)・逆流性食道炎",
+        "section": "related"
+      },
+      {
+        "id": "肺炎",
+        "name": "肺炎",
+        "section": "related"
+      },
+      {
+        "id": "アスペルギルス症",
+        "name": "アスペルギルス症",
+        "section": "related"
+      },
+      {
+        "id": "白血病",
+        "name": "白血病",
+        "section": "related"
+      },
+      {
+        "id": "門脈圧亢進症",
+        "name": "門脈圧亢進症",
+        "section": "easily-missed"
+      },
+      {
+        "id": "肝臓がん",
+        "name": "肝臓がん",
+        "section": "easily-missed"
+      }
+    ]
+  },
+  "questionLogs": {
+    "cDiagnosis": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/relationship",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760683173384
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "58歳",
+        "timestamp": 1760683173963
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760683174102
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "90cm",
+        "timestamp": 1760683175592
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "104kg",
+        "timestamp": 1760683176886
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-complaint",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "血を吐いた",
+          "肺が痛い",
+          "吐いた",
+          "血が混ざった物を吐いている",
+          "吐いてしまう",
+          "肺の痛みがある",
+          "肺に影があるといわれた",
+          "自分でわざと吐いてしまう",
+          "緑色の物を吐いている"
+        ],
+        "selectedOption": "血を吐いた",
+        "timestamp": 1760683178984
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-complaint/confirm",
+        "questionText": "【血を吐いた】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760683179234
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-8815",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "お腹の痛みがある",
+          "便がゆるい・下痢をしている",
+          "吐き気・嘔吐がある",
+          "右肋骨下や左肋骨下が腫れている、突出している",
+          "10日以内に海外への渡航歴がある",
+          "体温が37.5℃以上",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "体温が37.5℃以上",
+        "timestamp": 1760683180472
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-9223",
+        "questionText": "今回の【血を吐いた】はどのくらい前ですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683182533
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-11082",
+        "questionText": "【血を吐いた】の程度について、一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "口の中に血がにじむ",
+          "ペットボトルキャップに満たない程度の吐血",
+          "コップ一杯程度の吐血",
+          "洗面器にたまる程度の吐血",
+          "回答をとばす"
+        ],
+        "selectedOption": "ペットボトルキャップに満たない程度の吐血",
+        "timestamp": 1760683183847
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-10129",
+        "questionText": "何回か吐いている内に血が混ざるようになりましたか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760683185188
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-10744",
+        "questionText": "これまでの病気や怪我について当てはまるものがあれば選択して下さい",
+        "availableOptions": [
+          "胃潰瘍・十二指腸潰瘍と言われたことがある",
+          "肝臓が悪いと医師に言われたことがある",
+          "最近の血液検査で貧血を指摘された",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "肝臓が悪いと医師に言われたことがある",
+        "timestamp": 1760683187154
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-8303",
+        "questionText": "１週間以内に痛み止め・解熱薬(ロキソニン、バファリン、カロナール等)を飲みましたか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683188891
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-15705_health_history_general",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+        "timestamp": 1760683190201
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15920",
+        "questionText": "【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "心不全",
+          "心筋梗塞・不安定狭心症",
+          "不整脈",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683192161
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760683193295
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-16275",
+        "questionText": "以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "高血圧症",
+          "脂質異常症",
+          "糖尿病",
+          "慢性腎臓病・慢性腎不全",
+          "高尿酸血症",
+          "痛風",
+          "睡眠時無呼吸症候群",
+          "脂肪肝",
+          "脳梗塞",
+          "一過性脳虚血発作",
+          "変形性膝関節症",
+          "変形性股関節症",
+          "変形性脊椎症",
+          "肥満低換気症候群",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "糖尿病",
+        "timestamp": 1760683196016
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-19745",
+        "questionText": "これまで、【体重を減らす方法】について医師に相談したことがありますか？",
+        "availableOptions": [
+          "相談したことがある",
+          "相談したいが、実際にしたことはない",
+          "相談したいと思ったこともない",
+          "覚えていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "相談したいが、実際にしたことはない",
+        "timestamp": 1760683197899
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-19012",
+        "questionText": "現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。",
+        "availableOptions": [
+          "最近指導を受けたばかり",
+          "1ヶ月ほど継続している",
+          "2ヶ月から3ヶ月ほど継続している",
+          "4ヶ月から5ヶ月ほど継続している",
+          "6ヶ月以上継続している",
+          "指導を受けたが、やめてしまった",
+          "指導を受けたことはない",
+          "回答をとばす"
+        ],
+        "selectedOption": "1ヶ月ほど継続している",
+        "timestamp": 1760683199571
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760683201037
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-emergence-2233",
+        "questionText": "今回、体温が高くなったのはどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683202489
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-205",
+        "questionText": "せきが出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760683203797
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-2897",
+        "questionText": "一番最近の血液検査で、肝臓の異常を指摘されましたか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683205273
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-398",
+        "questionText": "たんが出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760683206623
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-8499",
+        "questionText": "黄色または緑色のたんが出ますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760683208106
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-2200",
+        "questionText": "【最高体温】は何℃くらいですか？",
+        "availableOptions": [
+          "38℃以下",
+          "38℃より高い",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683209771
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-132",
+        "questionText": "お酒を飲む習慣はありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760683211043
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-136",
+        "questionText": "お腹に血管が浮き出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760683212493
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760683213965
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/question-predicted-disease",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "肝硬変",
+          "急性気管支炎・慢性気管支炎",
+          "慢性腎臓病・慢性腎不全",
+          "門脈圧亢進症",
+          "アスペルギルス症",
+          "肺炎",
+          "胃食道逆流症(GERD)・逆流性食道炎",
+          "肺結核",
+          "肝臓がん",
+          "血管炎症候群(クリオグロブリン血症など)",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "肝硬変",
+        "timestamp": 1760683217267
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/disease-under-treatment",
+        "questionText": "この中に治療中、またはお薬を飲んでいる病気はありますか？",
+        "availableOptions": [
+          "肝機能障害",
+          "結節性痒疹(けっせつせいようしん)",
+          "糖尿病",
+          "肝硬変",
+          "この中に該当なし"
+        ],
+        "selectedOption": "肝硬変",
+        "timestamp": 1760683219476
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【血を吐いた】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "市販薬で対処したい",
+        "timestamp": 1760683221910
+      }
+    ],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760683174350
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "58歳",
+        "timestamp": 1760683175815
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760683177167
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "90cm",
+        "timestamp": 1760683180066
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "104kg",
+        "timestamp": 1760683181559
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "血を吐いた",
+          "肺が痛い",
+          "吐いた",
+          "血が混ざった物を吐いている",
+          "吐いてしまう",
+          "肺の痛みがある",
+          "肺に影があるといわれた",
+          "自分でわざと吐いてしまう",
+          "緑色の物を吐いている"
+        ],
+        "selectedOption": "血を吐いた",
+        "timestamp": 1760683182985
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "questionText": "【血を吐いた】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760683183633
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16123",
+        "questionText": "【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683185061
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-8815",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "お腹の痛みがある",
+          "便がゆるい・下痢をしている",
+          "吐き気・嘔吐がある",
+          "右肋骨下や左肋骨下が腫れている、突出している",
+          "10日以内に海外への渡航歴がある",
+          "体温が37.5℃以上",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "体温が37.5℃以上",
+        "timestamp": 1760683186608
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-9223",
+        "questionText": "今回の【血を吐いた】はどのくらい前ですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683189094
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-11082",
+        "questionText": "【血を吐いた】の程度について、一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "口の中に血がにじむ",
+          "ペットボトルキャップに満たない程度の吐血",
+          "コップ一杯程度の吐血",
+          "洗面器にたまる程度の吐血",
+          "回答をとばす"
+        ],
+        "selectedOption": "ペットボトルキャップに満たない程度の吐血",
+        "timestamp": 1760683190503
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-10129",
+        "questionText": "何回か吐いている内に血が混ざるようになりましたか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760683191899
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-10744",
+        "questionText": "これまでの病気や怪我について当てはまるものがあれば選択して下さい",
+        "availableOptions": [
+          "胃潰瘍・十二指腸潰瘍と言われたことがある",
+          "肝臓が悪いと医師に言われたことがある",
+          "最近の血液検査で貧血を指摘された",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "肝臓が悪いと医師に言われたことがある",
+        "timestamp": 1760683194350
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-8303",
+        "questionText": "１週間以内に痛み止め・解熱薬(ロキソニン、バファリン、カロナール等)を飲みましたか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683196257
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-15705",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+        "timestamp": 1760683197710
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15920",
+        "questionText": "【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "心不全",
+          "心筋梗塞・不安定狭心症",
+          "不整脈",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683199579
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760683201056
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-16275",
+        "questionText": "以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "高血圧症",
+          "脂質異常症",
+          "糖尿病",
+          "慢性腎臓病・慢性腎不全",
+          "狭心症・心筋梗塞",
+          "高尿酸血症",
+          "痛風",
+          "睡眠時無呼吸症候群",
+          "脂肪肝",
+          "脳梗塞",
+          "一過性脳虚血発作",
+          "変形性膝関節症",
+          "変形性股関節症",
+          "変形性脊椎症",
+          "肥満低換気症候群",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "脂質異常症",
+        "timestamp": 1760683203068
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-19745",
+        "questionText": "これまで、【体重を減らす方法】について医師に相談したことがありますか？",
+        "availableOptions": [
+          "相談したことがある",
+          "相談したいが、実際にしたことはない",
+          "相談したいと思ったこともない",
+          "覚えていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "相談したいが、実際にしたことはない",
+        "timestamp": 1760683205053
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/question-19012",
+        "questionText": "現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。",
+        "availableOptions": [
+          "最近指導を受けたばかり",
+          "1ヶ月ほど継続している",
+          "2ヶ月から3ヶ月ほど継続している",
+          "4ヶ月から5ヶ月ほど継続している",
+          "6ヶ月以上継続している",
+          "指導を受けたが、やめてしまった",
+          "指導を受けたことはない",
+          "回答をとばす"
+        ],
+        "selectedOption": "1ヶ月ほど継続している",
+        "timestamp": 1760683206387
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760683207890
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-205",
+        "questionText": "せきが出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760683209605
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-emergence-2233",
+        "questionText": "今回、体温が高くなったのはどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683212428
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-398",
+        "questionText": "たんが出ていますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760683213975
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-8499",
+        "questionText": "黄色または緑色のたんが出ますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760683216508
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-2200",
+        "questionText": "【最高体温】は何℃くらいですか？",
+        "availableOptions": [
+          "38℃以下",
+          "38℃より高い",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683218430
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-760",
+        "questionText": "発熱と解熱を繰り返していますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760683219963
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-166",
+        "questionText": "皮ふのかゆみはありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760683221948
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760683223701
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/predicted-disease-question",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "急性気管支炎・慢性気管支炎",
+          "肝硬変",
+          "門脈圧亢進症",
+          "慢性腎臓病・慢性腎不全",
+          "胃食道逆流症(GERD)",
+          "肺炎",
+          "アスペルギルス症( Aspergillus症)",
+          "白血病",
+          "肝癌",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760683225285
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【血を吐いた】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "市販薬で対処したい",
+        "timestamp": 1760683227247
+      }
+    ]
+  },
+  "differences": {
+    "diseaseMismatch": {
+      "cDiagnosisOnly": [
+        {
+          "id": "肺結核",
+          "name": "肺結核",
+          "section": "related"
+        },
+        {
+          "id": "血管炎症候群(クリオグロブリン血症など)",
+          "name": "血管炎症候群(クリオグロブリン血症など)",
+          "label": "指定難病と関連あり",
+          "section": "easily-missed"
+        }
+      ],
+      "askmanOnly": [
+        {
+          "id": "白血病",
+          "name": "白血病",
+          "section": "related"
+        }
+      ]
+    },
+    "questionCountMismatch": {
+      "cDiagnosis": 32,
+      "askman": 31
+    }
+  }
+}

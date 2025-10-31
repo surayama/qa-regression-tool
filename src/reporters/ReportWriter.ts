@@ -57,12 +57,11 @@ export class ReportWriter {
    * Returns the path to the saved report
    */
   async saveReport(result: ComparisonResult, formattedReport: string): Promise<string> {
-    const timestamp = this.getJSTTimestamp();
-    const scenarioName = result.cDiagnosisResult.scenario.name
-      .replace(/[^a-zA-Z0-9\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]+/g, '_');
+    // If outputDir is specified in result, use it; otherwise use default reportDir
+    const targetDir = result.outputDir || this.reportDir;
 
-    const filename = `${timestamp}_${scenarioName}.txt`;
-    const filepath = path.join(this.reportDir, filename);
+    const filename = `report.txt`;
+    const filepath = path.join(targetDir, filename);
 
     // Write report to file
     fs.writeFileSync(filepath, formattedReport, 'utf-8');
@@ -74,12 +73,11 @@ export class ReportWriter {
    * Save comparison report as JSON
    */
   async saveReportJSON(result: ComparisonResult): Promise<string> {
-    const timestamp = this.getJSTTimestamp();
-    const scenarioName = result.cDiagnosisResult.scenario.name
-      .replace(/[^a-zA-Z0-9\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]+/g, '_');
+    // If outputDir is specified in result, use it; otherwise use default reportDir
+    const targetDir = result.outputDir || this.reportDir;
 
-    const filename = `${timestamp}_${scenarioName}.json`;
-    const filepath = path.join(this.reportDir, filename);
+    const filename = `report.json`;
+    const filepath = path.join(targetDir, filename);
 
     // Convert result to JSON (exclude scenario to avoid duplication)
     const jsonData = {

@@ -1,0 +1,618 @@
+❌ FAILED - Results differ
+
+C-Diagnosis: 10 diseases, 34 questions
+Askman:      10 diseases, 32 questions
+
+Disease Results:
+  C-Diagnosis:
+    回答に関連する病気:
+      1. 化膿性リンパ節炎
+      2. 粉瘤
+      3. 急性扁桃炎・咽頭炎
+      4. 結節性紅斑
+      5. 水いぼ(伝染性軟属腫)
+      6. 慢性肝炎(B型慢性肝炎・C型慢性肝炎など)
+      7. 梅毒
+      8. 熱中症
+    見逃されやすい病気:
+      1. [指定難病と関連あり] キャッスルマン病・TAFRO症候群
+      2. 急性喉頭蓋炎
+  Askman:
+    回答に関連する病気:
+      1. 痛風・偽痛風
+      2. 糖尿病性壊疽
+      3. 慢性肝炎(B型慢性肝炎・C型慢性肝炎など)
+      4. [指定難病と関連あり] 関節リウマチ
+      5. 化膿性リンパ節炎
+      6. 水いぼ(伝染性軟属腫)
+      7. [指定難病] 全身性エリテマトーデス(SLE)
+      8. 肝硬変
+    見逃されやすい病気:
+      1. 痛風・偽痛風
+      2. [指定難病] 成人スティル(スチル)病
+
+Disease Differences:
+  Only in c-diagnosis: 粉瘤, 急性扁桃炎・咽頭炎, 結節性紅斑, 梅毒, 熱中症, キャッスルマン病・TAFRO症候群, 急性喉頭蓋炎
+  Only in askman: 痛風・偽痛風, 糖尿病性壊疽, 関節リウマチ, 全身性エリテマトーデス(SLE), 肝硬変, 痛風・偽痛風, 成人スティル(スチル)病
+
+Question Count Mismatch:
+  C-Diagnosis: 34
+  Askman: 32
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎨 Result Page Elements Differences (Warning)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Buttons:
+  ユビー機能ボタン:
+    C-Diagnosis (0個): 
+    Askman (1個): いますぐ取れる対処法
+    Askmanのみ: いますぐ取れる対処法
+
+Sections:
+  市販薬セクション: C-Diagnosis なし, Askman あり
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 Detailed Question Log Comparison
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q1]
+    URL: https://staging.ubie.app/qa/relationship
+    Question: 誰の症状について調べますか？
+    Options: 自分, 家族, その他
+    Selected: 自分
+
+  [Askman Q1]
+    URL: https://staging.ubie.app/qa/question/person
+    Question: 誰の症状について調べますか？
+    Options: 自分, 家族, その他
+    Selected: 自分
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q2]
+    URL: https://staging.ubie.app/qa/age
+    Question: 年齢を教えてください
+    Options: 
+    Selected: 40歳
+
+  [Askman Q2]
+    URL: https://staging.ubie.app/qa/question/age
+    Question: 年齢を教えてください
+    Options: 
+    Selected: 40歳
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q3]
+    URL: https://staging.ubie.app/qa/sex
+    Question: 性別を教えてください
+    Options: 男性, 女性
+    Selected: 男性
+
+  [Askman Q3]
+    URL: https://staging.ubie.app/qa/question/sex
+    Question: 性別を教えてください
+    Options: 男性, 女性
+    Selected: 男性
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q4]
+    URL: https://staging.ubie.app/qa/height
+    Question: 身長を教えてください
+    Options: 80-200cm
+    Selected: 157cm
+
+  [Askman Q4]
+    URL: https://staging.ubie.app/qa/question/height
+    Question: 身長を教えてください
+    Options: 80-200cm
+    Selected: 157cm
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q5]
+    URL: https://staging.ubie.app/qa/weight
+    Question: 体重を教えてください
+    Options: 10-130kg
+    Selected: 50kg
+
+  [Askman Q5]
+    URL: https://staging.ubie.app/qa/question/weight
+    Question: 体重を教えてください
+    Options: 10-130kg
+    Selected: 50kg
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q6]
+    URL: https://staging.ubie.app/qa/question/main-complaint
+    Question: 現在、最も気になる症状を教えてください。
+    Options: 熱がある, 熱が何回も出る, 熱が出ていてインフルエンザだと思う, 胸痛がある, 体が熱を持っている, 臀部が熱を持っている, すねが熱を持っている, 下腿が熱を持っている, 大腿が熱を持っている, 太ももが熱を持っている
+    Selected: 熱がある
+
+  [Askman Q6]
+    URL: https://staging.ubie.app/qa/question/main-symptom
+    Question: 現在、最も気になる症状を教えてください。
+    Options: 熱がある, 熱が何回も出る, 熱が出ていてインフルエンザだと思う, 胸痛がある, 体が熱を持っている, 臀部が熱を持っている, すねが熱を持っている, 下腿が熱を持っている, 大腿が熱を持っている, 太ももが熱を持っている
+    Selected: 熱がある
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q7]
+    URL: https://staging.ubie.app/qa/question/main-complaint/confirm
+    Question: 【熱がある】に関する質問に進みます
+    Options: 
+    Selected: 次へ進む
+
+  [Askman Q7]
+    URL: https://staging.ubie.app/qa/question/main-symptom/confirm
+    Question: 【熱がある】に関する質問に進みます
+    Options: 
+    Selected: 次へ進む
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q8]
+    URL: https://staging.ubie.app/qa/question/question-16123
+    Question: 【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman Q8]
+    URL: https://staging.ubie.app/qa/question/question-16123
+    Question: 【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q9]
+    URL: https://staging.ubie.app/qa/question/question-8393
+    Question: 今回の【熱がある】は【いつから】ですか？
+    Options: 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman Q9]
+    URL: https://staging.ubie.app/qa/question/question-8393
+    Question: 今回の【熱がある】は【いつから】ですか？
+    Options: 回答をとばす
+    Selected: 回答をとばす
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q10]
+    URL: https://staging.ubie.app/qa/question/question-7749
+    Question: 【最高体温】はどれくらいですか？
+    Options: 37.9℃ 以下, 38.0℃ 以上, 回答をとばす
+    Selected: 37.9℃ 以下
+
+  [Askman Q10]
+    URL: https://staging.ubie.app/qa/question/question-7749
+    Question: 【最高体温】はどれくらいですか？
+    Options: 37.9℃ 以下, 38.0℃ 以上, 回答をとばす
+    Selected: 37.9℃ 以下
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q11]
+    URL: https://staging.ubie.app/qa/question/question-8142
+    Question: 【熱がある】の【変化】として、一番近いものはどれですか？
+    Options: 悪化している, 改善も悪化もしていない, 改善したがまだ残っている, 改善し、現在はない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman Q11]
+    URL: https://staging.ubie.app/qa/question/question-8142
+    Question: 【熱がある】の【変化】として、一番近いものはどれですか？
+    Options: 悪化している, 改善も悪化もしていない, 改善したがまだ残っている, 改善し、現在はない, 回答をとばす
+    Selected: 回答をとばす
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q12]
+    URL: https://staging.ubie.app/qa/question/question-10709
+    Question: つぎのような症状はありますか？当てはまるものを【全て】選んでください
+    Options: 吐き気・嘔吐がある, 頭痛がある・頭が重い, のどの痛みがある, せきが出る, たんが出る, 鼻水が出る, 筋肉痛がある, 関節痛がある, 体のだるさがある, 息苦しさを感じる, 寒気がする, 顔の痛みがある, お腹の痛みがある, 便がゆるい・下痢をしている, 背中の痛みがある, 尿を出すときに痛みがある, 皮ふに何らかの異常がある, 白目や皮ふが黄色くなっている, においの感じ方がおかしい, 最近、味覚が変わったと感じることがある, この中に該当なし, 回答をとばす
+    Selected: 体のだるさがある
+
+  [Askman Q12]
+    URL: https://staging.ubie.app/qa/question/question-10709
+    Question: つぎのような症状はありますか？当てはまるものを【全て】選んでください
+    Options: 吐き気・嘔吐がある, 頭痛がある・頭が重い, のどの痛みがある, せきが出る, たんが出る, 鼻水が出る, 筋肉痛がある, 関節痛がある, 体のだるさがある, 息苦しさを感じる, 寒気がする, 顔の痛みがある, お腹の痛みがある, 便がゆるい・下痢をしている, 背中の痛みがある, 尿を出すときに痛みがある, 皮ふに何らかの異常がある, 白目や皮ふが黄色くなっている, においの感じ方がおかしい, 最近、味覚が変わったと感じることがある, この中に該当なし, 回答をとばす
+    Selected: 体のだるさがある
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q13]
+    URL: https://staging.ubie.app/qa/question/question-15705_health_history_general
+    Question: これまでにかかったことがある病気を【全て】選んでください
+    Options: 気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎, リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群, アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー, 生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧, 皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹, 腎臓の病気慢性腎臓病・慢性腎不全, 胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍, 心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈, 精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）, がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん, この中に該当なし, 回答をとばす
+    Selected: 心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈
+
+  [Askman Q13]
+    URL: https://staging.ubie.app/qa/question/question-15705
+    Question: これまでにかかったことがある病気を【全て】選んでください
+    Options: 気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎, リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群, アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー, 生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧, 皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹, 腎臓の病気慢性腎臓病・慢性腎不全, 胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍, 心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈, 精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）, がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん, この中に該当なし, 回答をとばす
+    Selected: 心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q14]
+    URL: https://staging.ubie.app/qa/question/question-15920
+    Question: 【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。
+    Options: 心不全, 心筋梗塞・不安定狭心症, 不整脈, この中に該当なし, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman Q14]
+    URL: https://staging.ubie.app/qa/question/question-15920
+    Question: 【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。
+    Options: 心不全, 心筋梗塞・不安定狭心症, 不整脈, この中に該当なし, 回答をとばす
+    Selected: 回答をとばす
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q15]
+    URL: https://staging.ubie.app/qa/question/question-15656
+    Question: 以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。
+    Options: アトピー性皮膚炎, 気管支喘息, 鼻茸（鼻ポリープ）, 結節性痒疹, 慢性蕁麻疹（じんましん）, COPD（慢性閉塞性肺疾患）, この中に該当なし, 回答をとばす
+    Selected: 結節性痒疹
+
+  [Askman Q15]
+    URL: https://staging.ubie.app/qa/question/question-15656
+    Question: 以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。
+    Options: アトピー性皮膚炎, 気管支喘息, 鼻茸（鼻ポリープ）, 結節性痒疹, 慢性蕁麻疹（じんましん）, COPD（慢性閉塞性肺疾患）, この中に該当なし, 回答をとばす
+    Selected: 結節性痒疹
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q16]
+    URL: https://staging.ubie.app/qa/question/question-16275
+    Question: 以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。
+    Options: 高血圧症, 脂質異常症, 糖尿病, 慢性腎臓病・慢性腎不全, 高尿酸血症, 痛風, 睡眠時無呼吸症候群, 脂肪肝, 脳梗塞, 一過性脳虚血発作, 変形性膝関節症, 変形性股関節症, 変形性脊椎症, 肥満低換気症候群, この中に該当なし, 回答をとばす
+    Selected: 変形性膝関節症
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q17]
+    URL: https://staging.ubie.app/qa/question/question-19745
+    Question: これまで、【体重を減らす方法】について医師に相談したことがありますか？
+    Options: 相談したことがある, 相談したいが、実際にしたことはない, 相談したいと思ったこともない, 覚えていない, 回答をとばす
+    Selected: 相談したいが、実際にしたことはない
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q18]
+    URL: https://staging.ubie.app/qa/question/question-19012
+    Question: 現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。
+    Options: 最近指導を受けたばかり, 1ヶ月ほど継続している, 2ヶ月から3ヶ月ほど継続している, 4ヶ月から5ヶ月ほど継続している, 6ヶ月以上継続している, 指導を受けたが、やめてしまった, 指導を受けたことはない, 回答をとばす
+    Selected: 1ヶ月ほど継続している
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q19]
+    URL: https://staging.ubie.app/qa/question/question-15455
+    Question: 医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？
+    Options: ある（慢性腎臓病と診断済み）, ある（慢性腎臓病と診断されていない）, ない, ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている, 回答をとばす
+    Selected: ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている
+
+  [Askman Q16]
+    URL: https://staging.ubie.app/qa/question/question-15455
+    Question: 医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？
+    Options: ある（慢性腎臓病と診断済み）, ある（慢性腎臓病と診断されていない）, ない, ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている, 回答をとばす
+    Selected: ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q20]
+    URL: https://staging.ubie.app/qa/question/symptom-emergence-2238
+    Question: 今回、体のだるさを感じたのはどのくらい前からですか？
+    Options: 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman Q17]
+    URL: https://staging.ubie.app/qa/question/symptom-emergence-2238
+    Question: 今回、体のだるさを感じたのはどのくらい前からですか？
+    Options: 回答をとばす
+    Selected: 回答をとばす
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q21]
+    URL: https://staging.ubie.app/qa/question/symptom-782
+    Question: 現在、皮ふにコブ状のものがある、または触れますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q22]
+    URL: https://staging.ubie.app/qa/question/symptom-327
+    Question: リンパ節(首や脇の下、股の付け根、耳の後ろなどにあります)がはれて大きくなっていると感じますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: わからない
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q23]
+    URL: https://staging.ubie.app/qa/question/symptom-1717
+    Question: 皮膚に水ぶくれが出来ていますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q24]
+    URL: https://staging.ubie.app/qa/question/symptom-1679
+    Question: 首の周りが腫れていますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q25]
+    URL: https://staging.ubie.app/qa/question/symptom-208
+    Question: 食べ物が飲み込みにくいと感じていますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q26]
+    URL: https://staging.ubie.app/qa/question/symptom-206
+    Question: よだれが飲み込めない状態ですか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q18]
+    URL: https://staging.ubie.app/qa/question/symptom-2088
+    Question: 足の指が痛みますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q27]
+    URL: https://staging.ubie.app/qa/question/symptom-2629
+    Question: 首にしこりがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: いいえ
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q28]
+    URL: https://staging.ubie.app/qa/question/symptom-1563
+    Question: 首の痛みやこわばりがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: わからない
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q29]
+    URL: https://staging.ubie.app/qa/question/symptom-789
+    Question: 体の一部に熱をもっている部分がありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q19]
+    URL: https://staging.ubie.app/qa/question/symptom-pain-7826
+    Question: 【足の指に痛みがある】について、最もつらかったときを1から10で表すとどれぐらいの痛みでしたか？
+    Options: 回答をとばす
+    Selected: 回答をとばす
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q20]
+    URL: https://staging.ubie.app/qa/question/symptom-1610
+    Question: どこかの関節に赤みや腫れがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: わからない
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q21]
+    URL: https://staging.ubie.app/qa/question/symptom-2005
+    Question: 患部は赤くなっていますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q22]
+    URL: https://staging.ubie.app/qa/question/symptom-1551
+    Question: 関節が熱くなっている感じがしますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q23]
+    URL: https://staging.ubie.app/qa/question/symptom-2147
+    Question: これまでに【高尿酸血症】と診断されたことはありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q24]
+    URL: https://staging.ubie.app/qa/question/symptom-2086
+    Question: 膝（ひざ）が痛みますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: わからない
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q25]
+    URL: https://staging.ubie.app/qa/question/symptom-1373
+    Question: 関節が動かしにくいですか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q26]
+    URL: https://staging.ubie.app/qa/question/symptom-2006
+    Question: 患部は腫れていますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q27]
+    URL: https://staging.ubie.app/qa/question/symptom-2177
+    Question: 手や足が熱くなっていると感じますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: いいえ
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q30]
+    URL: https://staging.ubie.app/qa/question/continue-symptom-answer
+    Question: ここまでの回答でおおよその結果を確認できます
+    Options: ここまでの回答で結果を見る, このまま回答を続ける
+    Selected: ここまでの回答で結果を見る
+
+  [Askman Q28]
+    URL: https://staging.ubie.app/qa/question/continue-symptom-answer
+    Question: ここまでの回答でおおよその結果を確認できます
+    Options: ここまでの回答で結果を見る, このまま回答を続ける
+    Selected: ここまでの回答で結果を見る
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q31]
+    URL: https://staging.ubie.app/qa/question/question-predicted-disease
+    Question: この中でかかったことがある病気をすべて選んでください
+    Options: 化膿性リンパ節炎, 粉瘤, 急性扁桃炎・咽頭炎, 結節性紅斑, 水いぼ(伝染性軟属腫), 慢性肝炎(B型慢性肝炎・C型慢性肝炎など), 梅毒, 熱中症, サルコイドーシス, 溶連菌感染症, この中に該当なし, 回答をとばす
+    Selected: 化膿性リンパ節炎
+
+  [Askman Q29]
+    URL: https://staging.ubie.app/qa/question/predicted-disease-question
+    Question: この中でかかったことがある病気をすべて選んでください
+    Options: 痛風・偽痛風, 糖尿病性壊疽, 慢性肝炎(B型慢性肝炎・C型慢性肝炎など), 関節リウマチ(類縁疾患も含む), 化膿性リンパ節炎, 伝染性軟属腫(水いぼ), 全身性エリテマトーデス(SLE), 肝硬変, リウマチ性多発筋痛症, この中に該当なし, 回答をとばす
+    Selected: 痛風・偽痛風
+
+  ⚠️  DIFFERENCES: URL differs, Selected option differs, Available options differ
+      C-Diagnosis only: 粉瘤, 急性扁桃炎・咽頭炎, 結節性紅斑
+      Askman only: 痛風・偽痛風, 糖尿病性壊疽, 関節リウマチ(類縁疾患も含む)
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q32]
+    URL: https://staging.ubie.app/qa/question/disease-under-treatment
+    Question: この中に治療中、またはお薬を飲んでいる病気はありますか？
+    Options: 結節性痒疹(けっせつせいようしん), 変形性膝関節症, 化膿性リンパ節炎, この中に該当なし
+    Selected: 化膿性リンパ節炎
+
+  [Askman Q30]
+    URL: https://staging.ubie.app/qa/question/disease-under-treatment
+    Question: この中に治療中、またはお薬を飲んでいる病気はありますか？
+    Options: 痛風, この中に該当なし
+    Selected: 痛風
+
+  ⚠️  DIFFERENCES: Selected option differs, Available options differ
+      C-Diagnosis only: 結節性痒疹(けっせつせいようしん), 変形性膝関節症, 化膿性リンパ節炎
+      Askman only: 痛風
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis] - No question logged
+
+  [Askman Q31]
+    URL: https://staging.ubie.app/qa/question/diagnosed-poorly-controlled-disease-395-visit-status
+    Question: 【痛風】の治療のため、病院に通っていますか？
+    Options: 病院に通っている, 病院に通っていない, 回答をとばす
+    Selected: 病院に通っていない
+
+  ⚠️  DIFFERENCES: Question only in Askman
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q33]
+    URL: https://staging.ubie.app/qa/question/symptom-care-needs
+    Question: 今回、【熱がある】についてどのような対応をしたいですか？
+    Options: 市販薬で対処したい, 医師に診てもらいたい, 症状に関する病気を詳しく知りたい, 該当するものがない, 回答をとばす
+    Selected: 症状に関する病気を詳しく知りたい
+
+  [Askman Q32]
+    URL: https://staging.ubie.app/qa/question/symptom-care-needs
+    Question: 今回、【熱がある】についてどのような対応をしたいですか？
+    Options: 市販薬で対処したい, 医師に診てもらいたい, 症状に関する病気を詳しく知りたい, 該当するものがない, 回答をとばす
+    Selected: 症状に関する病気を詳しく知りたい
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q34]
+    URL: https://staging.ubie.app/qa/question/remaining-symptoms
+    Question: あなたが伝えたい症状は伝えられましたか？
+    Options: はい, いいえ, 回答をとばす
+    Selected: はい
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis

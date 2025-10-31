@@ -1,4 +1,6 @@
 import { TestResult, ComparisonResult, DiseaseResult } from '../types';
+import * as fs from 'fs';
+import * as path from 'path';
 
 export class ComparisonEngine {
   /**
@@ -7,6 +9,19 @@ export class ComparisonEngine {
   compare(cDiagnosisResult: TestResult, askmanResult: TestResult): ComparisonResult {
     const differences: ComparisonResult['differences'] = {};
     let passed = true;
+
+    // Create output directory for this test
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5).replace('T', '_');
+    const scenarioName = cDiagnosisResult.scenario.name.replace(/[\/\\:*?"<>|]/g, '_');
+    const outputDir = `test-results/${timestamp}_${scenarioName}`;
+
+    // Create directory if it doesn't exist
+    if (!fs.existsSync('test-results')) {
+      fs.mkdirSync('test-results', { recursive: true });
+    }
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
 
     // Compare disease lists
     const diseaseMismatch = this.compareDiseases(
@@ -27,10 +42,21 @@ export class ComparisonEngine {
       passed = false;
     }
 
+    // Compare LocalStorage
+    const localStorageMismatch = this.compareLocalStorage(
+      cDiagnosisResult.localStorageSnapshot,
+      askmanResult.localStorageSnapshot
+    );
+    if (localStorageMismatch) {
+      (differences as any).localStorageMismatch = localStorageMismatch;
+      // LocalStorageの差分は警告のみで、passedには影響しない
+    }
+
     return {
       passed,
       cDiagnosisResult,
       askmanResult,
+      outputDir,
       differences,
     };
   }
@@ -249,6 +275,63 @@ export class ComparisonEngine {
   }
 
   /**
+   * Compare LocalStorage snapshots
+   */
+  private compareLocalStorage(cStorage: any, aStorage: any): any {
+    if (!cStorage || !aStorage) {
+      return undefined;
+    }
+
+    const differences: any = {};
+
+    // Compare user-info
+    const cUserInfo = cStorage.userInfo;
+    const aUserInfo = aStorage.userInfo;
+
+    if (cUserInfo || aUserInfo) {
+      const userInfoDiff: any = {};
+
+      if (cUserInfo?.age !== aUserInfo?.age) {
+        userInfoDiff.age = { cDiagnosis: cUserInfo?.age, askman: aUserInfo?.age };
+      }
+      if (cUserInfo?.sex !== aUserInfo?.sex) {
+        userInfoDiff.sex = { cDiagnosis: cUserInfo?.sex, askman: aUserInfo?.sex };
+      }
+      if (cUserInfo?.relationship !== aUserInfo?.relationship) {
+        userInfoDiff.relationship = { cDiagnosis: cUserInfo?.relationship, askman: aUserInfo?.relationship };
+      }
+
+      if (Object.keys(userInfoDiff).length > 0) {
+        differences.userInfo = userInfoDiff;
+      }
+    }
+
+    // Compare medico-user
+    const cMedicoUser = cStorage.medicoUser?.medicoUser;
+    const aMedicoUser = aStorage.medicoUser?.medicoUser;
+
+    if (cMedicoUser || aMedicoUser) {
+      const medicoUserDiff: any = {};
+
+      if (cMedicoUser?.age !== aMedicoUser?.age) {
+        medicoUserDiff.age = { cDiagnosis: cMedicoUser?.age, askman: aMedicoUser?.age };
+      }
+      if (cMedicoUser?.sex !== aMedicoUser?.sex) {
+        medicoUserDiff.sex = { cDiagnosis: cMedicoUser?.sex, askman: aMedicoUser?.sex };
+      }
+      if (cMedicoUser?.relationship !== aMedicoUser?.relationship) {
+        medicoUserDiff.relationship = { cDiagnosis: cMedicoUser?.relationship, askman: aMedicoUser?.relationship };
+      }
+
+      if (Object.keys(medicoUserDiff).length > 0) {
+        differences.medicoUser = medicoUserDiff;
+      }
+    }
+
+    return Object.keys(differences).length > 0 ? differences : undefined;
+  }
+
+  /**
    * Format comparison result for console output
    */
   formatResult(result: ComparisonResult): string {
@@ -355,6 +438,42 @@ export class ComparisonEngine {
       lines.push('Question Count Mismatch:');
       lines.push(`  C-Diagnosis: ${result.differences.questionCountMismatch.cDiagnosis}`);
       lines.push(`  Askman: ${result.differences.questionCountMismatch.askman}`);
+    }
+
+    // Show LocalStorage comparison if present
+    if ((result.differences as any).localStorageMismatch) {
+      lines.push('');
+      lines.push('⚠️  LocalStorage Mismatch (Warning - does not affect pass/fail):');
+
+      const lsMismatch = (result.differences as any).localStorageMismatch;
+
+      if (lsMismatch.userInfo) {
+        lines.push('');
+        lines.push('  user-info:');
+        if (lsMismatch.userInfo.age) {
+          lines.push(`    - age: C-Diagnosis=${lsMismatch.userInfo.age.cDiagnosis}, Askman=${lsMismatch.userInfo.age.askman}`);
+        }
+        if (lsMismatch.userInfo.sex) {
+          lines.push(`    - sex: C-Diagnosis=${lsMismatch.userInfo.sex.cDiagnosis}, Askman=${lsMismatch.userInfo.sex.askman}`);
+        }
+        if (lsMismatch.userInfo.relationship) {
+          lines.push(`    - relationship: C-Diagnosis=${lsMismatch.userInfo.relationship.cDiagnosis}, Askman=${lsMismatch.userInfo.relationship.askman}`);
+        }
+      }
+
+      if (lsMismatch.medicoUser) {
+        lines.push('');
+        lines.push('  medico-user:');
+        if (lsMismatch.medicoUser.age) {
+          lines.push(`    - age: C-Diagnosis=${lsMismatch.medicoUser.age.cDiagnosis}, Askman=${lsMismatch.medicoUser.age.askman}`);
+        }
+        if (lsMismatch.medicoUser.sex) {
+          lines.push(`    - sex: C-Diagnosis=${lsMismatch.medicoUser.sex.cDiagnosis}, Askman=${lsMismatch.medicoUser.sex.askman}`);
+        }
+        if (lsMismatch.medicoUser.relationship) {
+          lines.push(`    - relationship: C-Diagnosis=${lsMismatch.medicoUser.relationship.cDiagnosis}, Askman=${lsMismatch.medicoUser.relationship.askman}`);
+        }
+      }
     }
 
     // Show error details if present

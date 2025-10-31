@@ -1,0 +1,120 @@
+{
+  "timestamp": "2025-10-17T15:32:56.042+09:00",
+  "scenarioName": "40歳男性・下痢",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 0,
+      "diseaseCount": 0,
+      "executionTimeMs": 43785
+    },
+    "askman": {
+      "questionCount": 7,
+      "diseaseCount": 0,
+      "executionTimeMs": 80743
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [],
+    "askman": []
+  },
+  "questionLogs": {
+    "cDiagnosis": [],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760682705727
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "40歳",
+        "timestamp": 1760682707299
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760682708144
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "161cm",
+        "timestamp": 1760682709918
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "54kg",
+        "timestamp": 1760682711311
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "availableOptions": [
+          "お腹が痛い",
+          "発熱",
+          "だるい",
+          "頭痛",
+          "喉が痛い",
+          "吐き気"
+        ],
+        "timestamp": 1760682722083,
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "selectedOption": "吐き気"
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "availableOptions": [
+          "吐き気がある",
+          "吐き気のために食事が取れない",
+          "頭を動かすと吐き気がでる"
+        ],
+        "timestamp": 1760682752147,
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "selectedOption": "頭を動かすと吐き気がでる"
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "availableOptions": [
+          "クリック可能な領域（SVG/画像）"
+        ],
+        "timestamp": 1760682753065,
+        "questionText": "【頭を動かすと吐き気がでる】に関する質問に進みます",
+        "selectedOption": "次へ進む"
+      }
+    ]
+  },
+  "differences": {
+    "questionCountMismatch": {
+      "cDiagnosis": 0,
+      "askman": 7
+    }
+  }
+}

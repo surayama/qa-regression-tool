@@ -1,0 +1,992 @@
+{
+  "timestamp": "2025-10-17T11:27:52.289+09:00",
+  "scenarioName": "45歳男性・胃痛",
+  "passed": false,
+  "summary": {
+    "cDiagnosis": {
+      "questionCount": 32,
+      "diseaseCount": 10,
+      "executionTimeMs": 59813
+    },
+    "askman": {
+      "questionCount": 30,
+      "diseaseCount": 10,
+      "executionTimeMs": 81971
+    }
+  },
+  "diseases": {
+    "cDiagnosis": [
+      {
+        "id": "胃食道逆流症(GERD)・逆流性食道炎",
+        "name": "胃食道逆流症(GERD)・逆流性食道炎",
+        "section": "related"
+      },
+      {
+        "id": "機能性ディスペプシア",
+        "name": "機能性ディスペプシア",
+        "section": "related"
+      },
+      {
+        "id": "胃炎",
+        "name": "胃炎",
+        "section": "related"
+      },
+      {
+        "id": "胃潰瘍・十二指腸潰瘍",
+        "name": "胃潰瘍・十二指腸潰瘍",
+        "section": "related"
+      },
+      {
+        "id": "睡眠時無呼吸症候群",
+        "name": "睡眠時無呼吸症候群",
+        "section": "related"
+      },
+      {
+        "id": "呑気症(空気嚥下症)",
+        "name": "呑気症(空気嚥下症)",
+        "section": "related"
+      },
+      {
+        "id": "かぜ症候群(上気道炎)",
+        "name": "かぜ症候群(上気道炎)",
+        "section": "related"
+      },
+      {
+        "id": "便秘症",
+        "name": "便秘症",
+        "section": "related"
+      },
+      {
+        "id": "胃がん",
+        "name": "胃がん",
+        "section": "easily-missed"
+      },
+      {
+        "id": "強皮症",
+        "name": "強皮症",
+        "label": "指定難病と関連あり",
+        "section": "easily-missed"
+      }
+    ],
+    "askman": [
+      {
+        "id": "胃食道逆流症(GERD)・逆流性食道炎",
+        "name": "胃食道逆流症(GERD)・逆流性食道炎",
+        "section": "related"
+      },
+      {
+        "id": "機能性ディスペプシア",
+        "name": "機能性ディスペプシア",
+        "section": "related"
+      },
+      {
+        "id": "胃炎",
+        "name": "胃炎",
+        "section": "related"
+      },
+      {
+        "id": "睡眠時無呼吸症候群",
+        "name": "睡眠時無呼吸症候群",
+        "section": "related"
+      },
+      {
+        "id": "胃潰瘍・十二指腸潰瘍",
+        "name": "胃潰瘍・十二指腸潰瘍",
+        "section": "related"
+      },
+      {
+        "id": "呑気症(空気嚥下症)",
+        "name": "呑気症(空気嚥下症)",
+        "section": "related"
+      },
+      {
+        "id": "かぜ症候群(上気道炎)",
+        "name": "かぜ症候群(上気道炎)",
+        "section": "related"
+      },
+      {
+        "id": "便秘症",
+        "name": "便秘症",
+        "section": "related"
+      },
+      {
+        "id": "胃食道逆流症(GERD)・逆流性食道炎",
+        "name": "胃食道逆流症(GERD)・逆流性食道炎",
+        "section": "easily-missed"
+      },
+      {
+        "id": "安定狭心症(労作性狭心症)",
+        "name": "安定狭心症(労作性狭心症)",
+        "section": "easily-missed"
+      }
+    ]
+  },
+  "questionLogs": {
+    "cDiagnosis": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/relationship",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760668000060
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "45歳",
+        "timestamp": 1760668000287
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760668000376
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "182cm",
+        "timestamp": 1760668001653
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "75kg",
+        "timestamp": 1760668002713
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-complaint",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "胃が痛い",
+          "鼻が腫れていて痛い",
+          "手首の血管が膨らんでいて痛い",
+          "耳の後ろの骨が出っ張っていて痛い",
+          "胃と背中が痛い",
+          "胃を押すと痛い",
+          "胃の左側が痛い",
+          "腰が痛い",
+          "胃もたれがある"
+        ],
+        "selectedOption": "胃が痛い",
+        "timestamp": 1760668004208
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-complaint/confirm",
+        "questionText": "【胃が痛い】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760668004491
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-10717",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "お腹の痛みがある",
+          "吐き気・嘔吐がある",
+          "食べ物が飲み込みにくい",
+          "血を吐いた",
+          "食欲がない",
+          "胸の痛みがある",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "胸の痛みがある",
+        "timestamp": 1760668005733
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-7908",
+        "questionText": "今回の【胃が痛い】はどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668007574
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-7737",
+        "questionText": "これまでに同じような【胃が痛い】を経験したことはありますか？一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "月に数回程度は同じような症状がある",
+          "ほぼ毎日同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "年に数回程度は同じような症状がある",
+        "timestamp": 1760668008706
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-9965",
+        "questionText": "【胃が痛い】はどのくらい続いていますか？",
+        "availableOptions": [
+          "15分以内",
+          "15-30分程度",
+          "30分以上続いている",
+          "回答をとばす"
+        ],
+        "selectedOption": "15-30分程度",
+        "timestamp": 1760668009900
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-9576",
+        "questionText": "【胃が痛い】のはじまりから現在までの変化として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "改善も悪化もしていない",
+        "timestamp": 1760668011081
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-9177",
+        "questionText": "【胃が痛い】はどのような様子・状態ですか",
+        "availableOptions": [
+          "胸や胃のあたりがむかむかする",
+          "熱いものが込み上げて来る感じの胸やけがする",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "熱いものが込み上げて来る感じの胸やけがする",
+        "timestamp": 1760668012258
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-9205",
+        "questionText": "【胃が痛い】が出現・悪化・改善する要素として当てはまるものを教えてください",
+        "availableOptions": [
+          "胸やけは食後に出る",
+          "食事・水を飲むことによって胸の症状がやわらぐ",
+          "食べ過ぎたり、早食いした時に胸焼けがする",
+          "横になると胸やけは悪くなる",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668014020
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-10627",
+        "questionText": "これまでに逆流性食道炎(胃食道逆流症)と医師に言われたことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668015041
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-15705_health_history_general",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+        "timestamp": 1760668016202
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-15920",
+        "questionText": "【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "心不全",
+          "心筋梗塞・不安定狭心症",
+          "不整脈",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668018065
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760668019281
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-16275",
+        "questionText": "以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "高血圧症",
+          "脂質異常症",
+          "糖尿病",
+          "慢性腎臓病・慢性腎不全",
+          "高尿酸血症",
+          "痛風",
+          "睡眠時無呼吸症候群",
+          "脂肪肝",
+          "脳梗塞",
+          "一過性脳虚血発作",
+          "変形性膝関節症",
+          "変形性股関節症",
+          "変形性脊椎症",
+          "肥満低換気症候群",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "糖尿病",
+        "timestamp": 1760668021243
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/question-19745",
+        "questionText": "これまで、【体重を減らす方法】について医師に相談したことがありますか？",
+        "availableOptions": [
+          "相談したことがある",
+          "相談したいが、実際にしたことはない",
+          "相談したいと思ったこともない",
+          "覚えていない",
+          "回答をとばす"
+        ],
+        "selectedOption": "相談したいが、実際にしたことはない",
+        "timestamp": 1760668022989
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/question-19012",
+        "questionText": "現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。",
+        "availableOptions": [
+          "最近指導を受けたばかり",
+          "1ヶ月ほど継続している",
+          "2ヶ月から3ヶ月ほど継続している",
+          "4ヶ月から5ヶ月ほど継続している",
+          "6ヶ月以上継続している",
+          "指導を受けたが、やめてしまった",
+          "指導を受けたことはない",
+          "回答をとばす"
+        ],
+        "selectedOption": "1ヶ月ほど継続している",
+        "timestamp": 1760668024475
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760668025755
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-2612",
+        "questionText": "のどの圧迫感や詰まるような感じがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760668027217
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-1237",
+        "questionText": "現在、胃酸がこみ上げて来る感じや、のどの奥が酸っぱい感じがしますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "わからない",
+        "timestamp": 1760668028633
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-emergence-2232",
+        "questionText": "今回、胸の痛みや苦しい感じが出たのはどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668030072
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-2268",
+        "questionText": "胸の痛み、もしくは違和感の現れ方について、一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "全く前ぶれのない突然の発症だった",
+          "速やかに悪化した",
+          "徐々に症状が現れた",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668031223
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-pain-2199",
+        "questionText": "【胸の痛み】について、最もつらかったときを1から10で表すとどれぐらいの痛みでしたか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668032485
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/symptom-2803",
+        "questionText": "これまでにピロリ菌の除菌治療を受けたことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760668033626
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760668034950
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/question-predicted-disease",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "胃食道逆流症(GERD)・逆流性食道炎",
+          "機能性ディスペプシア",
+          "胃炎",
+          "胃潰瘍・十二指腸潰瘍",
+          "睡眠時無呼吸症候群",
+          "呑気症(空気嚥下症)",
+          "便秘症",
+          "胃がん",
+          "強皮症",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "胃潰瘍・十二指腸潰瘍",
+        "timestamp": 1760668037700
+      },
+      {
+        "questionNumber": 31,
+        "url": "https://staging.ubie.app/qa/question/disease-under-treatment",
+        "questionText": "この中に治療中、またはお薬を飲んでいる病気はありますか？",
+        "availableOptions": [
+          "結節性痒疹(けっせつせいようしん)",
+          "糖尿病",
+          "胃潰瘍・十二指腸潰瘍",
+          "この中に該当なし"
+        ],
+        "selectedOption": "胃潰瘍・十二指腸潰瘍",
+        "timestamp": 1760668039699
+      },
+      {
+        "questionNumber": 32,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【胃が痛い】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "症状に関する病気を詳しく知りたい",
+        "timestamp": 1760668042018
+      }
+    ],
+    "askman": [
+      {
+        "questionNumber": 1,
+        "url": "https://staging.ubie.app/qa/question/person",
+        "questionText": "誰の症状について調べますか？",
+        "availableOptions": [
+          "自分",
+          "家族",
+          "その他"
+        ],
+        "selectedOption": "自分",
+        "timestamp": 1760668001092
+      },
+      {
+        "questionNumber": 2,
+        "url": "https://staging.ubie.app/qa/question/age",
+        "questionText": "年齢を教えてください",
+        "availableOptions": [],
+        "selectedOption": "45歳",
+        "timestamp": 1760668001845
+      },
+      {
+        "questionNumber": 3,
+        "url": "https://staging.ubie.app/qa/question/sex",
+        "questionText": "性別を教えてください",
+        "availableOptions": [
+          "男性",
+          "女性"
+        ],
+        "selectedOption": "男性",
+        "timestamp": 1760668002691
+      },
+      {
+        "questionNumber": 4,
+        "url": "https://staging.ubie.app/qa/question/height",
+        "questionText": "身長を教えてください",
+        "availableOptions": [
+          "80-200cm"
+        ],
+        "selectedOption": "182cm",
+        "timestamp": 1760668004444
+      },
+      {
+        "questionNumber": 5,
+        "url": "https://staging.ubie.app/qa/question/weight",
+        "questionText": "体重を教えてください",
+        "availableOptions": [
+          "10-130kg"
+        ],
+        "selectedOption": "75kg",
+        "timestamp": 1760668007512
+      },
+      {
+        "questionNumber": 6,
+        "url": "https://staging.ubie.app/qa/question/main-symptom",
+        "questionText": "現在、最も気になる症状を教えてください。",
+        "availableOptions": [
+          "胃が痛い",
+          "鼻が腫れていて痛い",
+          "手首の血管が膨らんでいて痛い",
+          "耳の後ろの骨が出っ張っていて痛い",
+          "胃と背中が痛い",
+          "胃を押すと痛い",
+          "胃の左側が痛い",
+          "腰が痛い",
+          "胃もたれがある"
+        ],
+        "selectedOption": "胃が痛い",
+        "timestamp": 1760668008891
+      },
+      {
+        "questionNumber": 7,
+        "url": "https://staging.ubie.app/qa/question/main-symptom/confirm",
+        "questionText": "【胃が痛い】に関する質問に進みます",
+        "availableOptions": [],
+        "selectedOption": "次へ進む",
+        "timestamp": 1760668009308
+      },
+      {
+        "questionNumber": 8,
+        "url": "https://staging.ubie.app/qa/question/question-16123",
+        "questionText": "【これまでに】タバコ（電子タバコ等も含む）を吸ったことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668010631
+      },
+      {
+        "questionNumber": 9,
+        "url": "https://staging.ubie.app/qa/question/question-10717",
+        "questionText": "つぎのような症状はありますか？当てはまるものを全て選んでください",
+        "availableOptions": [
+          "お腹の痛みがある",
+          "吐き気・嘔吐がある",
+          "食べ物が飲み込みにくい",
+          "血を吐いた",
+          "食欲がない",
+          "胸の痛みがある",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "胸の痛みがある",
+        "timestamp": 1760668012020
+      },
+      {
+        "questionNumber": 10,
+        "url": "https://staging.ubie.app/qa/question/question-7908",
+        "questionText": "今回の【胃が痛い】はどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668014706
+      },
+      {
+        "questionNumber": 11,
+        "url": "https://staging.ubie.app/qa/question/question-7737",
+        "questionText": "これまでに同じような【胃が痛い】を経験したことはありますか？一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "初めての症状である",
+          "これまでに1回以上同じような症状があった",
+          "年に数回程度は同じような症状がある",
+          "月に数回程度は同じような症状がある",
+          "ほぼ毎日同じような症状がある",
+          "回答をとばす"
+        ],
+        "selectedOption": "年に数回程度は同じような症状がある",
+        "timestamp": 1760668016218
+      },
+      {
+        "questionNumber": 12,
+        "url": "https://staging.ubie.app/qa/question/question-9965",
+        "questionText": "【胃が痛い】はどのくらい続いていますか？",
+        "availableOptions": [
+          "15分以内",
+          "15-30分程度",
+          "30分以上続いている",
+          "回答をとばす"
+        ],
+        "selectedOption": "15-30分程度",
+        "timestamp": 1760668017608
+      },
+      {
+        "questionNumber": 13,
+        "url": "https://staging.ubie.app/qa/question/question-9576",
+        "questionText": "【胃が痛い】のはじまりから現在までの変化として、一番近いものはどれですか？",
+        "availableOptions": [
+          "悪化している",
+          "改善も悪化もしていない",
+          "改善したがまだ残っている",
+          "改善し、現在はない",
+          "回答をとばす"
+        ],
+        "selectedOption": "改善も悪化もしていない",
+        "timestamp": 1760668019008
+      },
+      {
+        "questionNumber": 14,
+        "url": "https://staging.ubie.app/qa/question/question-9177",
+        "questionText": "【胃が痛い】はどのような様子・状態ですか",
+        "availableOptions": [
+          "胸や胃のあたりがむかむかする",
+          "熱いものが込み上げて来る感じの胸やけがする",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "熱いものが込み上げて来る感じの胸やけがする",
+        "timestamp": 1760668020549
+      },
+      {
+        "questionNumber": 15,
+        "url": "https://staging.ubie.app/qa/question/question-9205",
+        "questionText": "【胃が痛い】が出現・悪化・改善する要素として当てはまるものを教えてください",
+        "availableOptions": [
+          "胸やけは食後に出る",
+          "食事・水を飲むことによって胸の症状がやわらぐ",
+          "食べ過ぎたり、早食いした時に胸焼けがする",
+          "横になると胸やけは悪くなる",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668024331
+      },
+      {
+        "questionNumber": 16,
+        "url": "https://staging.ubie.app/qa/question/question-10627",
+        "questionText": "これまでに逆流性食道炎(胃食道逆流症)と医師に言われたことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668025646
+      },
+      {
+        "questionNumber": 17,
+        "url": "https://staging.ubie.app/qa/question/question-15705",
+        "questionText": "これまでにかかったことがある病気を【全て】選んでください",
+        "availableOptions": [
+          "気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎",
+          "リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群",
+          "アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー",
+          "生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧",
+          "皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹",
+          "腎臓の病気慢性腎臓病・慢性腎不全",
+          "胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍",
+          "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+          "精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）",
+          "がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈",
+        "timestamp": 1760668027124
+      },
+      {
+        "questionNumber": 18,
+        "url": "https://staging.ubie.app/qa/question/question-15920",
+        "questionText": "【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。",
+        "availableOptions": [
+          "心不全",
+          "心筋梗塞・不安定狭心症",
+          "不整脈",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668029020
+      },
+      {
+        "questionNumber": 19,
+        "url": "https://staging.ubie.app/qa/question/question-15656",
+        "questionText": "以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。",
+        "availableOptions": [
+          "アトピー性皮膚炎",
+          "気管支喘息",
+          "鼻茸（鼻ポリープ）",
+          "結節性痒疹",
+          "慢性蕁麻疹（じんましん）",
+          "COPD（慢性閉塞性肺疾患）",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "結節性痒疹",
+        "timestamp": 1760668031019
+      },
+      {
+        "questionNumber": 20,
+        "url": "https://staging.ubie.app/qa/question/question-15455",
+        "questionText": "医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？",
+        "availableOptions": [
+          "ある（慢性腎臓病と診断済み）",
+          "ある（慢性腎臓病と診断されていない）",
+          "ない",
+          "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+          "回答をとばす"
+        ],
+        "selectedOption": "ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている",
+        "timestamp": 1760668032948
+      },
+      {
+        "questionNumber": 21,
+        "url": "https://staging.ubie.app/qa/question/symptom-2612",
+        "questionText": "のどの圧迫感や詰まるような感じがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "はい",
+        "timestamp": 1760668037549
+      },
+      {
+        "questionNumber": 22,
+        "url": "https://staging.ubie.app/qa/question/symptom-emergence-2232",
+        "questionText": "今回、胸の痛みや苦しい感じが出たのはどのくらい前からですか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668041015
+      },
+      {
+        "questionNumber": 23,
+        "url": "https://staging.ubie.app/qa/question/symptom-pain-2199",
+        "questionText": "【胸の痛み】について、最もつらかったときを1から10で表すとどれぐらいの痛みでしたか？",
+        "availableOptions": [
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668042894
+      },
+      {
+        "questionNumber": 24,
+        "url": "https://staging.ubie.app/qa/question/symptom-scale-2268",
+        "questionText": "胸の痛み、もしくは違和感の現れ方について、一番近いものを以下から選んでください。",
+        "availableOptions": [
+          "全く前ぶれのない突然の発症だった",
+          "速やかに悪化した",
+          "徐々に症状が現れた",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668044399
+      },
+      {
+        "questionNumber": 25,
+        "url": "https://staging.ubie.app/qa/question/symptom-2803",
+        "questionText": "これまでにピロリ菌の除菌治療を受けたことがありますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760668046015
+      },
+      {
+        "questionNumber": 26,
+        "url": "https://staging.ubie.app/qa/question/symptom-1405",
+        "questionText": "日常的にげっぷがよく出ますか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "いいえ",
+        "timestamp": 1760668050286
+      },
+      {
+        "questionNumber": 27,
+        "url": "https://staging.ubie.app/qa/question/symptom-1323",
+        "questionText": "普段から肉や脂の多い欧米的な食習慣ですか？",
+        "availableOptions": [
+          "はい",
+          "いいえ",
+          "わからない",
+          "回答をとばす"
+        ],
+        "selectedOption": "回答をとばす",
+        "timestamp": 1760668052395
+      },
+      {
+        "questionNumber": 28,
+        "url": "https://staging.ubie.app/qa/question/continue-symptom-answer",
+        "questionText": "ここまでの回答でおおよその結果を確認できます",
+        "availableOptions": [
+          "ここまでの回答で結果を見る",
+          "このまま回答を続ける"
+        ],
+        "selectedOption": "ここまでの回答で結果を見る",
+        "timestamp": 1760668054532
+      },
+      {
+        "questionNumber": 29,
+        "url": "https://staging.ubie.app/qa/question/predicted-disease-question",
+        "questionText": "この中でかかったことがある病気をすべて選んでください",
+        "availableOptions": [
+          "胃食道逆流症(GERD)",
+          "機能性ディスペプシア(Functional Dyspepsia)",
+          "胃炎",
+          "睡眠時無呼吸症候群",
+          "胃・十二指腸潰瘍",
+          "呑気症(空気嚥下症)",
+          "便秘症",
+          "安定狭心症(労作性狭心症)",
+          "この中に該当なし",
+          "回答をとばす"
+        ],
+        "selectedOption": "この中に該当なし",
+        "timestamp": 1760668056261
+      },
+      {
+        "questionNumber": 30,
+        "url": "https://staging.ubie.app/qa/question/symptom-care-needs",
+        "questionText": "今回、【胃が痛い】についてどのような対応をしたいですか？",
+        "availableOptions": [
+          "市販薬で対処したい",
+          "医師に診てもらいたい",
+          "症状に関する病気を詳しく知りたい",
+          "該当するものがない",
+          "回答をとばす"
+        ],
+        "selectedOption": "症状に関する病気を詳しく知りたい",
+        "timestamp": 1760668060835
+      }
+    ]
+  },
+  "differences": {
+    "diseaseMismatch": {
+      "cDiagnosisOnly": [
+        {
+          "id": "胃がん",
+          "name": "胃がん",
+          "section": "easily-missed"
+        },
+        {
+          "id": "強皮症",
+          "name": "強皮症",
+          "label": "指定難病と関連あり",
+          "section": "easily-missed"
+        }
+      ],
+      "askmanOnly": [
+        {
+          "id": "安定狭心症(労作性狭心症)",
+          "name": "安定狭心症(労作性狭心症)",
+          "section": "easily-missed"
+        }
+      ]
+    },
+    "questionCountMismatch": {
+      "cDiagnosis": 32,
+      "askman": 30
+    }
+  }
+}

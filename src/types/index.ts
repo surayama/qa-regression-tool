@@ -63,6 +63,24 @@ export interface QuestionLog {
   timestamp: number;
 }
 
+// LocalStorage snapshot
+export interface LocalStorageSnapshot {
+  userInfo?: {
+    relationship?: string;
+    age?: number;
+    sex?: string;
+  };
+  medicoUser?: {
+    medicoUser?: {
+      id?: string;
+      age?: number | null;
+      sex?: string | null;
+      relationship?: string;
+    };
+    authProvider?: string;
+  };
+}
+
 // Test Result
 export interface TestResult {
   scenario: TestScenario;
@@ -70,6 +88,7 @@ export interface TestResult {
   questionCount: number;
   executionTimeMs: number;
   questionLogs?: QuestionLog[];  // Detailed log of each question
+  localStorageSnapshot?: LocalStorageSnapshot;  // LocalStorage values after questionnaire
   error?: string;
   screenshotPath?: string;  // Path to error screenshot if error occurred
 }
@@ -79,6 +98,7 @@ export interface ComparisonResult {
   passed: boolean;
   cDiagnosisResult: TestResult;
   askmanResult: TestResult;
+  outputDir?: string;  // Output directory for this test result
   differences: {
     diseaseMismatch?: {
       cDiagnosisOnly: DiseaseResult[];

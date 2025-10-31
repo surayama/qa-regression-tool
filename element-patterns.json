@@ -1,0 +1,72 @@
+[
+  {
+    "scenario": "30歳女性・頭痛",
+    "elements": {
+      "banners": {
+        "membershipPlus": false,
+        "appDownload": false,
+        "ads": [
+          "https://freakout-api-stub.staging.ubie.dev/serve?id=55336&mt=282&csurl=https%3A%2F%2Fstaging.ubie.app%2Fapi%2Fubie-ads%2Fsync&pid=ac9780a5-2fbe-4980-8508-0fa9de0501ad&btt=UWfgWchIWE9cKQk_xVRv7h4APHiAMEFWE6dNOb8warA"
+        ]
+      },
+      "buttons": {
+        "hospitalSearch": true,
+        "ubieActions": []
+      },
+      "sections": {
+        "otc": false,
+        "relatedDiseases": true,
+        "treatmentInfo": true
+      }
+    }
+  },
+  {
+    "scenario": "50歳男性・咳",
+    "elements": {
+      "banners": {
+        "membershipPlus": true,
+        "appDownload": true,
+        "ads": [
+          "https://freakout-api-stub.staging.ubie.dev/serve?id=55336&mt=282&csurl=https%3A%2F%2Fstaging.ubie.app%2Fapi%2Fubie-ads%2Fsync&pid=bf1debdc-4111-4a1b-b4b1-322457a7d3bd&btt=WzxFzWH8XAZSwwepVGrRBHTl5Dc8dO0GqnmxUtecJc4"
+        ]
+      },
+      "buttons": {
+        "hospitalSearch": true,
+        "ubieActions": [
+          "いますぐ取れる対処法",
+          "病院に行くべきか知りたい",
+          "何科に行くべきか知りたい",
+          "適切な対処法を知りたい",
+          "病気や症状について詳しく知りたい",
+          "受診したがまだ悩みがある"
+        ]
+      },
+      "sections": {
+        "otc": true,
+        "relatedDiseases": true,
+        "treatmentInfo": true
+      }
+    }
+  },
+  {
+    "scenario": "60歳女性・腹痛",
+    "elements": {
+      "banners": {
+        "membershipPlus": false,
+        "appDownload": true,
+        "ads": [
+          "https://freakout-api-stub.staging.ubie.dev/serve?id=55336&mt=282&csurl=https%3A%2F%2Fstaging.ubie.app%2Fapi%2Fubie-ads%2Fsync&pid=61feaebd-7c6e-4cc2-8f5f-f186163e450f&btt=u63gZqP6fxOGc9JhJzUTmKTT1L3I84K3Ho9vzTx4h1s"
+        ]
+      },
+      "buttons": {
+        "hospitalSearch": true,
+        "ubieActions": []
+      },
+      "sections": {
+        "otc": false,
+        "relatedDiseases": true,
+        "treatmentInfo": true
+      }
+    }
+  }
+]

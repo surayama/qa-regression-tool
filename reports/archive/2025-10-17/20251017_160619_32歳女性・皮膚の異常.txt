@@ -1,0 +1,465 @@
+❌ FAILED - Results differ
+
+C-Diagnosis: 10 diseases, 34 questions
+Askman:      0 diseases, 7 questions ⚠️ ERROR
+
+Disease Results:
+  C-Diagnosis:
+    回答に関連する病気:
+      1. 鶏眼
+      2. 胼胝
+      3. 粉瘤
+      4. 手湿疹
+      5. 疣贅(ゆうぜい、イボ)
+      6. 乾癬性関節炎
+      7. 乳腺炎
+      8. 水いぼ(伝染性軟属腫)
+    見逃されやすい病気:
+      1. 乾癬
+      2. 糖尿病性壊疽
+  Askman:
+
+Disease Differences:
+  Only in c-diagnosis: 鶏眼, 胼胝, 粉瘤, 手湿疹, 疣贅(ゆうぜい、イボ), 乾癬性関節炎, 乳腺炎, 水いぼ(伝染性軟属腫), 乾癬, 糖尿病性壊疽
+
+Question Count Mismatch:
+  C-Diagnosis: 34
+  Askman: 7
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️  Error Details
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Askman Error:
+  結果ページに到達できませんでした。 停止位置: https://staging.ubie.app/qa/question/skin_condition_photo. Screenshot: ./screenshots/failed_to_reach_result_1760684779725.png
+  Stopped after 7 questions
+  📸 Screenshot: screenshots/error-askman-1760684779801.png
+
+  Steps before error:
+    1. person
+       Q: 誰の症状について調べますか？
+       A: 自分
+    2. age
+       Q: 年齢を教えてください
+       A: 32歳
+    3. sex
+       Q: 性別を教えてください
+       A: 女性
+    4. height
+       Q: 身長を教えてください
+       A: 119cm
+    5. weight
+       Q: 体重を教えてください
+       A: 12kg
+    6. main-symptom
+       Q: 現在、最も気になる症状を教えてください。
+       A: 皮膚が乾燥している
+    7. confirm
+       Q: 【皮膚が乾燥している】に関する質問に進みます
+       A: 次へ進む
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 Detailed Question Log Comparison
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q1]
+    URL: https://staging.ubie.app/qa/relationship
+    Question: 誰の症状について調べますか？
+    Options: 自分, 家族, その他
+    Selected: 自分
+
+  [Askman Q1]
+    URL: https://staging.ubie.app/qa/question/person
+    Question: 誰の症状について調べますか？
+    Options: 自分, 家族, その他
+    Selected: 自分
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q2]
+    URL: https://staging.ubie.app/qa/age
+    Question: 年齢を教えてください
+    Options: 
+    Selected: 32歳
+
+  [Askman Q2]
+    URL: https://staging.ubie.app/qa/question/age
+    Question: 年齢を教えてください
+    Options: 
+    Selected: 32歳
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q3]
+    URL: https://staging.ubie.app/qa/sex
+    Question: 性別を教えてください
+    Options: 男性, 女性
+    Selected: 女性
+
+  [Askman Q3]
+    URL: https://staging.ubie.app/qa/question/sex
+    Question: 性別を教えてください
+    Options: 男性, 女性
+    Selected: 女性
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q4]
+    URL: https://staging.ubie.app/qa/height
+    Question: 身長を教えてください
+    Options: 80-200cm
+    Selected: 119cm
+
+  [Askman Q4]
+    URL: https://staging.ubie.app/qa/question/height
+    Question: 身長を教えてください
+    Options: 80-200cm
+    Selected: 119cm
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q5]
+    URL: https://staging.ubie.app/qa/weight
+    Question: 体重を教えてください
+    Options: 10-130kg
+    Selected: 12kg
+
+  [Askman Q5]
+    URL: https://staging.ubie.app/qa/question/weight
+    Question: 体重を教えてください
+    Options: 10-130kg
+    Selected: 12kg
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q6]
+    URL: https://staging.ubie.app/qa/question/main-complaint
+    Question: 現在、最も気になる症状を教えてください。
+    Options: 皮膚が乾燥している, 皮膚に異常がある, 首の腫脹がある, 足の皮膚に異常がある, 陰部の皮膚に異常がある, 股間の皮膚に異常がある, 鼠径の皮膚に異常がある, お腹の皮膚に異常がある, 胸の皮膚に異常がある, 背中の皮膚に異常がある
+    Selected: 皮膚が乾燥している
+
+  [Askman Q6]
+    URL: https://staging.ubie.app/qa/question/main-symptom
+    Question: 現在、最も気になる症状を教えてください。
+    Options: 皮膚が乾燥している, 皮膚に異常がある, 首の腫脹がある, 足の皮膚に異常がある, 陰部の皮膚に異常がある, 股間の皮膚に異常がある, 鼠径の皮膚に異常がある, お腹の皮膚に異常がある, 胸の皮膚に異常がある, 背中の皮膚に異常がある
+    Selected: 皮膚が乾燥している
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q7]
+    URL: https://staging.ubie.app/qa/question/main-complaint/confirm
+    Question: 【皮膚が乾燥している】に関する質問に進みます
+    Options: 
+    Selected: 次へ進む
+
+  [Askman Q7]
+    URL: https://staging.ubie.app/qa/question/main-symptom/confirm
+    Question: 【皮膚が乾燥している】に関する質問に進みます
+    Options: 
+    Selected: 次へ進む
+
+  ⚡️  DIFFERENCES: URL differs
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q8]
+    URL: https://staging.ubie.app/qa/question/question-16095
+    Question: 【妊娠・授乳】の状況で、当てはまるものを【すべて】選んでください。
+    Options: 現在、妊娠している, 確定していないが、妊娠しているかもしれない, 現在、授乳中である, この中に該当なし, 回答をとばす
+    Selected: 現在、授乳中である
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q9]
+    URL: https://staging.ubie.app/qa/question/question-8284
+    Question: つぎのような症状はありますか？当てはまるものを全て選んでください
+    Options: 皮ふのかゆみがある, 皮ふに何らかの異常がある, 皮ふが赤くなっている, 体温が37.5℃以上, この中に該当なし, 回答をとばす
+    Selected: 皮ふに何らかの異常がある
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q10]
+    URL: https://staging.ubie.app/qa/question/question-8211
+    Question: 今回の【皮膚が乾燥している】はどのくらい前からですか？
+    Options: 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q11]
+    URL: https://staging.ubie.app/qa/question/question-8106
+    Question: これまでに同じような【皮膚が乾燥している】を経験したことはありますか？一番近いものを以下から選んでください。
+    Options: 初めての症状である, これまでに1回以上同じような症状があった, 年に数回程度は同じような症状がある, 月に数回程度は同じような症状がある, ほぼ毎日同じような症状がある, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q12]
+    URL: https://staging.ubie.app/qa/question/question-7957
+    Question: 【皮膚が乾燥している】のはじまりから現在までの変化として、一番近いものはどれですか？
+    Options: 悪化している, 改善も悪化もしていない, 改善したがまだ残っている, 改善し、現在はない, 回答をとばす
+    Selected: 悪化している
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q13]
+    URL: https://staging.ubie.app/qa/question/question-9735
+    Question: 冬になると皮ふの乾燥やひび割れ、カサカサなどの症状が悪化しますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q14]
+    URL: https://staging.ubie.app/qa/question/question-15705_health_history_general
+    Question: これまでにかかったことがある病気を【全て】選んでください
+    Options: 気管支・肺の病気気管支喘息、慢性閉塞性肺疾患（COPD）、肺線維症・間質性肺炎, リウマチ・膠原病関節リウマチ、全身性エリテマトーデス（SLE）、強皮症、多発性筋炎・皮膚筋炎、シェーグレン症候群, アレルギー関連の病気アトピー性皮膚炎、気管支喘息、鼻茸（鼻ポリープ）、結節性痒疹、慢性閉塞性肺疾患（COPD）、慢性蕁麻疹、慢性副鼻腔炎、アレルギー性鼻炎、食物アレルギー, 生活習慣病・貧血糖尿病、脂質異常症、脂肪肝、貧血、高血圧, 皮ふの病気乾癬、アトピー性皮膚炎、慢性蕁麻疹、結節性痒疹, 腎臓の病気慢性腎臓病・慢性腎不全, 胃腸の病気潰瘍性大腸炎、胃食道逆流症（GERD/逆流性食道炎）、クローン病、機能性ディスペプシア、便秘症、胃・十二指腸潰瘍, 心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈, 精神科・心療内科の病気うつ病、注意欠如多動症（ADHD）、統合失調症、双極性感情障害（躁うつ病）, がん肺がん、乳がん、食道がん、胃がん、大腸がん、子宮頸がん、膵臓がん、前立腺がん、肝臓がん、皮膚がん, この中に該当なし, 回答をとばす
+    Selected: 心臓の病気心不全、心筋梗塞・不安定狭心症、不整脈
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q15]
+    URL: https://staging.ubie.app/qa/question/question-15920
+    Question: 【心臓の病気】について、【かかったことのある病気】を【全て】選んでください。
+    Options: 心不全, 心筋梗塞・不安定狭心症, 不整脈, この中に該当なし, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q16]
+    URL: https://staging.ubie.app/qa/question/question-15656
+    Question: 以下の【アレルギーに関連する病気】をお持ちですか？当てはまるものを【全て】選んでください。
+    Options: アトピー性皮膚炎, 気管支喘息, 鼻茸（鼻ポリープ）, 結節性痒疹, 慢性蕁麻疹（じんましん）, COPD（慢性閉塞性肺疾患）, この中に該当なし, 回答をとばす
+    Selected: 結節性痒疹
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q17]
+    URL: https://staging.ubie.app/qa/question/question-16275
+    Question: 以下の【生活習慣病などの病気】にかかったことがありますか？当てはまるものを【全て】選んでください。
+    Options: 高血圧症, 脂質異常症, 糖尿病, 慢性腎臓病・慢性腎不全, 高尿酸血症, 痛風, 睡眠時無呼吸症候群, 脂肪肝, 脳梗塞, 一過性脳虚血発作, 変形性膝関節症, 変形性股関節症, 変形性脊椎症, 肥満低換気症候群, この中に該当なし, 回答をとばす
+    Selected: 糖尿病
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q18]
+    URL: https://staging.ubie.app/qa/question/question-19745
+    Question: これまで、【体重を減らす方法】について医師に相談したことがありますか？
+    Options: 相談したことがある, 相談したいが、実際にしたことはない, 相談したいと思ったこともない, 覚えていない, 回答をとばす
+    Selected: 相談したいが、実際にしたことはない
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q19]
+    URL: https://staging.ubie.app/qa/question/question-19012
+    Question: 現在、医療スタッフによる【食事指導】や【運動指導】を、継続して受けていますか？最も近いものを【1つ】お選びください。
+    Options: 最近指導を受けたばかり, 1ヶ月ほど継続している, 2ヶ月から3ヶ月ほど継続している, 4ヶ月から5ヶ月ほど継続している, 6ヶ月以上継続している, 指導を受けたが、やめてしまった, 指導を受けたことはない, 回答をとばす
+    Selected: 1ヶ月ほど継続している
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q20]
+    URL: https://staging.ubie.app/qa/question/question-16347
+    Question: ここ1年で、生理が遅れる、あるいは早まっているということがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q21]
+    URL: https://staging.ubie.app/qa/question/question-15455
+    Question: 医師に腎臓（じんぞう）の機能の低下を指摘されたことがありますか？
+    Options: ある（慢性腎臓病と診断済み）, ある（慢性腎臓病と診断されていない）, ない, ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている, 回答をとばす
+    Selected: ないが、健康診断の血液検査（クレアチニン、eGFR）や尿検査で異常を指摘されている
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q22]
+    URL: https://staging.ubie.app/qa/question/symptom-2110
+    Question: 手首より先の皮膚に症状が出ていますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: いいえ
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q23]
+    URL: https://staging.ubie.app/qa/question/symptom-782
+    Question: 現在、皮ふにコブ状のものがある、または触れますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q24]
+    URL: https://staging.ubie.app/qa/question/symptom-scale-2322
+    Question: これまでに同じような皮膚の症状が現れたことがありますか？一番近いものを以下から選んでください。
+    Options: 初めての症状である, これまでに1回以上同じような症状があった, 年に数回程度は同じような症状がある, 月に数回程度は同じような症状がある, ほぼ毎日同じような症状がある, 回答をとばす
+    Selected: 月に数回程度は同じような症状がある
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q25]
+    URL: https://staging.ubie.app/qa/question/symptom-822
+    Question: 皮ふが硬くなっている場所がありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q26]
+    URL: https://staging.ubie.app/qa/question/symptom-2112
+    Question: 現在、足首よりつま先側の皮膚に症状が出ていますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: わからない
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q27]
+    URL: https://staging.ubie.app/qa/question/symptom-335
+    Question: 手の指から手の甲にかけて皮ふが硬くなっていると感じますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: 回答をとばす
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q28]
+    URL: https://staging.ubie.app/qa/question/symptom-7393
+    Question: 肌にカキのからのようにガサガサしている部分がありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q29]
+    URL: https://staging.ubie.app/qa/question/symptom-2113
+    Question: 太ももから足首までの皮膚に症状が出ていますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: はい
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q30]
+    URL: https://staging.ubie.app/qa/question/symptom-2649
+    Question: 足の裏の痛みがありますか？
+    Options: はい, いいえ, わからない, 回答をとばす
+    Selected: わからない
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q31]
+    URL: https://staging.ubie.app/qa/question/continue-symptom-answer
+    Question: ここまでの回答でおおよその結果を確認できます
+    Options: ここまでの回答で結果を見る, このまま回答を続ける
+    Selected: ここまでの回答で結果を見る
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q32]
+    URL: https://staging.ubie.app/qa/question/question-predicted-disease
+    Question: この中でかかったことがある病気をすべて選んでください
+    Options: 鶏眼, 胼胝, 粉瘤, 手湿疹, 疣贅(ゆうぜい、イボ), 乾癬性関節炎, 乳腺炎, 水いぼ(伝染性軟属腫), 乾癬, 糖尿病性壊疽, この中に該当なし, 回答をとばす
+    Selected: 鶏眼
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q33]
+    URL: https://staging.ubie.app/qa/question/disease-under-treatment
+    Question: この中に治療中、またはお薬を飲んでいる病気はありますか？
+    Options: 結節性痒疹(けっせつせいようしん), 糖尿病, 鶏眼, この中に該当なし
+    Selected: 鶏眼
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
+
+────────────────────────────────────────────────────────────
+  [C-Diagnosis Q34]
+    URL: https://staging.ubie.app/qa/question/symptom-care-needs
+    Question: 今回、【皮膚が乾燥している】についてどのような対応をしたいですか？
+    Options: 市販薬で対処したい, 医師に診てもらいたい, 症状に関する病気を詳しく知りたい, 該当するものがない, 回答をとばす
+    Selected: 医師に診てもらいたい
+
+  [Askman] - No question logged
+
+  ⚠️  DIFFERENCES: Question only in C-Diagnosis
