@@ -1,5 +1,5 @@
 import { chromium, Browser, Page } from 'playwright';
-import { TestScenario, TestResult, DiseaseResult, QuestionLog } from '../types';
+import { TestScenario, TestResult, DiseaseResult, QuestionLog, ResultPageElements } from '../types';
 
 /**
  * PlaywrightベースのQAランナー
@@ -102,7 +102,7 @@ export class PlaywrightQARunner {
     }
   }
 
-  async runScenario(scenario: TestScenario): Promise<TestResult> {
+  async runScenario(scenario: TestScenario, keepPageOpen: boolean = false): Promise<TestResult & { page?: Page; context?: any }> {
     if (!this.browser) {
       throw new Error('Browser not initialized. Call init() first.');
     }
@@ -156,27 +156,48 @@ export class PlaywrightQARunner {
       questionLogs = [...basicInfoLogs, ...questionResult.logs];
 
       // 5. 結果ページに移動（Extra Questionsも処理してログを取得）
-      const goToResultResponse = await this.goToResult(page, questionCount);
+      let goToResultResponse;
+      try {
+        goToResultResponse = await this.goToResult(page, questionCount);
+        // Extra Questionsのログをマージ
+        questionCount += goToResultResponse.logs.length;
+        questionLogs = [...questionLogs, ...goToResultResponse.logs];
+      } catch (error: any) {
+        // goToResultでエラーが発生してもExtra questionsのログは保持
+        console.log(`      ⚠️  goToResult中にエラー: ${error instanceof Error ? error.message : String(error)}`);
 
-      // Extra Questionsのログをマージ
-      questionCount += goToResultResponse.logs.length;
-      questionLogs = [...questionLogs, ...goToResultResponse.logs];
+        // エラーオブジェクトからExtra questionsのログを取得
+        if (error.extraQuestionLogs && error.extraQuestionLogs.length > 0) {
+          questionCount += error.extraQuestionLogs.length;
+          questionLogs = [...questionLogs, ...error.extraQuestionLogs];
+        }
 
-      // 6. 疾患結果を取得
+        throw error; // 上位でキャッチして処理
+      }
+
+      // 6. 疾患結果を取得（互換性のため）
       diseases = await this.getDiseaseResults(page);
+
+      // 7. 結果ページの全要素を取得
+      const resultPageElements = await this.getResultPageElements(page);
 
       const executionTimeMs = Date.now() - startTime;
 
-      await page.close();
-      await context.close(); // コンテキストをクリーンアップして状態の漏洩を防止
+      // keepPageOpenフラグがtrueの場合、ページとコンテキストを開いたままにする
+      if (!keepPageOpen) {
+        await page.close();
+        await context.close(); // コンテキストをクリーンアップして状態の漏洩を防止
+      }
 
       return {
         scenario,
         diseases,
+        resultPageElements,
         questionCount,
         questionLogs,
         executionTimeMs,
         screenshotPath: goToResultResponse.screenshot,  // 結果ページに到達しなかった場合のスクリーンショットを含む
+        ...(keepPageOpen && { page, context }),
       };
     } catch (error) {
       console.log(`      ❌ 問診中にエラー: ${error instanceof Error ? error.message : String(error)}`);
@@ -184,7 +205,11 @@ export class PlaywrightQARunner {
       // エラー時にスクリーンショットを保存
       let screenshotPath: string | undefined;
       try {
-        screenshotPath = `screenshots/error-${this.engine || 'unknown'}-${Date.now()}.png`;
+        const now = new Date();
+        const jstDate = now.toLocaleDateString('ja-JP', { timeZone: 'Asia/Tokyo' }).replace(/\//g, '');
+        const jstTime = now.toLocaleTimeString('ja-JP', { timeZone: 'Asia/Tokyo', hour12: false }).replace(/:/g, '');
+        const scenarioName = scenario.name.replace(/[\/\\:*?"<>|]/g, '_');
+        screenshotPath = `screenshots/error_${this.engine || 'unknown'}_${scenarioName}_${jstDate}_${jstTime}.png`;
         await page.screenshot({ path: screenshotPath });
         console.log(`      📸 スクリーンショット保存: ${screenshotPath}`);
       } catch {}
@@ -495,9 +520,54 @@ export class PlaywrightQARunner {
   private async collectValidButtons(page: Page): Promise<{ button: any; text: string }[]> {
     const validButtons: { button: any; text: string }[] = [];
 
+    // ラジオボタンがある場合は、ラジオボタンのラベルを収集（askman用）
+    const radioButtons = await page.locator('input[type="radio"]:visible').all();
+    if (radioButtons.length > 0) {
+      for (const radio of radioButtons) {
+        try {
+          // 親ラベルを探す
+          const parent = radio.locator('xpath=ancestor::label').first();
+          const hasParentLabel = await parent.count() > 0;
+
+          if (hasParentLabel) {
+            const labelText = await parent.textContent();
+            if (labelText && labelText.trim()) {
+              validButtons.push({ button: parent, text: labelText.trim() });
+            }
+          } else {
+            // IDベースのラベルを探す
+            const radioId = await radio.getAttribute('id');
+            if (radioId) {
+              const label = page.locator(`label[for="${radioId}"]`);
+              if (await label.count() > 0) {
+                const labelText = await label.first().textContent();
+                if (labelText && labelText.trim()) {
+                  validButtons.push({ button: label.first(), text: labelText.trim() });
+                }
+              }
+            }
+          }
+        } catch (error) {
+          // ラベル取得エラーは無視
+        }
+      }
+
+      // ラジオボタンページでは「回答をとばす」も追加
+      const skipButton = page.getByRole('button', { name: '回答をとばす' });
+      if (await skipButton.isVisible({ timeout: 500 }).catch(() => false)) {
+        validButtons.push({ button: skipButton, text: '回答をとばす' });
+      }
+
+      if (validButtons.length > 0) {
+        return validButtons;
+      }
+    }
+
     // チェックボックスがある場合は、チェックボックスのラベルを収集
     const checkboxes = await page.locator('input[type="checkbox"]:visible').all();
     if (checkboxes.length > 0) {
+      console.log(`      [DEBUG] チェックボックス検出: ${checkboxes.length}個`);
+
       for (const checkbox of checkboxes) {
         try {
           // 親ラベルを探す
@@ -526,6 +596,8 @@ export class PlaywrightQARunner {
           // ラベル取得エラーは無視
         }
       }
+
+      console.log(`      [DEBUG] 収集したチェックボックスラベル: ${validButtons.length}個`);
 
       // チェックボックスページでは「回答をとばす」も追加
       const skipButton = page.getByRole('button', { name: '回答をとばす' });
@@ -964,13 +1036,34 @@ export class PlaywrightQARunner {
             // 設問文に基づいて選択肢を選択 (同じ質問 = 同じ選択を保証)
             if (this.randomSeed !== null && validButtons.length > 0) {
               const questionKey = questionLog.questionText || currentUrl;
-              const randomIndex = this.getRandomIndexForQuestion(questionKey, validButtons.length);
-              const selectedButton = validButtons[randomIndex];
+
+              // question-16275のみ特別処理: c-diagnosisとaskmanで選択肢が異なるため安全な選択肢を優先
+              const isQuestion16275 = currentUrl.includes('question-16275');
+              let selectedButton;
+
+              if (isQuestion16275) {
+                const safeOptions = ['この中に該当なし', 'わからない', '回答をとばす'];
+                const safeButton = validButtons.find(b => safeOptions.some(opt => b.text === opt));
+
+                if (safeButton) {
+                  selectedButton = safeButton;
+                  console.log(`      ✓ [question-16275] 安全な選択肢をクリック: ${safeButton.text}`);
+                } else {
+                  const randomIndex = this.getRandomIndexForQuestion(questionKey, validButtons.length);
+                  selectedButton = validButtons[randomIndex];
+                  console.log(`      ✓ ランダム: 要素をクリック "${selectedButton.text}"`);
+                }
+              } else {
+                // その他の質問: 通常のランダム選択
+                const randomIndex = this.getRandomIndexForQuestion(questionKey, validButtons.length);
+                selectedButton = validButtons[randomIndex];
+                console.log(`      ✓ ランダム: 要素をクリック "${selectedButton.text}"`);
+              }
+
               await selectedButton.button.click();
               clicked = true;
               selectedOption = selectedButton.text;
               questionCount++;
-              console.log(`      ✓ 設問ベース要素をクリック [${randomIndex + 1}/${validButtons.length}]: ${selectedButton.text.substring(0, 30)}`);
             } else {
               // デフォルトモード: 「回答をとばす」ボタンがあるか確認
               const skipButton = validButtons.find(b => b.text.includes('回答をとばす'));
@@ -1043,6 +1136,18 @@ export class PlaywrightQARunner {
 
         if (!clicked) {
           console.log(`      ⚠️  クリック可能なボタンが見つかりません。停止します`);
+          // デバッグ用スクリーンショットを撮影
+          try {
+            const now = new Date();
+            const jstDate = now.toLocaleDateString('ja-JP', { timeZone: 'Asia/Tokyo' }).replace(/\//g, '');
+            const jstTime = now.toLocaleTimeString('ja-JP', { timeZone: 'Asia/Tokyo', hour12: false }).replace(/:/g, '');
+            const scenarioName = scenario.name.replace(/[\/\\:*?"<>|]/g, '_');
+            const debugScreenshot = `screenshots/debug_no_buttons_${this.engine || 'unknown'}_${scenarioName}_${jstDate}_${jstTime}.png`;
+            await page.screenshot({ path: debugScreenshot, fullPage: true });
+            console.log(`      📸 デバッグスクリーンショット保存: ${debugScreenshot}`);
+          } catch (err) {
+            console.log(`      ⚠️  スクリーンショット撮影失敗: ${err}`);
+          }
           break;
         }
 
@@ -1113,6 +1218,13 @@ export class PlaywrightQARunner {
         }
 
         console.log(`      [Extra Q${i + 1}] URL: ${currentUrl.split('?')[0]}`);
+
+        // エラーページの検出
+        const errorMessage = await page.locator('text=エラーが発生しました').isVisible({ timeout: 1000 }).catch(() => false);
+        if (errorMessage) {
+          console.log(`      ⚠️  エラーページが表示されました。問診を中断します。`);
+          throw new Error(`askmanでエラーページが表示されました: ${currentUrl}`);
+        }
 
         // 入力フィールドがあるか確認
         const inputFields = await page.locator('input[type="text"]:visible, input[type="number"]:visible, textarea:visible').all();
@@ -1197,9 +1309,29 @@ export class PlaywrightQARunner {
 
           if (validButtons.length > 0) {
             const questionKey = questionText || currentUrl;
-            const randomIndex = this.getRandomIndexForQuestion(questionKey, validButtons.length);
-            const selectedButton = validButtons[randomIndex];
-            console.log(`      ✓ ランダム: 要素をクリック "${selectedButton.text.substring(0, 30)}"`);
+
+            // question-16275のみ特別処理: c-diagnosisとaskmanで選択肢が異なるため安全な選択肢を優先
+            const isQuestion16275 = currentUrl.includes('question-16275');
+            let selectedButton;
+
+            if (isQuestion16275) {
+              const safeOptions = ['この中に該当なし', 'わからない', '回答をとばす'];
+              const safeButton = validButtons.find(b => safeOptions.some(opt => b.text === opt));
+
+              if (safeButton) {
+                selectedButton = safeButton;
+                console.log(`      ✓ [question-16275] 安全な選択肢をクリック "${selectedButton.text}"`);
+              } else {
+                const randomIndex = this.getRandomIndexForQuestion(questionKey, validButtons.length);
+                selectedButton = validButtons[randomIndex];
+                console.log(`      ✓ ランダム: 要素をクリック "${selectedButton.text.substring(0, 30)}"`);
+              }
+            } else {
+              // その他の質問: 通常のランダム選択
+              const randomIndex = this.getRandomIndexForQuestion(questionKey, validButtons.length);
+              selectedButton = validButtons[randomIndex];
+              console.log(`      ✓ ランダム: 要素をクリック "${selectedButton.text.substring(0, 30)}"`);
+            }
 
             // ログに記録
             questionNumber++;
@@ -1496,10 +1628,17 @@ export class PlaywrightQARunner {
     } else {
       console.log(`      ❌ ERROR: 結果ページに到達できませんでした。 Final URL: ${currentUrl}`);
       console.log(`      📸 デバッグ用スクリーンショットを撮影中...`);
-      const screenshotPath = `./screenshots/failed_to_reach_result_${Date.now()}.png`;
+      const now = new Date();
+      const jstDate = now.toLocaleDateString('ja-JP', { timeZone: 'Asia/Tokyo' }).replace(/\//g, '');
+      const jstTime = now.toLocaleTimeString('ja-JP', { timeZone: 'Asia/Tokyo', hour12: false }).replace(/:/g, '');
+      const screenshotPath = `./screenshots/failed_to_reach_result_${this.engine || 'unknown'}_${jstDate}_${jstTime}.png`;
       await page.screenshot({ path: screenshotPath, fullPage: true });
       console.log(`      📸 スクリーンショット保存: ${screenshotPath}`);
-      throw new Error(`結果ページに到達できませんでした。 停止位置: ${currentUrl}. Screenshot: ${screenshotPath}`);
+
+      // エラーをthrowする前に、Extra questionsのログを含むエラーオブジェクトを作成
+      const error: any = new Error(`結果ページに到達できませんでした。 停止位置: ${currentUrl}. Screenshot: ${screenshotPath}`);
+      error.extraQuestionLogs = extraQuestionLogs; // ログを保持
+      throw error;
     }
   }
 
@@ -1668,5 +1807,105 @@ export class PlaywrightQARunner {
     }
 
     return diseases;
+  }
+
+  /**
+   * 結果ページから全ての要素を抽出（疾患カード + バナー + ボタンなど）
+   */
+  private async getResultPageElements(page: Page): Promise<ResultPageElements> {
+    // まず疾患情報を取得
+    const diseases = await this.getDiseaseResults(page);
+
+    const elements: ResultPageElements = {
+      diseases,
+      banners: {},
+      buttons: {},
+      sections: {},
+      social: {},
+    };
+
+    // バナーの検出
+    try {
+      const membershipBanner = await page.locator('[data-testid="membership-plus-banner"]').isVisible({ timeout: 1000 }).catch(() => false);
+      elements.banners!.membershipPlus = membershipBanner;
+
+      // アプリダウンロードバナー（alt属性で検出）
+      const appDownloadBanner = await page.locator('img[alt*="アプリ"]').isVisible({ timeout: 1000 }).catch(() => false);
+      elements.banners!.appDownload = appDownloadBanner;
+
+      // 広告バナー（freakout-api-stub URLを含む画像）
+      const adImages = await page.$$('img[src*="freakout-api-stub"]');
+      elements.banners!.ads = await Promise.all(
+        adImages.map(img => img.getAttribute('src').then(src => src || ''))
+      );
+    } catch (error) {
+      console.log(`      ⚠️  バナー検出中にエラー: ${error}`);
+    }
+
+    // ボタンの検出
+    try {
+      // 病院検索ボタン
+      const hospitalSearchButton = await page.locator('button:has-text("症状にあった病院を探す")').isVisible({ timeout: 1000 }).catch(() => false);
+      elements.buttons!.hospitalSearch = hospitalSearchButton;
+
+      // ユビー機能ボタン
+      const ubieActionButtons = [
+        'いますぐ取れる対処法',
+        '病院に行くべきか知りたい',
+        '何科に行くべきか知りたい',
+        '適切な対処法を知りたい',
+        '病気や症状について詳しく知りたい',
+        '受診したがまだ悩みがある',
+      ];
+
+      const detectedActions: string[] = [];
+      for (const action of ubieActionButtons) {
+        const isVisible = await page.locator(`button:has-text("${action}")`).isVisible({ timeout: 500 }).catch(() => false);
+        if (isVisible) {
+          detectedActions.push(action);
+        }
+      }
+      elements.buttons!.ubieActions = detectedActions;
+    } catch (error) {
+      console.log(`      ⚠️  ボタン検出中にエラー: ${error}`);
+    }
+
+    // セクションの検出
+    try {
+      // 市販薬セクション
+      const otcSection = await page.locator('#otcSection').isVisible({ timeout: 1000 }).catch(() => false);
+      elements.sections!.otc = otcSection;
+
+      // 関連疾患セクション
+      const relatedDiseasesSection = await page.locator('#answerRelatedDiseases').isVisible({ timeout: 1000 }).catch(() => false);
+      elements.sections!.relatedDiseases = relatedDiseasesSection;
+
+      // 治療情報セクション
+      const treatmentInfoSection = await page.locator('#treatnmentInfoTitle').isVisible({ timeout: 1000 }).catch(() => false);
+      elements.sections!.treatmentInfo = treatmentInfoSection;
+    } catch (error) {
+      console.log(`      ⚠️  セクション検出中にエラー: ${error}`);
+    }
+
+    // SNS共有ボタンの検出
+    try {
+      const twitterShare = await page.locator('a[href*="twitter.com/intent/tweet"]').isVisible({ timeout: 1000 }).catch(() => false);
+      elements.social!.twitter = twitterShare;
+
+      const lineShare = await page.locator('a[href*="line.me/R/share"]').isVisible({ timeout: 1000 }).catch(() => false);
+      elements.social!.line = lineShare;
+    } catch (error) {
+      console.log(`      ⚠️  SNS共有ボタン検出中にエラー: ${error}`);
+    }
+
+    // デバッグログ
+    console.log(`      📊 結果ページ要素検出:`);
+    console.log(`         - 疾患カード: ${diseases.length}個`);
+    console.log(`         - 会員バナー: ${elements.banners!.membershipPlus ? 'あり' : 'なし'}`);
+    console.log(`         - 病院検索: ${elements.buttons!.hospitalSearch ? 'あり' : 'なし'}`);
+    console.log(`         - ユビー機能: ${elements.buttons!.ubieActions?.length || 0}個`);
+    console.log(`         - 市販薬: ${elements.sections!.otc ? 'あり' : 'なし'}`);
+
+    return elements;
   }
 }

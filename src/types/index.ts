@@ -53,6 +53,38 @@ export interface DiseaseResult {
   section?: 'related' | 'easily-missed';  // Which section the disease appeared in
 }
 
+// Result Page Elements - 結果画面の検出要素
+export interface ResultPageElements {
+  // 疾患カード
+  diseases: DiseaseResult[];
+
+  // バナー
+  banners?: {
+    membershipPlus?: boolean;  // 会員登録バナーの有無
+    appDownload?: boolean;     // アプリダウンロードバナーの有無
+    ads?: string[];            // 広告バナーのURL一覧
+  };
+
+  // ボタン・機能
+  buttons?: {
+    hospitalSearch?: boolean;  // 病院検索ボタンの有無
+    ubieActions?: string[];    // ユビー機能ボタン一覧
+  };
+
+  // セクション
+  sections?: {
+    otc?: boolean;             // 市販薬セクションの有無
+    relatedDiseases?: boolean; // 関連疾患セクションの有無
+    treatmentInfo?: boolean;   // 治療情報セクションの有無
+  };
+
+  // SNS共有
+  social?: {
+    twitter?: boolean;         // Twitter共有ボタンの有無
+    line?: boolean;            // LINE共有ボタンの有無
+  };
+}
+
 // Question Log - detailed information about each question answered
 export interface QuestionLog {
   questionNumber: number;
@@ -67,6 +99,7 @@ export interface QuestionLog {
 export interface TestResult {
   scenario: TestScenario;
   diseases: DiseaseResult[];
+  resultPageElements?: ResultPageElements;  // 結果画面の詳細要素
   questionCount: number;
   executionTimeMs: number;
   questionLogs?: QuestionLog[];  // Detailed log of each question
@@ -88,6 +121,12 @@ export interface ComparisonResult {
     questionCountMismatch?: {
       cDiagnosis: number;
       askman: number;
+    };
+    resultPageElementsMismatch?: {
+      banners?: Record<string, any>;
+      buttons?: Record<string, any>;
+      sections?: Record<string, any>;
+      social?: Record<string, any>;
     };
   };
 }

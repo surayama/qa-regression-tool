@@ -27,12 +27,130 @@ export class ComparisonEngine {
       passed = false;
     }
 
+    // Compare result page elements (banners, buttons, sections)
+    const elementsMismatch = this.compareResultPageElements(
+      cDiagnosisResult.resultPageElements,
+      askmanResult.resultPageElements
+    );
+    if (elementsMismatch) {
+      (differences as any).resultPageElementsMismatch = elementsMismatch;
+      // 要素の差分は警告扱いで、failedにはしない（疾患と質問数のみfail対象）
+      // passed = false; // コメントアウト: 要素差分では失敗扱いにしない
+    }
+
     return {
       passed,
       cDiagnosisResult,
       askmanResult,
       differences,
     };
+  }
+
+  /**
+   * Compare result page elements (banners, buttons, sections, etc.)
+   * 固定表示要素は比較対象外:
+   * - SNS共有 (Twitter/LINE) - 常に表示
+   * - 病院検索ボタン - 常に表示
+   * - 関連疾患セクション - 常に表示
+   * - 治療情報セクション - 常に表示
+   */
+  private compareResultPageElements(cElements: any, aElements: any): any {
+    if (!cElements || !aElements) {
+      return undefined; // 片方がない場合は比較しない
+    }
+
+    const diffs: any = {};
+    let hasDifferences = false;
+
+    // バナーの比較（動的要素のみ）
+    if (cElements.banners || aElements.banners) {
+      const bannerDiffs: any = {};
+
+      if (cElements.banners?.membershipPlus !== aElements.banners?.membershipPlus) {
+        bannerDiffs.membershipPlus = {
+          cDiagnosis: cElements.banners?.membershipPlus || false,
+          askman: aElements.banners?.membershipPlus || false,
+        };
+        hasDifferences = true;
+      }
+
+      if (cElements.banners?.appDownload !== aElements.banners?.appDownload) {
+        bannerDiffs.appDownload = {
+          cDiagnosis: cElements.banners?.appDownload || false,
+          askman: aElements.banners?.appDownload || false,
+        };
+        hasDifferences = true;
+      }
+
+      // 広告バナーの比較（URL数のみ）
+      const cAdsCount = cElements.banners?.ads?.length || 0;
+      const aAdsCount = aElements.banners?.ads?.length || 0;
+      if (cAdsCount !== aAdsCount) {
+        bannerDiffs.adsCount = {
+          cDiagnosis: cAdsCount,
+          askman: aAdsCount,
+        };
+        hasDifferences = true;
+      }
+
+      if (Object.keys(bannerDiffs).length > 0) {
+        diffs.banners = bannerDiffs;
+      }
+    }
+
+    // ボタンの比較（動的要素のみ）
+    if (cElements.buttons || aElements.buttons) {
+      const buttonDiffs: any = {};
+
+      // 病院検索ボタンは固定表示なので比較対象外
+      // hospitalSearch は常に表示されるため、差分チェックしない
+
+      // ユビー機能ボタンの比較（動的）
+      const cActions = cElements.buttons?.ubieActions || [];
+      const aActions = aElements.buttons?.ubieActions || [];
+      if (JSON.stringify(cActions.sort()) !== JSON.stringify(aActions.sort())) {
+        buttonDiffs.ubieActions = {
+          cDiagnosis: cActions,
+          askman: aActions,
+          cOnly: cActions.filter((a: string) => !aActions.includes(a)),
+          aOnly: aActions.filter((a: string) => !cActions.includes(a)),
+        };
+        hasDifferences = true;
+      }
+
+      if (Object.keys(buttonDiffs).length > 0) {
+        diffs.buttons = buttonDiffs;
+      }
+    }
+
+    // セクションの比較（動的要素のみ）
+    if (cElements.sections || aElements.sections) {
+      const sectionDiffs: any = {};
+
+      // 市販薬セクション（動的）
+      if (cElements.sections?.otc !== aElements.sections?.otc) {
+        sectionDiffs.otc = {
+          cDiagnosis: cElements.sections?.otc || false,
+          askman: aElements.sections?.otc || false,
+        };
+        hasDifferences = true;
+      }
+
+      // 関連疾患セクションは固定表示なので比較対象外
+      // relatedDiseases は常に表示されるため、差分チェックしない
+
+      // 治療情報セクションは固定表示なので比較対象外
+      // treatmentInfo は常に表示されるため、差分チェックしない
+
+      if (Object.keys(sectionDiffs).length > 0) {
+        diffs.sections = sectionDiffs;
+      }
+    }
+
+    // SNS共有は固定表示なので比較対象外
+    // Twitter, LINEは常に表示されるため、差分チェックしない
+
+    return hasDifferences ? diffs : undefined;
   }
 
   /**
@@ -355,6 +473,57 @@ export class ComparisonEngine {
       lines.push('Question Count Mismatch:');
       lines.push(`  C-Diagnosis: ${result.differences.questionCountMismatch.cDiagnosis}`);
       lines.push(`  Askman: ${result.differences.questionCountMismatch.askman}`);
+    }
+
+    // Show result page elements differences
+    const elementsMismatch = (result.differences as any).resultPageElementsMismatch;
+    if (elementsMismatch) {
+      lines.push('');
+      lines.push('━'.repeat(60));
+      lines.push('🎨 Result Page Elements Differences (Warning)');
+      lines.push('━'.repeat(60));
+
+      if (elementsMismatch.banners) {
+        lines.push('');
+        lines.push('Banners:');
+        if (elementsMismatch.banners.membershipPlus) {
+          lines.push(`  会員登録バナー: C-Diagnosis ${elementsMismatch.banners.membershipPlus.cDiagnosis ? 'あり' : 'なし'}, Askman ${elementsMismatch.banners.membershipPlus.askman ? 'あり' : 'なし'}`);
+        }
+        if (elementsMismatch.banners.appDownload) {
+          lines.push(`  アプリDLバナー: C-Diagnosis ${elementsMismatch.banners.appDownload.cDiagnosis ? 'あり' : 'なし'}, Askman ${elementsMismatch.banners.appDownload.askman ? 'あり' : 'なし'}`);
+        }
+        if (elementsMismatch.banners.adsCount) {
+          lines.push(`  広告バナー数: C-Diagnosis ${elementsMismatch.banners.adsCount.cDiagnosis}個, Askman ${elementsMismatch.banners.adsCount.askman}個`);
+        }
+      }
+
+      if (elementsMismatch.buttons) {
+        lines.push('');
+        lines.push('Buttons:');
+        // 病院検索ボタンは固定表示なので出力しない
+        if (elementsMismatch.buttons.ubieActions) {
+          lines.push(`  ユビー機能ボタン:`);
+          lines.push(`    C-Diagnosis (${elementsMismatch.buttons.ubieActions.cDiagnosis.length}個): ${elementsMismatch.buttons.ubieActions.cDiagnosis.join(', ')}`);
+          lines.push(`    Askman (${elementsMismatch.buttons.ubieActions.askman.length}個): ${elementsMismatch.buttons.ubieActions.askman.join(', ')}`);
+          if (elementsMismatch.buttons.ubieActions.cOnly.length > 0) {
+            lines.push(`    C-Diagnosisのみ: ${elementsMismatch.buttons.ubieActions.cOnly.join(', ')}`);
+          }
+          if (elementsMismatch.buttons.ubieActions.aOnly.length > 0) {
+            lines.push(`    Askmanのみ: ${elementsMismatch.buttons.ubieActions.aOnly.join(', ')}`);
+          }
+        }
+      }
+
+      if (elementsMismatch.sections) {
+        lines.push('');
+        lines.push('Sections:');
+        if (elementsMismatch.sections.otc) {
+          lines.push(`  市販薬セクション: C-Diagnosis ${elementsMismatch.sections.otc.cDiagnosis ? 'あり' : 'なし'}, Askman ${elementsMismatch.sections.otc.askman ? 'あり' : 'なし'}`);
+        }
+        // 関連疾患セクション、治療情報セクションは固定表示なので出力しない
+      }
+
+      // SNS共有は固定表示なので出力しない
     }
 
     // Show error details if present

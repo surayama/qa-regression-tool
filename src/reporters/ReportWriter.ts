@@ -102,6 +102,10 @@ export class ReportWriter {
         cDiagnosis: result.cDiagnosisResult.diseases,
         askman: result.askmanResult.diseases,
       },
+      resultPageElements: {
+        cDiagnosis: result.cDiagnosisResult.resultPageElements,
+        askman: result.askmanResult.resultPageElements,
+      },
       questionLogs: {
         cDiagnosis: result.cDiagnosisResult.questionLogs || [],
         askman: result.askmanResult.questionLogs || [],
